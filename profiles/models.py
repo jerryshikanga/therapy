@@ -19,7 +19,7 @@ class AbstractProfile(TimeStampedModel):
     gender = models.CharField(choices=Genders.choices, null=True, blank=True, max_length=10)
     description = models.TextField(null=True, blank=True)
     telephone = PhoneNumberField(blank=True, null=True)
-    picture = models.ImageField(upload_to="profiles", null=True, blank=True)
+    picture = models.ImageField(upload_to="profiles")
 
     class Meta:
         abstract = True

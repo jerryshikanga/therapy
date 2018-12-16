@@ -1,0 +1,11 @@
+
+{% for message in thread.messages.all %}
+    {{ message.sender }} -- {{ message.content }}
+    </hr>
+{% endfor %}
+
+<form method = "post" action="{% url 'session:message_thread' thread.id %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+</form>
