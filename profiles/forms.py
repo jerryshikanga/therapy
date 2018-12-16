@@ -21,7 +21,9 @@ class UserRoles(DjangoChoices):
 
 
 class ProfileUpdateForm(forms.ModelForm):
-    role = forms.ChoiceField(widget=forms.Select(), choices=UserRoles.choices,)
+    role = forms.ChoiceField(widget=forms.RadioSelect(), choices=UserRoles.choices, initial=UserRoles.Patient)
+    telephone = forms.CharField(widget=forms.TextInput(), help_text="Use International format e.g. +254...")
+    date_of_birth = forms.CharField(widget=forms.DateInput(format='%d/%m/%Y'), help_text="Use format YYYY-MM-DD")
 
     def __init__(self, *args, **kwargs):
         self.user = kwargs.pop("user")

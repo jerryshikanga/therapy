@@ -16,7 +16,7 @@
     {% if therapist.description is not None %}
         Description : {{ therapist.description }}
     {% endif %}
-    {% if therapist.picture is not None %}
+    {% if therapist.picture.url is not None %}
         <img src="{{ therapist.picture.url }}" width="50px" height="50px"/>
     {% endif %}
 {% endfor %}
