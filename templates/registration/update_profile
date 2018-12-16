@@ -1,0 +1,6 @@
+<h3>Update Your Profile</h3>
+<form method = "post" action="{% url 'profiles:create_profile_view' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+</form>
