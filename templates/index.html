@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,32 +20,32 @@
 <meta itemprop="specialty" content="Online Therapy">
 <meta name="apple-mobile-web-app-title" content="Talkspace">
 <meta name="apple-itunes-app" content="app-id=661829386, app-argument=https://app.adjust.io/29i9b5" />
-<script src="cdn-cgi/apps/head/pPkyCGpXOiX9s9rsG_uVgd8zFIo.js"></script><link href="homepage/css/bootstrap.minc619.css?v=1.0" rel="stylesheet">
+<script src="cdn-cgi/apps/head/pPkyCGpXOiX9s9rsG_uVgd8zFIo.js"></script>
+    <link href="{% static 'homepage/css/bootstrap.minc619.css?v=1.0' %} rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="homepage/css/custom7839.css?v=1.2" rel="stylesheet">
-<link href="homepage/css/auth7839.css?v=1.2" rel="stylesheet">
-<link href="homepage/css/slick/slickc619.css?v=1.0" rel="stylesheet">
-<link href="homepage/css/slick/slick-themec619.css?v=1.0" rel="stylesheet">
-<link rel="stylesheet" href="homepage/css/plyr/plyrc619.css?v=1.0">
-<link rel="stylesheet" href="homepage/css/aosc619.css?v=1.0">
-<link rel="shortcut icon" href="homepage/images/icons/faviconc619.png?v=1.0" type="image/x-icon">
-<link rel="icon" href="homepage/images/icons/favicon_rebrandedc619.png?v=1.0" />
-<link rel="apple-touch-icon" href="homepage/images/icons/appIcons/60x60b6f5.png?v=10">
-<link rel="apple-touch-icon" href="homepage/images/icons/appIcons/76x76b6f5.png?v=10">
-<link rel="apple-touch-icon" href="homepage/images/icons/appIcons/120x120b6f5.png?v=10">
-<link rel="apple-touch-icon" href="homepage/images/icons/appIcons/152x152b6f5.png?v=10">
+<link href="{% static 'homepage/css/auth7839.css?v=1.2' %}" rel="stylesheet">
+<link href="{% static 'homepage/css/slick/slickc619.css?v=1.0' %}" rel="stylesheet">
+<link href="{% static 'homepage/css/slick/slick-themec619.css?v=1.0' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'homepage/css/plyr/plyrc619.css?v=1.0'%} ">
+<link rel="stylesheet" href="{% static 'homepage/css/aosc619.css?v=1.0'%}">
+<link rel="shortcut icon" href="{% static 'homepage/images/icons/faviconc619.png?v=1.0" type="image/x-icon' %}">
+<link rel="icon" href="{% static 'homepage/images/icons/favicon_rebrandedc619.png?v=1.0' %}" />
+<link rel="apple-touch-icon" href="{% static 'homepage/images/icons/appIcons/60x60b6f5.png?v=10' %}">
+<link rel="apple-touch-icon" href="{% static 'homepage/images/icons/appIcons/76x76b6f5.png?v=10' %}">
+<link rel="apple-touch-icon" href="{% static 'homepage/images/icons/appIcons/120x120b6f5.png?v=10' %}">
+<link rel="apple-touch-icon" href="{% static 'homepage/images/icons/appIcons/152x152b6f5.png?v=10' %}">
 <meta property="og:title" content="Talkspace | Online Therapy | Counseling Online | Marriage Counseling" />
 <meta property="og:description" content="With Talkspace online therapy, anyone can get therapy without traveling to an office - join one million people who already feel happier!" />
-<meta property="og:image" content="homepage/images/talktala-facebook-thumbnail.jpg" />
+<meta property="og:image" content="{% static 'homepage/images/talktala-facebook-thumbnail.jpg' %}" />
 <meta property="og:url" content="https://www.talkspace.com" />
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@talkspace">
 <meta name="twitter:title" content="Talkspace Online Therapy">
 <meta name="twitter:description" content="With Talkspace online therapy, anyone can get therapy without traveling to an office - join one million people who already feel happier!">
-<meta name="twitter:image:src" content="homepage/images/talktala-facebook-thumbnail.jpg">
+<meta name="twitter:image:src" content="{% static 'homepage/images/talktala-facebook-thumbnail.jpg' %}">
 <link rel="canonical" href="index.html" />
 
-<script src="homepage/js/jquery.minc619.js?v=1.0"></script>
+<script src="{% static 'homepage/js/jquery.minc619.js?v=1.0' %}"></script>
 <script src="http://cdn.optimizely.com/js/590452337.js"></script>
 
 
@@ -242,7 +244,7 @@ I love that I can write my issues as they come up, instead of waiting for an app
 <div class="col-lg-4 no-padding">
 <div id="dating-lg">
 <div class="tint third">
-<img src="homepage/images/green-quote_2x.png" class="illustration-img">
+<img src="{% static 'homepage/images/green-quote_2x.png' %}" class="illustration-img">
 <div class="illustrations-slide">
 <div class="illustration-text">
 I owe the recent improvement in my personal relationships to my therapist. My therapist has been one of the most supportive individuals that I have ever met.
@@ -262,15 +264,15 @@ I owe the recent improvement in my personal relationships to my therapist. My th
 <div class="col-lg-12 no-padding">
 <div class="devices-ul no-padding">
 <ul id="devices-list">
-<li><div class="img-table"><div class="img-wrap"><img src="homepage/images/ios-icon_2x.png" alt="Mac"></div></div><span>MAC</span></li>
-<li><div class="img-table"><div class="img-wrap"><img src="homepage/images/android-icon_2x.png" alt="Android"></div></div><span>ANDROID</span></li>
-<li><div class="img-table"><div class="img-wrap"><img src="homepage/images/desktop-icon_2x.png" alt="Deskop"></div></div><span>DESKTOP</span></li>
+<li><div class="img-table"><div class="img-wrap"><img src="{% static 'homepage/images/ios-icon_2x.png' %}" alt="Mac"></div></div><span>MAC</span></li>
+<li><div class="img-table"><div class="img-wrap"><img src="{% static 'homepage/images/android-icon_2x.png' %}" alt="Android"></div></div><span>ANDROID</span></li>
+<li><div class="img-table"><div class="img-wrap"><img src="{% static 'homepage/images/desktop-icon_2x.png' %}" alt="Deskop"></div></div><span>DESKTOP</span></li>
 </ul>
 <ul id="features-list">
-<li><div class="img-table"><div class="img-wrap"><img src="homepage/images/text-icon_2x.png" alt="Text"></div></div><span>TEXT</span></li>
-<li><div class="img-table"><div class="img-wrap"><img src="homepage/images/voice-icon_2x.png" alt="Voice"></div></div><span>VOICE</span></li>
-<li><div class="img-table"><div class="img-wrap"><img src="homepage/images/livevideo-icon_2x.png" alt="Live Video"></div></div><span>LIVE VIDEO</span></li>
-<li><div class="img-table"><div class="img-wrap"><img src="homepage/images/media-icon_2x.png" alt="Media"></div></div><span>MEDIA</span></li>
+<li><div class="img-table"><div class="img-wrap"><img src="{% static 'homepage/images/text-icon_2x.png' %}" alt="Text"></div></div><span>TEXT</span></li>
+<li><div class="img-table"><div class="img-wrap"><img src="{% static 'homepage/images/voice-icon_2x.png' %}" alt="Voice"></div></div><span>VOICE</span></li>
+<li><div class="img-table"><div class="img-wrap"><img src="{% static 'homepage/images/livevideo-icon_2x.png' %}" alt="Live Video"></div></div><span>LIVE VIDEO</span></li>
+<li><div class="img-table"><div class="img-wrap"><img src="{% static 'homepage/images/media-icon_2x.png' %}" alt="Media"></div></div><span>MEDIA</span></li>
 </ul>
 </div>
 </div>
@@ -280,19 +282,19 @@ I owe the recent improvement in my personal relationships to my therapist. My th
 <p>It can be difficult to wait days or weeks until your next appointment. With Talkspace, you can send your therapist a message whenever you’re near a laptop, tablet, or smartphone. Your conversation carries over seamlessly across devices and uses banking-grade encryption to keep it safe and confidential.</p>
 <ul class="store-icon">
 <li>
-<a href="https://app.adjust.io/l6yexx" target="_blank"><img src="homepage/images/appstore-text_2x.png" alt="Get Talkspace on the App Store"></a>
+<a href="https://app.adjust.io/l6yexx" target="_blank"><img src="{% static 'homepage/images/appstore-text_2x.png' %}" alt="Get Talkspace on the App Store"></a>
 </li>
 <li>
-<a href="https://app.adjust.io/kw4oz4" target="_blank"><img src="homepage/images/googleplay-text_2x.png" alt="Get Talkspace on Google Play"></a>
+<a href="https://app.adjust.io/kw4oz4" target="_blank"><img src="{% static 'homepage/images/googleplay-text_2x.png' %}" alt="Get Talkspace on Google Play"></a>
 </li>
 </ul>
 </div>
 </div>
 <div class="visible-xs prlx-img">
-<img src="homepage/images/devices-bg_2x.png" class="hidden-sm hidden-md hidden-lg prlx-img" alt="Talkspace on Smartphone, Tablet and Laptop">
+<img src="{% static 'homepage/images/devices-bg_2x.png' %}" class="hidden-sm hidden-md hidden-lg prlx-img" alt="Talkspace on Smartphone, Tablet and Laptop">
 </div>
 <div class="hidden-xs prlx-img">
-<img src="homepage/images/devices_2x.png" alt="Talkspace on Smartphone, Tablet and Laptop">
+<img src="{% static 'homepage/images/devices_2x.png' %}" alt="Talkspace on Smartphone, Tablet and Laptop">
 </div>
 </div>
 </section>
@@ -408,7 +410,7 @@ Customer Support is available to help answer non-clinical questions about how Ta
 
 </div>
 </div>
-<img src="homepage/images/umt-phone_2x.png" alt="Talkspace Unlimited Messaging Therapy">
+<img src="{% static 'homepage/images/umt-phone_2x.png' %}" alt="Talkspace Unlimited Messaging Therapy">
 </div>
 </div>
 <div class="col-xs-12 col-lg-5 no-padding">
@@ -540,7 +542,7 @@ Read <a href="online-therapy/press/index.html" target="_blank" class="green">MOR
 </section>
 <section id="giftcard">
 <div class="col-xs-12 no-padding">
-<img src="homepage/images/gift_2x.png" class="gift-img">
+<img src="{% static 'homepage/images/gift_2x.png' %}" class="gift-img">
 <div class="half-half">Talkspace <a href="https://giftcard.talkspace.com/" class="green">Gift Cards</a></div>
 <h2>Give the gift of <span class="green">happiness</span></h2>
 <div class="section-description black">
@@ -582,11 +584,11 @@ Visit our <a href="online-therapy/faqs/index.html" target="_blank" class="green"
 <div class="col-xs-12">
 <div class="row hidden-md hidden-lg">
 <ul class="social-icons">
-<li><a href="https://www.facebook.com/Talkspacetherapy" target="_blank"><img src="homepage/images/facebook_2x.png" class="fb-icon"></a></li>
-<li><a href="https://twitter.com/talkspace" target="_blank"><img src="homepage/images/twitter_2x.png" class="tw-icon"></a></li>
-<li><a href="https://www.instagram.com/talkspace/" target="_blank"><img src="homepage/images/instagram_2x.png" class="ig-icon"></a></li>
-<li><a href="http://www.pinterest.com/talkspace" target="_blank"><img src="homepage/images/pinterest_2x.png" class="pt-icon"></a></li>
-<li><a href="https://www.linkedin.com/company/talkspace-online-therapy" target="_blank"><img src="homepage/images/linkedin_2x.png" class="li-icon"></a></li>
+<li><a href="https://www.facebook.com/Talkspacetherapy" target="_blank"><img src="{% static 'homepage/images/facebook_2x.png' %}" class="fb-icon"></a></li>
+<li><a href="https://twitter.com/talkspace" target="_blank"><img src="{% static 'homepage/images/twitter_2x.png' %}" class="tw-icon"></a></li>
+<li><a href="https://www.instagram.com/talkspace/" target="_blank"><img src="{% static 'homepage/images/instagram_2x.png' %}" class="ig-icon"></a></li>
+<li><a href="http://www.pinterest.com/talkspace" target="_blank"><img src="{% static 'homepage/images/pinterest_2x.png' %}" class="pt-icon"></a></li>
+<li><a href="https://www.linkedin.com/company/talkspace-online-therapy" target="_blank"><img src="{% static 'homepage/images/linkedin_2x.png' %}" class="li-icon"></a></li>
 </ul>
 </div>
 <div class="row hidden-md hidden-lg">
@@ -657,11 +659,11 @@ Visit our <a href="online-therapy/faqs/index.html" target="_blank" class="green"
 <div class="col-md-3">
 <div class="row">
 <ul class="social-icons">
-<li><a href="https://www.facebook.com/Talkspacetherapy" target="_blank"><img src="homepage/images/facebook_2x.png" class="fb-icon"></a></li>
-<li><a href="https://twitter.com/talkspace" target="_blank"><img src="homepage/images/twitter_2x.png" class="tw-icon"></a></li>
-<li><a href="https://www.instagram.com/talkspace/" target="_blank"><img src="homepage/images/instagram_2x.png" class="ig-icon"></a></li>
-<li><a href="http://www.pinterest.com/talkspace" target="_blank"><img src="homepage/images/pinterest_2x.png" class="pt-icon"></a></li>
-<li><a href="https://www.linkedin.com/company/talkspace-online-therapy" target="_blank"><img src="homepage/images/linkedin_2x.png" class="li-icon"></a></li>
+<li><a href="https://www.facebook.com/Talkspacetherapy" target="_blank"><img src="{% static 'homepage/images/facebook_2x.png' %}" class="fb-icon"></a></li>
+<li><a href="https://twitter.com/talkspace" target="_blank"><img src="{% static 'homepage/images/twitter_2x.png' %}" class="tw-icon"></a></li>
+<li><a href="https://www.instagram.com/talkspace/" target="_blank"><img src="{% static 'homepage/images/instagram_2x.png' %}" class="ig-icon"></a></li>
+<li><a href="http://www.pinterest.com/talkspace" target="_blank"><img src="{% static 'homepage/images/pinterest_2x.png' %}" class="pt-icon"></a></li>
+<li><a href="https://www.linkedin.com/company/talkspace-online-therapy" target="_blank"><img src="{% static 'homepage/images/linkedin_2x.png' %}" class="li-icon"></a></li>
 </ul>
 </div>
 <div class="row">
@@ -734,11 +736,11 @@ If you are in a life threatening situation - don’t use this site. Call +1 (800
 <div class="modal-dialog registration-lightbox">
 <div class="modal-content row" id="registrationBox">
 <div class="hidden-xs-down">
-<a href="#" id="rl-close-dialog" class="pull-right roboto-light visible-xs" data-dismiss="modal"><img src="homepage/images/close_responsive.png" /></a>
-<a href="#" id="rl-close-dialog" class="pull-right roboto-light hidden-xs" data-dismiss="modal"><img src="homepage/images/close.png" /></a>
+<a href="#" id="rl-close-dialog" class="pull-right roboto-light visible-xs" data-dismiss="modal"><img src="{% static 'homepage/images/close_responsive.png' %}" /></a>
+<a href="#" id="rl-close-dialog" class="pull-right roboto-light hidden-xs" data-dismiss="modal"><img src="{% static 'homepage/images/close.png' %}" /></a>
 <div class="logoWrap">
-<img class="visible-xs" src="homepage/images/logo_2x.png" alt="logo" />
-<img class="hidden-xs" src="homepage/images/ts-logo_2x.png" alt="logo" />
+<img class="visible-xs" src="{% static 'homepage/images/logo_2x.png' %}" alt="logo" />
+<img class="hidden-xs" src="{% static 'homepage/images/ts-logo_2x.png' %}" alt="logo" />
 </div>
 </div>
 <div class="col-12 nopadding registration-form-body">
@@ -781,10 +783,10 @@ If you are in a life threatening situation - don’t use this site. Call +1 (800
 </div>
 <ul class="store-icon-registration">
 <li>
-<a href="https://app.adjust.io/l6yexx" target="_blank"><img src="homepage/images/appstore-text_2x.png" alt="Get Talkspace on the App Store"></a>
+<a href="https://app.adjust.io/l6yexx" target="_blank"><img src="{% static 'homepage/images/appstore-text_2x.png' %}" alt="Get Talkspace on the App Store"></a>
 </li>
 <li>
-<a href="https://app.adjust.io/kw4oz4" target="_blank"><img src="homepage/images/googleplay-text_2x.png" alt="Get Talkspace on Google Play"></a>
+<a href="https://app.adjust.io/kw4oz4" target="_blank"><img src="{% static 'homepage/images/googleplay-text_2x.png' %}" alt="Get Talkspace on Google Play"></a>
 </li>
 </ul>
 </div>
@@ -796,12 +798,12 @@ If you are in a life threatening situation - don’t use this site. Call +1 (800
 </div>
 </div>
 
-<script src="homepage/js/bootstrap.minc619.js?v=1.0"></script>
+<script src="{% static 'homepage/js/bootstrap.minc619.js?v=1.0' %}"></script>
 
-<script src="homepage/js/registrationc619.html?v=1.0"></script>
+<script src="{% static 'homepage/js/registrationc619.html?v=1.0' %}"></script>
 
-<script src="homepage/js/handlebars-v4.0.5c619.js?v=1.0"></script>
-<script src="homepage/js/home7839.js?v=1.2" type="text/javascript"></script>
+<script src="{% static 'homepage/js/handlebars-v4.0.5c619.js?v=1.0' %}"></script>
+<script src="{% static 'homepage/js/home7839.js?v=1.2' %}" type="text/javascript"></script>
 
 <script>
             $(function() {
@@ -850,7 +852,7 @@ If you are in a life threatening situation - don’t use this site. Call +1 (800
             });
         </script>
 
-<script src="homepage/js/plyrc619.js?v=1.0"></script>
+<script src="{% static 'homepage/js/plyrc619.js?v=1.0' %}"></script>
 <script>
             plyr.setup('#video-player');
             $(function(){
@@ -870,7 +872,7 @@ If you are in a life threatening situation - don’t use this site. Call +1 (800
             }
         </script>
 
-<script src="homepage/js/slickc619.js?v=1.0" type="text/javascript" charset="utf-8"></script>
+<script src="{% static 'homepage/js/slickc619.js?v=1.0' %}" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
              $('.announcements-slider').slick({
                 slidesToShow: 1,
@@ -932,14 +934,14 @@ If you are in a life threatening situation - don’t use this site. Call +1 (800
             });
         </script>
 
-<script src="homepage/js/jquery.enllax.minc619.js?v=1.0"></script>
+<script src="{% static 'homepage/js/jquery.enllax.minc619.js?v=1.0' %}"></script>
 <script>
             (function($){
                 $('#devices, #umt').enllax();
             })(jQuery);
         </script>
 
-<script src="homepage/js/aosc619.js?v=1.0"></script>
+<script src="{% static 'homepage/js/aosc619.js?v=1.0' %}"></script>
 <script>
             AOS.init({
                 easing: 'ease-out-quad',
