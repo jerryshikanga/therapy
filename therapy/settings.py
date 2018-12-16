@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     "pinax.messages",
+    "phonenumber_field",
 
     'session.apps.SessionConfig',
     "profiles.apps.ProfilesConfig",
@@ -129,3 +130,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+MEDIA_URL = '/static/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media")

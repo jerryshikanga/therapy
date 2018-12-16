@@ -26,5 +26,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("messages/", include("pinax.messages.urls", namespace="pinax_messages")),
     path("profiles/", include("profiles.urls")),
+    path("session/", include("session.urls"))
     path("accounts/", include("django.contrib.auth.urls"))
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
