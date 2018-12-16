@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<!-- Mirrored from www.talkspace.com/online-therapy/veterans/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Dec 2018 15:47:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script src="../../cdn-cgi/apps/head/pPkyCGpXOiX9s9rsG_uVgd8zFIo.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<link rel="pingback" href="../xmlrpc.html" />
+<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+<script>var et_site_url='../index.html';var et_post_id='3276';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script><title>Online Therapy for Veterans | PTSD | Talkspace</title>
+
+<meta name="description" content="Chat with a licensed therapist anytime and anywhere with Talkspace online therapy for veterans. Affordable, confidential, and stigma-free therapy." />
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Online Therapy for Veterans | PTSD - Talkspace" />
+<meta property="og:description" content="Chat with a licensed therapist anytime and anywhere with Talkspace online therapy for veterans. Affordable, confidential, and stigma-free therapy." />
+<meta property="og:url" content="https://www.talkspace.com/online-therapy/veterans/" />
+<meta property="og:site_name" content="Talkspace" />
+<meta property="og:image" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2018/04/stigma_2x-95x95.png" />
+<meta property="og:image" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2018/05/convenient_2x-95x97.png" />
+<meta property="og:image" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2018/05/affordable_2x-95x97.png" />
+<meta property="og:image" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2018/05/stars_2x-300x49.png" />
+<meta property="og:image" content="//cdn.talkspace.com/homepage/images/social-icons/Social_Media_FB_25x25.png" />
+<meta property="og:image" content="//cdn.talkspace.com/homepage/images/social-icons/Social_Medial_Twtr_25x25.png" />
+<meta property="og:image" content="//cdn.talkspace.com/homepage/images/social-icons/Social_Medial_insta_25x25.png" />
+<meta property="og:image" content="//cdn.talkspace.com/homepage/images/social-icons/Social_Medial_Pntrst_25x25.png" />
+<meta property="og:image" content="//cdn.talkspace.com/homepage/images/social-icons/Social_Medial_LI_25x25.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Chat with a licensed therapist anytime and anywhere with Talkspace online therapy for veterans. Affordable, confidential, and stigma-free therapy." />
+<meta name="twitter:title" content="Online Therapy for Veterans | PTSD - Talkspace" />
+<meta name="twitter:domain" content="Talkspace" />
+<meta name="twitter:image" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2018/04/stigma_2x-95x95.png" />
+
+<link rel='dns-prefetch' href='../../index.html' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Talkspace &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Talkspace &raquo; Comments Feed" href="../comments/feed/index.html" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.talkspace.com\/online-therapy\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<meta content="Divi v.3.9" name="generator" /><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='divi-style-css' href='../wp-content/themes/Divi/style.dev7868.css?ver=3.9' type='text/css' media='all' />
+<link rel='stylesheet' id='et-builder-googlefonts-cached-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic&amp;ver=4.9.9#038;subset=cyrillic,greek,vietnamese,latin,greek-ext,latin-ext,cyrillic-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='et-shortcodes-responsive-css-css' href='../wp-content/themes/Divi/epanel/shortcodes/css/shortcodes_responsive7868.css?ver=3.9' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css' href='../wp-content/themes/Divi/includes/builder/styles/magnific_popup7868.css?ver=3.9' type='text/css' media='all' />
+<link rel='stylesheet' id='ms-main-css' href='../wp-content/plugins/masterslider/public/assets/css/masterslider.main9066.css?ver=2.14.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ms-custom-css' href='../wp-content/uploads/masterslider/custom0dd0.css?ver=8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='../wp-includes/css/dashicons.mind87f.css?ver=4.9.9' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.html?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" />
+<link rel='shortlink' href='../index938b.html?p=3276' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed63a9.json?url=https%3A%2F%2Fwww.talkspace.com%2Fonline-therapy%2Fveterans%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed6055?url=https%3A%2F%2Fwww.talkspace.com%2Fonline-therapy%2Fveterans%2F&amp;format=xml" />
+<script>var ms_grabbing_curosr='../wp-content/plugins/masterslider/public/assets/css/common/grabbing.ico',ms_grab_curosr='../wp-content/plugins/masterslider/public/assets/css/common/grab.ico';</script>
+<meta name="generator" content="MasterSlider 2.14.2 - Responsive Touch Image Slider" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link rel="shortcut icon" href="https://cdn.talkspace.com/homepage/images/icons/favicon_rebranded.png?ver5" /><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M9F7GF');</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../homepage/css/auth7839.css?v=1.2">
+
+<style>
+            .modal-backdrop {
+                z-index: 0;
+            }
+/*
+            .confirmAgeLabel {
+                background-image: url('https://www.talkspace.com/homepage/images/auth_mark_default.png') !important;
+                background-position: left center !important;
+                background-size: 21px !important;
+                background-repeat: no-repeat !important;
+            }
+*/
+        </style>
+<script>
+	jQuery(function($){
+		$('.logo_container a').attr('href','../../index.html');
+	});
+</script><link rel="icon" href="../wp-content/uploads/2017/03/favicon.png" sizes="32x32" />
+<link rel="icon" href="../wp-content/uploads/2017/03/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="../wp-content/uploads/2017/03/favicon.png" />
+<meta name="msapplication-TileImage" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2017/03/favicon.png" />
+<link rel="stylesheet" id="et-core-unified-cached-inline-styles" href="../wp-content/cache/et/3276/et-core-unified-15446416415478.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" />
+</head>
+<body class="page-template-default page page-id-3276 custom-background _masterslider _msp_version_2.14.2 et_button_no_icon et_pb_button_helper_class et_fullwidth_nav et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns1 et_header_style_left et_pb_pagebuilder_layout et_right_sidebar et_divi_theme">
+<div id="page-container">
+<header id="main-header" data-height-onload="40">
+<div class="container clearfix et_menu_container">
+<div class="logo_container">
+<span class="logo_helper"></span>
+<a href="../index.html">
+<img src="../wp-content/uploads/2018/09/TS_nav_logo.png" alt="Talkspace" id="logo" data-height-percentage="40" />
+</a>
+</div>
+<div id="et-top-navigation" data-height="40" data-fixed-height="40">
+<nav id="top-menu-nav">
+<ul id="top-menu" class="nav"><li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="http://talkspace.com/blog">BLOG</a></li>
+<li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="https://www.youtube.com/embed/YYBEuaM_gEc">OUR VIDEO</a></li>
+<li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="../../auth/login.html">SIGN IN</a></li>
+</ul> </nav>
+<div id="et_mobile_nav_menu">
+<div class="mobile_nav closed">
+<span class="select_page">Select Page</span>
+<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+</div>
+</div> </div> 
+</div> 
+<div class="et_search_outer">
+<div class="container et_search_form_container">
+<form role="search" method="get" class="et-search-form" action="https://www.talkspace.com/online-therapy/">
+<input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" /> </form>
+<span class="et_close_search_field"></span>
+</div>
+</div>
+</header> 
+<div id="et-main-area">
+<div id="main-content">
+<article id="post-3276" class="post-3276 page type-page status-publish hentry">
+<div class="entry-content">
+<div class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_0">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_0    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_0 et_pb_bg_layout_dark  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<h1 style="text-align: center;">ONLINE THERAPY<br /> <span class="head-light">FOR</span> VETERANS</h1>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_1">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_1    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_code et_pb_code_0  et_pb_text_align_center">
+<div class="et_pb_code_inner">
+<a href="#" data-toggle="modal" data-target="#registration-lightbox" class="et_pb_button_white">Chat With A Therapist Now ›</a>
+</div> 
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_2">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_2    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_image et_pb_image_0 et_always_center_on_mobile">
+<a href="https://app.adjust.io/l6yexx" target="_blank"><span class="et_pb_image_wrap"><img src="../wp-content/uploads/2018/04/applestore_2x1-162x54-1.png" alt="" /></span></a>
+</div>
+</div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_3    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_1 et_always_center_on_mobile">
+<a href="https://app.adjust.io/kw4oz4" target="_blank"><span class="et_pb_image_wrap"><img src="../wp-content/uploads/2018/04/googlestore_2x1-162x54-1.png" alt="" /></span></a>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_section et_pb_section_1 et_section_regular">
+<div class="et_pb_row et_pb_row_3">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_4    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_1 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<p style="text-align: center;">TALKSPACE HAS BEEN FEATURED ON:</p>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_4">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_5    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_2 et_always_center_on_mobile">
+<span class="et_pb_image_wrap"><img src="../wp-content/uploads/2018/04/Brand_Logos4-1080x54.png" alt="" /></span>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_section et_pb_section_2 et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_5">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_6    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_2 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="vc_custom_heading">
+<h2 style="text-align: center;">The Dilemma</h2>
+<p>&nbsp;</p>
+</div>
+<div class="wpb_row vc_row vc_row-fluid mk-fullwidth-false attched-false vc_row-fluid">
+<div class="vc_col-sm-10 wpb_column column_container ">
+<div class="mk-text-block ">
+<p>We owe our safety to the brave men and women who serve in our military. Unfortunately, many veterans face obstacles to finding work, starting or maintaining relationships, and living their lives. Despite their sacrifices, very few veterans receive adequate mental health care to help them overcome these obstacles. According to a 2004 study, only 30-40% of veterans and military personnel who screen positive for severe mental or emotional distress actually seek professional help.</p>
+</div>
+</div>
+</div>
+</div>
+</div> 
+</div> 
+</div> 
+</div> <div class="et_pb_section et_pb_section_3 et_section_regular">
+<div class="et_pb_row et_pb_row_6">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_7    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_3 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<h2 style="text-align: center;">Living with PTSD</h2>
+</div>
+</div> 
+ </div> 
+</div> <div class="et_pb_row et_pb_row_7">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_8    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_4 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+For many veterans, the stress of combat can persist long after their service has ended, creating feelings of anxiety, depression, fear, sadness, and disconnectedness back home. These emotions can lay dormant, only to surface in unexpected flashbacks and outbursts.</p>
+<p>If you are living with emotional pain and a constant sense of danger that doesn’t let up with time, you may be suffering from post-traumatic stress disorder, otherwise known as PTSD. You may think you will never feel normal again, or that this is your burden to suffer alone.
+</div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_9    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_3 et_always_center_on_mobile">
+<span class="et_pb_image_wrap"><img src="../wp-content/uploads/2018/04/man-with-PTSD-sm-297x280.jpg.jpg" alt="" /></span>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_section et_pb_section_4 et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_8">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_10    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_5 et_pb_bg_layout_dark  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<h2 style="text-align: center;">Talkspace Can Help</h2>
+</div>
+</div> 
+</div> 
+</div> 
+</div> <div class="et_pb_section et_pb_section_5 et_section_regular">
+<div class="et_pb_row et_pb_row_9">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_11    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_6 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+At Talkspace, we believe that every veteran and his or her family deserve a chance to live the highest quality of life possible. We want to make sure our veterans have access to affordable, confidential therapy.</p>
+<p>Talkspace puts a professional, licensed therapist at your fingertips. You can message your therapist from the privacy of your smartphone or web browser, anytime and anywhere.
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_10">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_12    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_7 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_11">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_13    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_8 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<h2 style="text-align: center;">The Benefits</h2>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_with_border et_pb_row et_pb_row_12">
+<div class="et_pb_column et_pb_column_1_3 et_pb_column_14    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_9 et_pb_bg_layout_light  et_pb_text_align_center">
+<div class="et_pb_text_inner">
+<h3 style="text-align: center;">Stigma-Free &amp; Confidential</h3>
+<p><img src="../wp-content/uploads/2018/04/stigma_2x-95x95.png" alt="" width="95" height="95" class="alignnone size-full wp-image-3284" /></p>
+<p style="text-align: center;">Completely confidential. Your therapy stays between you and your therapist.</p>
+</div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_3 et_pb_column_15    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_10 et_pb_bg_layout_light  et_pb_text_align_center">
+<div class="et_pb_text_inner">
+<h3 style="text-align: center;">Convenient</h3>
+<p><img src="../wp-content/uploads/2018/05/convenient_2x-95x97.png" alt="" width="95" height="97" class="alignnone size-full wp-image-3450"></p>
+<div class="vc_col-sm-4 wpb_column column_container vc_custom_1444857291003 ">
+<div class="mk-text-block ">
+<p style="text-align: center;">&nbsp;<span style="font-size: 15px; text-align: center;">Chat with your therapist whenever and wherever, on web or mobile. No scheduled appointments, no long wait</span></p>
+<div class="clearboth"></div>
+</div>
+</div>
+<div class="vc_col-sm-3 wpb_column column_container vc_custom_1444857325631 ">
+<div class="mk-text-block "></div>
+</div>
+</div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_3 et_pb_column_16    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_11 et_pb_bg_layout_light  et_pb_text_align_center">
+<div class="et_pb_text_inner">
+<div class="vc_col-sm-3 wpb_column column_container ">
+<div class="mk-text-block ">
+<h3 style="text-align: center;">Affordable</h3>
+<p><img src="../wp-content/uploads/2018/05/affordable_2x-95x97.png" alt="" width="95" height="97" class="alignnone size-full wp-image-3451" /></p>
+<p style="text-align: center;">80% cheaper than traditional face-to-face therapy</p>
+</div>
+</div>
+</div>
+</div> 
+</div> 
+</div> 
+</div> <div class="et_pb_section et_pb_section_6 et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_13">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_17    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_12 et_pb_bg_layout_dark  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="vc_custom_heading vc_custom_1444857508217"></div>
+<div class="wpb_row vc_row vc_row-fluid mk-fullwidth-false attched-false vc_row-fluid">
+<div class="vc_col-sm-10 wpb_column column_container ">
+<div class="mk-text-block ">
+<div class="clearboth">
+<div class="vc_custom_heading vc_custom_1444857508217">
+<h2 style="text-align: center;">The Therapists</h2>
+<p>&nbsp;</p>
+</div>
+<div class="clearboth"></div>
+<div class="wpb_row vc_row vc_row-fluid mk-fullwidth-false attched-false vc_row-fluid">
+<div class="vc_col-sm-10 wpb_column column_container ">
+<div class="mk-text-block ">
+<p><span style="color: #ffffff;">At Talkspace, we work with many professional therapists who specialize in treating PTSD, trauma, severe depression, chronic anxiety, and different types of mental and physical abuse.</span></p>
+<p><span style="color: #ffffff;">Our online therapists will help you develop new perspectives on life, teach you skills to cope with your circumstances, assist you with freeing yourself from problematic habits and/or destructive behaviors, identify your emotional triggers, improve the quality of your relationships, and assist you with getting your life back. We are here to help you live better.</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_14">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_18    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_code et_pb_code_1  et_pb_text_align_center">
+<div class="et_pb_code_inner">
+<a href="#" data-toggle="modal" data-target="#registration-lightbox" class="et_pb_button_white">Chat With A Therapist Now ›</a>
+</div> 
+</div> 
+</div> 
+</div> 
+</div> <div class="et_pb_section et_pb_section_7 et_section_regular">
+<div class="et_pb_row et_pb_row_15">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_19    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_13 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="vc_custom_heading vc_custom_1444862084055">
+<h2 style="text-align: center;">User Reviews</h2>
+</div>
+<div class="wpb_row vc_row  vc_row-fluid  mk-fullwidth-false  attched-false vc_row-fluid">
+<div class="vc_col-sm-12 wpb_column column_container vc_custom_1444947671776 ">
+<div class="mk-text-block  ">
+<h3 style="text-align: center;">Over 300,000 people already feel happier with Talkspace</h3>
+</div>
+</div>
+</div>
+<div class="wpb_row vc_row md-hide vc_row-fluid  mk-fullwidth-false  attched-false vc_row-fluid">
+<div class="vc_col-sm-12 wpb_column column_container "></div>
+</div>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_16">
+<div class="et_pb_column et_pb_column_1_3 et_pb_column_20    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_14 et_pb_bg_layout_light  et_pb_text_align_center">
+<div class="et_pb_text_inner">
+<p><img src="../wp-content/uploads/2018/05/stars_2x-300x49.png" alt="" width="300" height="49" class="alignnone size-full wp-image-3425" /></p>
+<p style="text-align: center;"><span>“I’m so glad I gave this a chance… The advantage of this format is that I truly do not feel alone. At any time or any place I’ve got my therapist in my phone just a message away.”</span></p>
+<p style="text-align: center;"><span>Talkspace User / September 2014</span></p>
+<p style="text-align: center;">
+</div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_3 et_pb_column_21    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_15 et_pb_bg_layout_light  et_pb_text_align_center">
+<div class="et_pb_text_inner">
+<img src="../wp-content/uploads/2018/05/stars_2x-300x49.png" alt="" width="300" height="49" class="alignnone size-full wp-image-3425" /></p>
+<p style="text-align: center;"><span>“Robert is really good at understanding the patient and at giving specific and helpful advice. I have been through a lot of therapists but I think he has the fastest positive impact, also the strongest. He also gets back to you in good time!”</span></p>
+<p style="text-align: center;"><span>Talkspace User / August&nbsp;2015</span></p>
+<p style="text-align: center;"><span></span></p>
+</div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_3 et_pb_column_22    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_16 et_pb_bg_layout_light  et_pb_text_align_center">
+<div class="et_pb_text_inner">
+<p><img src="../wp-content/uploads/2018/05/stars_2x-300x49.png" alt="" width="300" height="49" class="alignnone size-full wp-image-3425" /></p>
+<p style="text-align: center;"><span>“Amazing I’m talking to a real person when I have trouble. No appointment needed, all in my hands. Anytime and anywhere.”</span></p>
+<p style="text-align: center;"><span>Talkspace User / October 2014</span></p>
+<p style="text-align: center;">
+</div>
+</div> 
+</div> 
+</div> 
+</div> <div class="et_pb_section et_pb_section_8 et_section_regular">
+<div class="et_pb_row et_pb_row_17">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_23    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_17 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info">
+<div class="footer-row">
+<ul class="footer-menu">
+<li class="footer-links"><a class="inet" href="../../blog/index.html">Blog</a></li>
+<li class="footer-links"><a class="inet" href="../../public/contact-us.html">Contact Us</a></li>
+<li class="footer-links"><a class="inet" href="https://help.talkspace.com/hc/en-us" target="_blank" rel="noopener noreferrer">FAQ</a></li>
+<li class="footer-links"><a class="inet" href="http://talkspace.workable.com/" target="_blank" rel="noopener">Careers</a></li>
+<li class="footer-links"><a class="inet" href="../../public/privacy-policy.html">Privacy Policy</a></li>
+<li class="footer-links"><a class="inet" href="../../join-as-a-therapist.html">Therapist? Join Us!</a></li>
+<li class="footer-links"><a class="inet" href="../press/index.html">Press</a></li>
+<li class="footer-links"><a class="inet" href="https://giftcard.talkspace.com/">Gift Card</a></li>
+</ul>
+</div>
+<div class="footer-row">
+<ul class="footer-menu">
+<li class="footer-links"><a class="inet" href="../unlimited-messaging-therapy/index.html">Unlimited Messaging Therapy</a></li>
+<li class="footer-links"><a class="inet" href="../index.html">Online Therapy</a></li>
+<li class="footer-links"><a class="inet" href="../assessments/index.html">Assessments</a></li>
+<li class="footer-links"><a class="inet" href="../lgbt/index.html">LGBT</a></li>
+<li class="footer-links"><a class="inet" href="index.html">Veterans</a></li>
+<li class="footer-links"><a class="inet" href="../couples-therapy/index.html">Couples Therapy</a></li>
+<li class="footer-links"><a class="inet" href="../therapy-for-business/index.html">Therapy for Business</a></li>
+</ul>
+</div>
+<ul class="list-inline">
+<li class="social-inline"><a href="https://www.facebook.com/Talkspacetherapy/" target="_blank" rel="noopener noreferrer" title="Talkspace Facebook"><img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Media_FB_25x25.png" alt="Facebook"></a></li>
+<li class="social-inline"><a href="https://twitter.com/talkspace" target="_blank" rel="noopener noreferrer" title="Talkspace Twitter"><img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Medial_Twtr_25x25.png" alt="Twitter"></a></li>
+<li class="social-inline"><a href="https://www.instagram.com/talkspace/?hl=en" target="_blank" rel="noopener noreferrer" title="Talkspace Instagram"><img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Medial_insta_25x25.png" alt="Instagram" data-pin-nopin="true"></a></li>
+<li class="social-inline"><a href="https://www.pinterest.com/talkspace/" target="_blank" rel="noopener noreferrer" title="Talkspace Pinterest"><img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Medial_Pntrst_25x25.png" alt="Pinterest"></a></li>
+<li class="social-inline"><a href="https://www.linkedin.com/company/talkspace-online-therapy" target="_blank" rel="noopener noreferrer" title="Talkspace LinkedIn"><img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Medial_LI_25x25.png" alt="LinkedIn"></a></li>
+</ul>
+<div class="warning">If you are in a life threatening situation, do NOT use this site.<br /> Call the 24-hr National Suicide Prevention Lifeline at 1.800.273.8255.<br /> Your call will be routed to the crisis center near you. If your issue is an emergency, call 911 or go to your nearest emergency room.</div>
+</div>
+</footer>
+</div>
+</div> 
+</div> 
+</div> 
+</div>  </div> 
+</article> 
+</div> 
+<footer id="main-footer">
+<div id="footer-bottom">
+<div class="container clearfix">
+</div> 
+</div>
+</footer> 
+</div> 
+</div> 
+<script type="text/javascript">
+		var et_animation_data = [];
+	</script>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9F7GF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="modal fade" id="registration-lightbox" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="#registration-lightbox" aria-hidden="true">
+<div class="modal-dialog registration-lightbox">
+<div class="modal-content row" id="registrationBox">
+<div class="hidden-xs-down">
+<a href="#" id="rl-close-dialog" class="pull-right roboto-light visible-xs" data-dismiss="modal"><img src="../../homepage/images/close_responsive.png" /></a>
+<a href="#" id="rl-close-dialog" class="pull-right roboto-light hidden-xs" data-dismiss="modal"><img src="../../homepage/images/close.png" /></a>
+<div class="logoWrap">
+<img class="visible-xs" src="../../homepage/images/logo_2x.png" alt="logo" />
+<img class="hidden-xs" src="../../homepage/images/ts-logo_2x.png" alt="logo" />
+</div>
+</div>
+<div class="col-12 nopadding registration-form-body">
+<div class="row registration-title">
+<h2 class="create-account">Create an Account</h2>
+<div class="log-in">or <a href="../../auth/login.html">Log in</a></div>
+<div class="pull-right" id="rl-top" style="z-index: 400; position: relative;">
+</div>
+</div>
+<div class="row nopadding">
+<div id="rl-wrapper" class="col-xs-12 roboto-light">
+<div id="rl-bubble" class="col-xs-12 roboto-light">
+<div class="authFormRow">
+<div class="input-error username"></div>
+<input type="email" name="email" id="username" value="" class="user-input" maxlength="80" autocomplete="off" onfocus="focusEmailBorder()" onkeydown="emailPlaceholderUp()" onblur="emailPlaceholderDown(); focusoutEmailBorder();" autocomplete="off">
+<span class="placeholder username">Email</span>
+</div>
+<div class="authFormRow">
+<div class="input-error r-password"></div>
+ <input type="password" name="password" id="r-password" value="" class="user-input" autocomplete="off" onfocus="showPassHint(); focusPassBorder();" onkeydown="passwordPlaceholderUp()" onblur="hidePassHint(); passwordPlaceholderDown(); focusoutPassBorder();" autocomplete="off">
+<span class="placeholder r-password">Password</span>
+<div class="info-field password roboto">8 character minimum, no special characters</div>
+</div>
+<div class="authFormRow">
+<div class="input-error r-nickname"></div>
+<input type="text" name="pseudonym" id="r-nickname" value="" class="user-input" maxlength="50" autocomplete="off" onfocus="showNickHint(); focusNickBorder();" onkeydown="nicknamePlaceholderUp()" onblur="hideNickHint(); nicknamePlaceholderDown(); focusoutNickBorder();" style="border-bottom: 2px solid rgb(196, 196, 196);" autocomplete="off">
+<span class="placeholder r-nickname">Nickname</span>
+<div class="info-field nickname roboto">This will be the name your therapist sees</div>
+</div>
+<div class="authFormRow">
+<div class="checkbox">
+<input type="checkbox" name="r-terms" id="r-terms"> <label class="roboto-light confirmAgeLabel" for="r-terms">I am over 18 and agree to the <br>
+<a href="../../public/terms.html" class="inet" target="_blank">terms of use</a> and <a href="../../public/privacy-policy.html" class="inet" target="_blank">privacy policy</a></label>
+</div>
+</div>
+<div class="authFormRow submitBtn">
+<input class="buttonClassNew btn btn-primary green-btn login-modal" id="rl-register-btn" type="submit" value="Sign Up">
+<div class="ajaxloader greenAjaxLoader" onclick="return false;"><a>Sign Up</a> <i class="fa fa-circle-o-notch fa-spin fa-fw"></i></div>
+<div class="input-error general-error"></div>
+</div>
+<ul class="store-icon-registration">
+<li>
+<a href="https://app.adjust.io/l6yexx" target="_blank"><img src="../../homepage/images/appstore-text_2x.png" alt="Get Talkspace on the App Store"></a>
+</li>
+<li>
+<a href="https://app.adjust.io/kw4oz4" target="_blank"><img src="../../homepage/images/googleplay-text_2x.png" alt="Get Talkspace on Google Play"></a>
+</li>
+</ul>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><script type='text/javascript' src='../wp-content/themes/Divi/includes/builder/scripts/frontend-builder-global-functions7868.js?ver=3.9'></script>
+<script type='text/javascript' src='../wp-content/themes/Divi/includes/builder/scripts/jquery.mobile.custom.min7868.js?ver=3.9'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/Divi/js/custom7868.js?ver=3.9'></script>
+<script type='text/javascript' src='../wp-content/themes/Divi/includes/builder/scripts/jquery.fitvids7868.js?ver=3.9'></script>
+<script type='text/javascript' src='../wp-content/themes/Divi/includes/builder/scripts/waypoints.min7868.js?ver=3.9'></script>
+<script type='text/javascript' src='../wp-content/themes/Divi/includes/builder/scripts/jquery.magnific-popup7868.js?ver=3.9'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_pb_custom = {"ajaxurl":"https:\/\/www.talkspace.com\/online-therapy\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.talkspace.com\/online-therapy\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.talkspace.com\/online-therapy\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"c5f18052ea","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"ef2dcd0579","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","is_builder_plugin_used":"","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","is_ab_testing_active":"","page_id":"3276","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":""};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/Divi/includes/builder/scripts/frontend-builder-scripts7868.js?ver=3.9'></script>
+<script type='text/javascript' src='../wp-content/themes/Divi/core/admin/js/common7868.js?ver=3.9'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.mind87f.js?ver=4.9.9'></script>
+<script src="../../homepage/js/handlebars-v4.0.5c619.js?v=1.0"></script>
+<script src="https://cdn.talkspace.com/js/reg.js"></script>
+<script>
+  function showPassHint() {
+    $(".info-field.password").addClass("active");
+  }
+  function hidePassHint() {
+    $(".info-field.password").removeClass("active");
+  }
+  function showNickHint() {
+    $(".info-field.nickname").addClass("active");
+  }
+  function hideNickHint() {
+    $(".info-field.nickname").removeClass("active");
+  }
+  function focusEmailBorder() {
+    if ($(".input-error.username").text().trim().length == 0) {
+      $("#username").css("border-color", "#0FC1A7");
+    }
+  }
+  function focusPassBorder() {
+    if ($(".input-error.r-password").text().trim().length == 0) {
+      $("#r-password").css("border-color", "#0FC1A7");
+    }
+  }
+  function focusNickBorder() {
+    if ($(".input-error.r-nickname").text().trim().length == 0) {
+      $("#r-nickname").css("border-color", "#0FC1A7");
+    }
+  }
+  function focusVoucherBorder() {
+    if ($(".input-error.r-accessCode").text().trim().length == 0) {
+      $("#r-accessCode").css("border-color", "#0FC1A7");
+    }
+  }
+  function focusoutEmailBorder() {
+    if ($(".input-error.username").text().trim().length == 0) {
+      $("#username").css("border-color", "#C4C4C4");
+    }
+  }
+  function focusoutPassBorder() {
+    if ($(".input-error.r-password").text().trim().length == 0) {
+      $("#r-password").css("border-color", "#C4C4C4");
+    }
+  }
+  function focusoutNickBorder() {
+    if ($(".input-error.r-nickname").text().trim().length == 0) {
+      $("#r-nickname").css("border-color", "#C4C4C4");
+    }
+  }
+  function focusoutVoucherBorder() {
+    if ($(".input-error.r-accessCode").text().trim().length == 0) {
+      $("#r-accessCode").css("border-color", "#C4C4C4");
+    }
+  }
+  function emailPlaceholderUp() {
+    if ($(".input-error.username").text().trim().length > 0) {
+      $(".placeholder.username").addClass("hidden");
+    } else {
+      $(".placeholder.username").addClass("up");
+    }
+  }
+  function passwordPlaceholderUp() {
+    if ($(".input-error.r-password").text().trim().length > 0) {
+      $(".placeholder.r-password").addClass("hidden");
+    } else {
+      $(".placeholder.r-password").addClass("up");
+    }
+  }
+  function nicknamePlaceholderUp() {
+    if ($(".input-error.r-nickname").text().trim().length > 0) {
+      $(".placeholder.r-nickname").addClass("hidden");
+    } else {
+      $(".placeholder.r-nickname").addClass("up");
+    }
+  }
+  function voucherPlaceholderUp() {
+    if ($(".input-error.r-accessCode").text().trim().length > 0) {
+      $(".placeholder.r-voucher").addClass("hidden");
+    } else {
+      $(".placeholder.r-voucher").addClass("up");
+    }
+  }
+  function emailPlaceholderDown() {
+    if ($('#username').val() == '') {
+      $(".placeholder.username").removeClass("up");
+      $(".placeholder.username").removeClass("hidden");
+    }
+  }
+  function passwordPlaceholderDown() {
+    if ($('#r-password').val() == '') {
+      $(".placeholder.r-password").removeClass("up");
+      $(".placeholder.r-password").removeClass("hidden");
+    }
+  }
+  function nicknamePlaceholderDown() {
+    if ($('#r-nickname').val() == '') {
+      $(".placeholder.r-nickname").removeClass("up");
+      $(".placeholder.r-nickname").removeClass("hidden");
+    }
+  }
+  function voucherPlaceholderDown() {
+    if ($('#r-accessCode').val() == '') {
+      $(".placeholder.r-voucher").removeClass("up");
+      $(".placeholder.r-voucher").removeClass("hidden");
+    }
+  }
+</script>
+
+<script>
+  $(document).ready(function(){
+    $("body").bind("click", ".modal-dialog", function(e) {
+      if ($(e.target.children).hasClass('modal-dialog')) {
+        // Registration modal
+        if ($('#registration-lightbox').hasClass('in')) {
+          $('#registration-lightbox').modal('toggle');
+        }
+      }
+    });
+  });
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ae0508e4dc","applicationID":"84446818","transactionName":"blxVZEVVV0JQBk0IW1cWdlNDXVZfHhVYBlE=","queueTime":0,"applicationTime":640,"atts":"QhtWEg1PREw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.talkspace.com/online-therapy/veterans/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Dec 2018 15:47:31 GMT -->
+</html>

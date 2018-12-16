@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
+
+<!-- Mirrored from www.talkspace.com/blog/category/ptsd/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Dec 2018 16:02:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"><script src="../../../cdn-cgi/apps/head/pPkyCGpXOiX9s9rsG_uVgd8zFIo.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="icon" href="http://cdn.talkspace.com/homepage/images/icons/favicon_rebranded.ico?ver5" />
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback" href="../../../index.html">
+<!--[if lt IE 9]>
+	<script src="https://www.talkspace.com/blog/wp-content/themes/twentyfifteen/js/html5.js"></script>
+	<![endif]-->
+<script>(function(){document.documentElement.className='js'})();</script>
+<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>PTSD Archives - #1 Mental Health Blog - Talkspace</title>
+
+<link rel="canonical" href="index.html" />
+<link rel="next" href="page/2/index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="object" />
+<meta property="og:title" content="PTSD Archives - #1 Mental Health Blog - Talkspace" />
+<meta property="og:url" content="https://www.talkspace.com/blog/category/ptsd/" />
+<meta property="og:site_name" content="#1 Mental Health Blog - Talkspace" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="PTSD Archives - #1 Mental Health Blog - Talkspace" />
+<meta name="twitter:site" content="@talkspace" />
+
+<link rel='dns-prefetch' href='../../../index.html' />
+<link rel='dns-prefetch' href='http://a.optmnstr.com/' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="#1 Mental Health Blog - Talkspace &raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="#1 Mental Health Blog - Talkspace &raquo; Comments Feed" href="../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="#1 Mental Health Blog - Talkspace &raquo; PTSD Category Feed" href="feed/index.html" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.talkspace.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='easy_author_image-css' href='../../wp-content/plugins/easy-author-image/css/easy-author-imaged87f.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-public-css-main-css' href='../../wp-content/plugins/tweetthis/assets/css/public-maind87f.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-public-css-theme-css' href='../../wp-content/plugins/tweetthis/assets/css/themes/lightd87f.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css' href='../../wp-content/plugins/wp-pagenavi/pagenavi-css44fd.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-fonts-css' href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css' href='../../wp-content/themes/twentyfifteen/genericons/genericonscf1b.css?ver=3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css' href='../../wp-content/themes/twentyfifteen-child/styled87f.css?ver=4.9.9' type='text/css' media='all' />
+<style id='twentyfifteen-style-inline-css' type='text/css'>
+
+		/* Custom Sidebar Text Color */
+		.site-title a,
+		.site-description,
+		.secondary-toggle:before {
+			color: #222f2d;
+		}
+
+		.site-title a:hover,
+		.site-title a:focus {
+			color: #222f2d; /* Fallback for IE7 and IE8 */
+			color: rgba( 34, 47, 45, 0.7);
+		}
+
+		.secondary-toggle {
+			border-color: #222f2d; /* Fallback for IE7 and IE8 */
+			border-color: rgba( 34, 47, 45, 0.1);
+		}
+
+		.secondary-toggle:hover,
+		.secondary-toggle:focus {
+			border-color: #222f2d; /* Fallback for IE7 and IE8 */
+			border-color: rgba( 34, 47, 45, 0.3);
+		}
+
+		.site-title a {
+			outline-color: #222f2d; /* Fallback for IE7 and IE8 */
+			outline-color: rgba( 34, 47, 45, 0.3);
+		}
+
+		@media screen and (min-width: 59.6875em) {
+			.secondary a,
+			.dropdown-toggle:after,
+			.widget-title,
+			.widget blockquote cite,
+			.widget blockquote small {
+				color: #222f2d;
+			}
+
+			.widget button,
+			.widget input[type="button"],
+			.widget input[type="reset"],
+			.widget input[type="submit"],
+			.widget_calendar tbody a {
+				background-color: #222f2d;
+			}
+
+			.textwidget a {
+				border-color: #222f2d;
+			}
+
+			.secondary a:hover,
+			.secondary a:focus,
+			.main-navigation .menu-item-description,
+			.widget,
+			.widget blockquote,
+			.widget .wp-caption-text,
+			.widget .gallery-caption {
+				color: rgba( 34, 47, 45, 0.7);
+			}
+
+			.widget button:hover,
+			.widget button:focus,
+			.widget input[type="button"]:hover,
+			.widget input[type="button"]:focus,
+			.widget input[type="reset"]:hover,
+			.widget input[type="reset"]:focus,
+			.widget input[type="submit"]:hover,
+			.widget input[type="submit"]:focus,
+			.widget_calendar tbody a:hover,
+			.widget_calendar tbody a:focus {
+				background-color: rgba( 34, 47, 45, 0.7);
+			}
+
+			.widget blockquote {
+				border-color: rgba( 34, 47, 45, 0.7);
+			}
+
+			.main-navigation ul,
+			.main-navigation li,
+			.secondary-toggle,
+			.widget input,
+			.widget textarea,
+			.widget table,
+			.widget th,
+			.widget td,
+			.widget pre,
+			.widget li,
+			.widget_categories .children,
+			.widget_nav_menu .sub-menu,
+			.widget_pages .children,
+			.widget abbr[title] {
+				border-color: rgba( 34, 47, 45, 0.1);
+			}
+
+			.dropdown-toggle:hover,
+			.dropdown-toggle:focus,
+			.widget hr {
+				background-color: rgba( 34, 47, 45, 0.1);
+			}
+
+			.widget input:focus,
+			.widget textarea:focus {
+				border-color: rgba( 34, 47, 45, 0.3);
+			}
+
+			.sidebar a:focus,
+			.dropdown-toggle:focus {
+				outline-color: rgba( 34, 47, 45, 0.3);
+			}
+		}
+	
+</style>
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='https://www.talkspace.com/blog/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='https://www.talkspace.com/blog/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='mc4wp-form-basic-css' href='../../wp-content/plugins/mailchimp-for-wp/assets/css/form-basic.min5b31.css?ver=4.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='../../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<script type='text/javascript' src='../../wp-content/plugins/ns-comment-validator/public/js/jquery.validate.mind87f.js?ver=4.9.9'></script>
+<script type='text/javascript' src='../../wp-content/plugins/tweetthis/assets/js/tweet-this-boxd87f.js?ver=4.9.9'></script>
+<script type='text/javascript' data-cfasync="false" id="omapi-script" async="async" src='https://a.optmnstr.com/app/js/api.min.js'></script>
+<link rel='https://api.w.org/' href='../../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../index.html?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 4.9.9" />
+<style type="text/css">#commentform p.error,
+                  #commentform span.error,
+                  #commentform div.error,
+                  #commentform label.error{
+                    color:#FF0000;
+                    font-size:.9em;
+                    font-style:italic;
+                  }</style><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #f8f8f8; }
+</style>
+<link rel="icon" href="../../wp-content/uploads/2017/03/favicon.png" sizes="32x32" />
+<link rel="icon" href="../../wp-content/uploads/2017/03/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="../../wp-content/uploads/2017/03/favicon.png" />
+<meta name="msapplication-TileImage" content="https://www.talkspace.com/blog/wp-content/uploads/2017/03/favicon.png" />
+<style type="text/css" id="wp-custom-css">
+			.module-head .module-filter {
+	display: none;
+}
+
+.post-content .entry-content  a {
+	color: #0FC1A7 !important;
+	text-decoration: underline;
+} 
+
+#main-content .container a:hover {
+	text-decoration: underline;
+	color: #0fc1a7 !important;
+}
+
+#main-content .et_pb_extra_column_main .et_pb_text_inner h2 {
+	font-size: 45px;
+}
+
+.module {
+	border-top-color: #F4F5FA !important;
+}
+
+.module-head h1 {
+	color: #73788b !important;
+}
+
+.module-head .module-filter {
+	display: none;
+}
+
+.module .tabbed-post ul li{
+	color: rgba(0,0,0,.5);
+}
+
+.post-thumbnail {
+	background-color: #b8c1d1 !important;	
+}
+
+.tabbed-post-module .tabs ul li {
+	color: #73788b !important;
+}
+
+.entry-title .et-accent-color {
+	color: #0fc1a7 !important;
+}
+
+.post-header .entry-title {
+	font-size: 45px;
+}
+
+.post-content .entry-content  a {
+	color: #0FC1A7 !important;
+	text-decoration: underline;
+}
+
+.post-wrap h2 {
+	font-size: 38px;
+	margin: 50px 0 25px 0;
+}
+
+.post-wrap h3 {
+	font-size: 22px;
+	color: #73788b;
+	margin: 30px 0 25px 0;
+}
+
+@media only screen and (max-width: 480px) {
+       h1 { font-size: 30px !important;}
+       h2 { font-size: 24px !important; }
+       h3 { font-size: 20px !important; }
+     }
+
+@media only screen and (max-width: 640px) {
+	#et-info .et-top-search .et-search-field {
+    border: 1px solid;
+    border-color: #d4d4d4;
+		color: #003E47;
+}
+} 		</style>
+<link href='https://fonts.googleapis.com/css?family=Roboto:500,400italic,100,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
+</head>
+<body class="archive category category-ptsd category-1072 custom-background">
+
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M9F7GF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'http://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M9F7GF');</script>
+
+<div class="header">
+<div class="header-left">
+<a href="../../../index.html"><img src="http://cdn.talkspace.com/homepage/images/Logo_140X40@2x.png?ver5" width="140" height="40" alt="talkspace"></a>
+</div>
+<div class="header-right">
+<ul class="nav navbar-nav roboto-light">
+<li class=""><a class="inet" target="" href="../../index.html">BLOG</a></li>
+<li class=""><a target="_blank" " href="https://www.youtube.com/embed/YYBEuaM_gEc">OUR VIDEO</a></li>
+<li class=""><a class="inet" href="../../../auth/login.html">SIGN IN</a></li>
+</ul>
+</div>
+</div>
+<div id="page" class="hfeed site">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<div id="sidebar" class="sidebar">
+<header id="masthead" class="site-header" role="banner">
+<div class="site-branding">
+<p class="site-title"><a href="../../../index.html" rel="home">#1 Mental Health Blog &#8211; Talkspace</a></p>
+<p class="site-description">Therapy For How We Live Today</p>
+<button class="secondary-toggle">Menu and widgets</button>
+</div>
+</header>
+<div id="secondary" class="secondary">
+<div id="widget-area" class="widget-area" role="complementary">
+<aside id="text-3" class="widget widget_text"> <div class="textwidget"><div style="text-align: center;"><a href="https://lp.talkspace.com/online-therapy-with-a-licensed-therapist?utr_source=Blog&amp;utr_medium=CPC&amp;utr_campaign=BLOG_CTA_RHC&amp;utr_adgroup=right-hand-rail&amp;var=promo-b&amp;partner=Talkspace%20Blog&amp;code=BLOG45" target="_blank"><img src="../../wp-content/uploads/2016/11/CTA%402x.png" alt="Learn More About Talkspace"></a></div></div>
+</aside><aside id="text-6" class="widget widget_text"> <div class="textwidget"><div style="text-align: center;"><a href="https://courses.talkspace.com/?utr_source=Blog&amp;utr_medium=CPC&amp;utr_campaign=BLOG_CTA_RHC&amp;utr_adgroup=right-hand-rail" target="_blank"><img src="../../wp-content/uploads/2018/11/TS-Ecourse-CTA-rev.png" alt="The Talkspace Guide to Overcoming Stress At Work. Enroll Now."></a></div></div>
+</aside><aside id="text-2" class="widget widget_text"> <div class="textwidget"><script>(function() {
+	if (!window.mc4wp) {
+		window.mc4wp = {
+			listeners: [],
+			forms    : {
+				on: function (event, callback) {
+					window.mc4wp.listeners.push({
+						event   : event,
+						callback: callback
+					});
+				}
+			}
+		}
+	}
+})();
+</script><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-3367 mc4wp-form-basic" method="post" data-id="3367" data-name="Default sign-up form"><div class="mc4wp-form-fields"><p>
+<label style="font-weight: 300; font-size: 13px; letter-spacing: 0; line-height: 18px; color: #979797; text-align: center;">
+<span style="font-weight: 700; font-size: 17px; letter-spacing: 0; line-height: 23px; color: #00CAB6;">Join thousands of readers</span><br>
+Subscribe to our weekly digest and get posts in your inbox every week.</label>
+<input type="email" id="mc4wp_email" name="EMAIL" placeholder="Enter email address" required />
+</p>
+<p>
+<input type="submit" value="Subscribe" />
+</p></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1544802370" /><input type="hidden" name="_mc4wp_form_id" value="3367" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div></form></div>
+</aside><aside id="text-5" class="widget widget_text"><h2 class="widget-title">Get the Talkspace App</h2> <div class="textwidget"><a href="https://app.adjust.io/l6yexx" style="width: 48%; text-decoration: none; display: inline-block; border: 0; margin-right: 1%;"><img src="../../wp-content/uploads/2016/11/apple%402x-5.png"></a><a href="https://app.adjust.io/kw4oz4" style="width: 48%; text-decoration: none; display: inline-block; border: 0; margin-left: 1%;"><img src="../../wp-content/uploads/2016/11/google%402x-5.png"></a></div>
+</aside> <aside id="recent-posts-2" class="widget widget_recent_entries"> <h2 class="widget-title">Recent Posts</h2> <ul>
+<li>
+<a href="../../2018/12/relationship-control-dominant-person/index.html">When One Person Controls the Relationship</a>
+</li>
+<li>
+<a href="../../2018/12/relationship-chemistry-consistency/index.html">Chemistry or Consistency: What Makes for a Better Relationship</a>
+</li>
+<li>
+<a href="../../2018/12/dealing-with-distant-people/index.html">6 Ways to Deal With People Who Are Distant</a>
+</li>
+<li>
+<a href="../../2018/12/commitment-issues-reasons/index.html">5 Reasons for Your Commitment Issues</a>
+</li>
+<li>
+<a href="../../2018/12/does-exercise-help-depression-and-anxiety/index.html">Can You Really Exercise Away Depression and Anxiety?</a>
+</li>
+</ul>
+</aside><aside id="nav_menu-4" class="widget widget_nav_menu"><h2 class="widget-title">Featured Posts</h2><div class="menu-boost-links-container"><ul id="menu-boost-links" class="menu"><li id="menu-item-9809" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9809"><a href="../../2016/11/therapist-psychotherapist-complete-definition/index.html">What Is a Therapist? – The Complete Definition</a></li>
+<li id="menu-item-9808" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9808"><a href="../../2017/04/anxiety-attack-vs-panic-attack-one/index.html">Anxiety Attack vs. Panic Attack: Which One Are You Having?</a></li>
+<li id="menu-item-9806" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9806"><a href="../../2017/04/dealing-depression-need-know/index.html">Dealing With Depression: What You Need to Know</a></li>
+<li id="menu-item-9807" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9807"><a href="../../2017/05/mental-health-counselor/index.html">What Is a Mental Health Counselor?</a></li>
+<li id="menu-item-9811" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9811"><a href="../../2015/02/everything-you-need-to-know-about-couples-therapy/index.html">Everything You Need to Know About Couples Therapy</a></li>
+</ul></div></aside><aside id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2> <ul>
+<li class="cat-item cat-item-1279"><a href="../abuse/index.html">Abuse</a>
+</li>
+<li class="cat-item cat-item-1045"><a href="../addiction/index.html">Addiction</a>
+</li>
+<li class="cat-item cat-item-1293"><a href="../anger/index.html">Anger</a>
+</li>
+<li class="cat-item cat-item-190"><a href="../anxiety/index.html">Anxiety</a>
+</li>
+<li class="cat-item cat-item-1046"><a href="../bipolar-disorder/index.html">Bipolar Disorder</a>
+</li>
+<li class="cat-item cat-item-1299"><a href="../body-dysmorphic-disorder/index.html">Body Dysmorphic Disorder</a>
+</li>
+<li class="cat-item cat-item-1051"><a href="../borderline-personality-disorder/index.html">Borderline Personality Disorder</a>
+</li>
+<li class="cat-item cat-item-1295"><a href="../bullying/index.html">Bullying</a>
+</li>
+<li class="cat-item cat-item-1291"><a href="../career/index.html">Career</a>
+</li>
+<li class="cat-item cat-item-1277"><a href="../counselor/index.html">Counselor</a>
+</li>
+<li class="cat-item cat-item-962"><a href="../dating/index.html">Dating</a>
+</li>
+<li class="cat-item cat-item-89"><a href="../depression/index.html">Depression</a>
+</li>
+<li class="cat-item cat-item-1288"><a href="../domestic-violence/index.html">Domestic Violence</a>
+</li>
+<li class="cat-item cat-item-990"><a href="../eating-disorders-body-image/index.html">Eating Disorders &amp; Body Image</a>
+</li>
+<li class="cat-item cat-item-3"><a href="../family-children/index.html">Family &amp; Children</a>
+</li>
+<li class="cat-item cat-item-965"><a href="../fun-posts/index.html">Fun Posts</a>
+</li>
+<li class="cat-item cat-item-1268"><a href="../general/index.html">General</a>
+</li>
+<li class="cat-item cat-item-932"><a href="../going-to-therapy/index.html">Going to Therapy</a>
+</li>
+<li class="cat-item cat-item-1286"><a href="../grief/index.html">Grief</a>
+</li>
+<li class="cat-item cat-item-1272"><a href="../happiness/index.html">Happiness</a>
+</li>
+<li class="cat-item cat-item-468"><a href="../lgbtq/index.html">LGBTQ</a>
+</li>
+<li class="cat-item cat-item-5"><a href="../life-hacks/index.html">Life Hacks</a>
+</li>
+<li class="cat-item cat-item-964"><a href="../lifestyle-wellness/index.html">Lifestyle &amp; Wellness</a>
+</li>
+<li class="cat-item cat-item-1280"><a href="../loneliness/index.html">Loneliness</a>
+</li>
+<li class="cat-item cat-item-1294"><a href="../marriage/index.html">Marriage</a>
+</li>
+<li class="cat-item cat-item-991"><a href="../mental-health-stories/index.html">Mental Health Stories</a>
+</li>
+<li class="cat-item cat-item-1052"><a href="../mental-health-warriors/index.html">Mental Health Warriors</a>
+</li>
+<li class="cat-item cat-item-1033"><a href="../mindfulness/index.html">Mindfulness</a>
+</li>
+<li class="cat-item cat-item-1283"><a href="../minority/index.html">Minority</a>
+</li>
+<li class="cat-item cat-item-1281"><a href="../motivation/index.html">Motivation</a>
+</li>
+<li class="cat-item cat-item-1108"><a href="../ocd/index.html">OCD</a>
+</li>
+<li class="cat-item cat-item-933"><a href="../online-therapy-technology/index.html">Online Therapy &amp; Technology</a>
+</li>
+<li class="cat-item cat-item-1285"><a href="../panic-attack/index.html">Panic Attack</a>
+</li>
+<li class="cat-item cat-item-1278"><a href="../parenting/index.html">Parenting</a>
+</li>
+<li class="cat-item cat-item-1057"><a href="../perfectionism/index.html">Perfectionism</a>
+</li>
+<li class="cat-item cat-item-1300"><a href="../perfectionist/index.html">Perfectionist</a>
+</li>
+<li class="cat-item cat-item-1082"><a href="../personality-disorders/index.html">Personality Disorders</a>
+</li>
+<li class="cat-item cat-item-1287"><a href="../phobias/index.html">Phobias</a>
+</li>
+<li class="cat-item cat-item-956"><a href="../politics-mental-health/index.html">Politics &amp; Mental Health</a>
+</li>
+<li class="cat-item cat-item-1270"><a href="../psychology/index.html">Psychology</a>
+</li>
+<li class="cat-item cat-item-1297"><a href="../psychopath/index.html">Psychopath</a>
+</li>
+<li class="cat-item cat-item-1072 current-cat"><a href="index.html">PTSD</a>
+</li>
+<li class="cat-item cat-item-963"><a href="../recovery/index.html">Recovery</a>
+</li>
+<li class="cat-item cat-item-2"><a href="../relationships/index.html">Relationships</a>
+</li>
+<li class="cat-item cat-item-1298"><a href="../resilience/index.html">Resilience</a>
+</li>
+<li class="cat-item cat-item-1098"><a href="../schizophrenia/index.html">Schizophrenia</a>
+</li>
+<li class="cat-item cat-item-1274"><a href="../self-esteem/index.html">Self esteem</a>
+</li>
+<li class="cat-item cat-item-961"><a href="../sex/index.html">Sex</a>
+</li>
+<li class="cat-item cat-item-1282"><a href="../sleep/index.html">Sleep</a>
+</li>
+<li class="cat-item cat-item-928"><a href="../social-media-use/index.html">Social Media Use</a>
+</li>
+<li class="cat-item cat-item-1296"><a href="../sociopath/index.html">Sociopath</a>
+</li>
+<li class="cat-item cat-item-4"><a href="../stigma/index.html">Stigma</a>
+</li>
+<li class="cat-item cat-item-69"><a href="../stress/index.html">Stress</a>
+</li>
+<li class="cat-item cat-item-941"><a href="../talkspace/index.html">Talkspace</a>
+</li>
+<li class="cat-item cat-item-1301"><a href="../teens/index.html">Teens</a>
+</li>
+<li class="cat-item cat-item-1269"><a href="../therapy/index.html">Therapy</a>
+</li>
+<li class="cat-item cat-item-1290"><a href="../therapy-mental-health/index.html">Therapy / Mental Health</a>
+</li>
+<li class="cat-item cat-item-1273"><a href="../topical/index.html">Topical</a>
+</li>
+ <li class="cat-item cat-item-1292"><a href="../trauma/index.html">Trauma</a>
+</li>
+<li class="cat-item cat-item-1"><a href="../uncategorized/index.html">Uncategorized</a>
+</li>
+<li class="cat-item cat-item-1271"><a href="../wellness/index.html">Wellness</a>
+</li>
+<li class="cat-item cat-item-1087"><a href="../workplace-mental-health/index.html">Workplace Mental Health</a>
+</li>
+</ul>
+</aside> </div>
+</div>
+</div>
+<div id="content" class="site-content">
+<section id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<header class="page-header">
+<h1 class="page-title">Category: PTSD</h1> </header>
+<article id="post-10264" class="post-10264 post type-post status-publish format-standard has-post-thumbnail hentry category-ptsd">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2018/06/ptsd-traumas-difference/index.html" rel="bookmark" class="blue-title">PTSD and the Difference Between Big &#8216;T&#8217; and Little &#8216;t&#8217; Traumas</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2017/06/Renee_Fabian.png" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/renee-fabian/index.html">Renee Fabian</a></span>, Contributor<br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2018-06-27T10:05:09+00:00">June 27, 2018</time><time class="updated" datetime="2018-06-26T18:03:33+00:00">June 26, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="880" src="../../wp-content/uploads/2018/06/ptsd-traumas-difference_1320w_jw-1.png" class="attachment- size- wp-post-image" alt="Man silhouetted in front of fire" srcset="https://www.talkspace.com/blog/wp-content/uploads/2018/06/ptsd-traumas-difference_1320w_jw-1.png 1320w, https://www.talkspace.com/blog/wp-content/uploads/2018/06/ptsd-traumas-difference_1320w_jw-1-300x200.png 300w, https://www.talkspace.com/blog/wp-content/uploads/2018/06/ptsd-traumas-difference_1320w_jw-1-768x512.png 768w, https://www.talkspace.com/blog/wp-content/uploads/2018/06/ptsd-traumas-difference_1320w_jw-1-1024x683.png 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<p>We’ve come a long way in our understanding of post-traumatic stress disorder. From the early designation of “shell shock” for military veterans to transforming the label of “hysteric” to PTSD for survivors of rape, we know that trauma can have lasting physical and emotional effects on those who experience it.</p>
+<p>However, often we default to discussing only soldiers and victims of sexual violence when we talk about PTSD. These experiences are certainly among the leading causes of the mental illness, yet they aren’t the only type of trauma that result in PTSD. Let’s expand on how trauma of any kind changes us and how that impacts the way we think about PTSD.</p>
+<p> <a href="../../2018/06/ptsd-traumas-difference/index.html#more-10264" class="more-link">Continue reading <span class="screen-reader-text">PTSD and the Difference Between Big &#8216;T&#8217; and Little &#8216;t&#8217; Traumas</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-10253" class="post-10253 post type-post status-publish format-standard has-post-thumbnail hentry category-ptsd">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2018/06/ptsd-does-internet-make-worse/index.html" rel="bookmark" class="blue-title">Does the Internet Make PTSD Worse?</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2017/06/Renee_Fabian.png" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/renee-fabian/index.html">Renee Fabian</a></span>, Contributor<br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2018-06-26T10:04:29+00:00">June 26, 2018</time><time class="updated" datetime="2018-06-27T16:41:15+00:00">June 27, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="880" src="../../wp-content/uploads/2018/06/ptsd-does-internet-make-worse_1320w_jw.jpg" class="attachment- size- wp-post-image" alt="" srcset="https://www.talkspace.com/blog/wp-content/uploads/2018/06/ptsd-does-internet-make-worse_1320w_jw.jpg 1320w, https://www.talkspace.com/blog/wp-content/uploads/2018/06/ptsd-does-internet-make-worse_1320w_jw-300x200.jpg 300w, https://www.talkspace.com/blog/wp-content/uploads/2018/06/ptsd-does-internet-make-worse_1320w_jw-768x512.jpg 768w, https://www.talkspace.com/blog/wp-content/uploads/2018/06/ptsd-does-internet-make-worse_1320w_jw-1024x683.jpg 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<p>Oh, the internet. Home of cute cat videos, sarcastic memes that make us cackle, social media to engage with anyone anywhere, and lightning-fast news with real-time live video. What could go wrong?</p>
+<p>For better or worse, the internet has largely become how we consume and share information and interact with others from every corner of the world. Because of its vast and complex nature, it’s hard to determine just how the internet impacts those who use it on a daily basis. But what about for those of us who live with post-traumatic stress disorder? Does the internet make PTSD worse?</p>
+<p> <a href="../../2018/06/ptsd-does-internet-make-worse/index.html#more-10253" class="more-link">Continue reading <span class="screen-reader-text">Does the Internet Make PTSD Worse?</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-9483" class="post-9483 post type-post status-publish format-standard has-post-thumbnail hentry category-ptsd tag-c-ptsd tag-complex-ptsd tag-post-traumatic-stress-disorder tag-ptsd tag-trauma tag-treatment-options">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2018/03/complex-ptsd-versus-standard-ptsd/index.html" rel="bookmark" class="blue-title">Complex PTSD: How a New Diagnosis Differs From Standard PTSD</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2017/10/Reina-Gattuso-Head-Shot.jpg" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/reina-gattuso/index.html">Reina Gattuso</a></span>, Contributor<br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2018-03-30T10:07:45+00:00">March 30, 2018</time><time class="updated" datetime="2018-03-28T16:10:14+00:00">March 28, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="880" src="../../wp-content/uploads/2018/03/complex-ptsd-versus-standard-ptsd_1320W_JW-1.jpg" class="attachment- size- wp-post-image" alt="Woman on stand with grey background" srcset="https://www.talkspace.com/blog/wp-content/uploads/2018/03/complex-ptsd-versus-standard-ptsd_1320W_JW-1.jpg 1320w, https://www.talkspace.com/blog/wp-content/uploads/2018/03/complex-ptsd-versus-standard-ptsd_1320W_JW-1-300x200.jpg 300w, https://www.talkspace.com/blog/wp-content/uploads/2018/03/complex-ptsd-versus-standard-ptsd_1320W_JW-1-768x512.jpg 768w, https://www.talkspace.com/blog/wp-content/uploads/2018/03/complex-ptsd-versus-standard-ptsd_1320W_JW-1-1024x683.jpg 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<p>Your palms sweat. Your heart races. You don’t remember where you are — are you here, now, or back in another, scarier time?</p>
+<p><a href="../../2017/06/happens-brain-ptsd-flashback/index.html" target="_blank">This is a flashback</a>. And for many people living with PTSD, it’s a common experience. Faced with a reminder of a traumatic event, someone with PTSD can be jerked back into the mental, emotional and even physical experience of trauma.</p>
+<p>But what happens when that trauma is ongoing, or a prolonged series of events? This is where a Complex PTSD diagnosis bridges an important behavioral health gap.</p>
+<p> <a href="../../2018/03/complex-ptsd-versus-standard-ptsd/index.html#more-9483" class="more-link">Continue reading <span class="screen-reader-text">Complex PTSD: How a New Diagnosis Differs From Standard PTSD</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-8682" class="post-8682 post type-post status-publish format-standard has-post-thumbnail hentry category-parenting category-ptsd tag-birth-trauma tag-perinatal-ptsd">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2017/12/birth-trauma-perinatal-ptsd-isnt-unusual-and-youre-not-alone/index.html" rel="bookmark" class="blue-title">Birth Trauma — Perinatal PTSD — Isn’t Unusual, and You’re Not Alone</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2017/07/se-smith-contributor-headshot_square-300x300.png" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/s-e-smith/index.html">s.e. smith</a></span>, Contributor<br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2017-12-21T10:26:40+00:00">December 21, 2017</time><time class="updated" datetime="2018-10-01T13:43:41+00:00">October 1, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="880" src="../../wp-content/uploads/2017/12/birth-trauma-perinatal-ptsd-feature_1320W_JR-1.png" class="attachment- size- wp-post-image" alt="woman giving birth doctor and nurse treating her" srcset="https://www.talkspace.com/blog/wp-content/uploads/2017/12/birth-trauma-perinatal-ptsd-feature_1320W_JR-1.png 1320w, https://www.talkspace.com/blog/wp-content/uploads/2017/12/birth-trauma-perinatal-ptsd-feature_1320W_JR-1-300x200.png 300w, https://www.talkspace.com/blog/wp-content/uploads/2017/12/birth-trauma-perinatal-ptsd-feature_1320W_JR-1-768x512.png 768w, https://www.talkspace.com/blog/wp-content/uploads/2017/12/birth-trauma-perinatal-ptsd-feature_1320W_JR-1-1024x683.png 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<p>Giving birth can be one of the biggest events in a person’s life, and it’s a loaded experience. Everyone has expectations about what a “good birth” looks like, but birth doesn’t always go as planned. For some parents feelings of disappointment, fear, or stress about the events surrounding the birth of a beloved child can transition into something more serious: birth trauma, also known as perinatal PTSD. This condition is a lot more common than you might think.</p>
+<p>Our expanding understanding of psychological trauma has highlighted the fact that PTSD is an issue much broader than the emotional aftermath of experiencing combat. Any intense traumatic experience can have psychological ramifications, whether someone has a history of mental health conditions or not, and no matter how well-prepared someone might be. Birth, accompanied with intense physical and emotional experiences, is no exception. But the myths surrounding pregnancy and childbirth can make people uncomfortable when it comes to speaking out, or uncertain about whether what they’re experiencing is normal. <a href="../../2017/12/birth-trauma-perinatal-ptsd-isnt-unusual-and-youre-not-alone/index.html#more-8682" class="more-link">Continue reading <span class="screen-reader-text">Birth Trauma — Perinatal PTSD — Isn’t Unusual, and You’re Not Alone</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-8384" class="post-8384 post type-post status-publish format-standard has-post-thumbnail hentry category-career category-ptsd tag-military tag-veterans">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2017/11/military-changed-mind-forever/index.html" rel="bookmark" class="blue-title">How Being in the Military Changed My Mind Forever</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2016/02/ts-avatar3.png" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/talkspace/index.html">Talkspace</a></span><br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2017-11-10T16:42:20+00:00">November 10, 2017</time><time class="updated" datetime="2018-10-01T11:53:25+00:00">October 1, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="880" src="../../wp-content/uploads/2017/11/military-mind-feature_1320W_JR-1.png" class="attachment- size- wp-post-image" alt="soldier in uniform with US flag patch" srcset="https://www.talkspace.com/blog/wp-content/uploads/2017/11/military-mind-feature_1320W_JR-1.png 1320w, https://www.talkspace.com/blog/wp-content/uploads/2017/11/military-mind-feature_1320W_JR-1-300x200.png 300w, https://www.talkspace.com/blog/wp-content/uploads/2017/11/military-mind-feature_1320W_JR-1-768x512.png 768w, https://www.talkspace.com/blog/wp-content/uploads/2017/11/military-mind-feature_1320W_JR-1-1024x683.png 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<p>During my first Christmas in Iraq, we were hit by a roadside bomb. It could have been worse. Luckily, no one died in this explosion. Back at the firebase, we were allowed a call on the satellite phone. Some people freely told their parents or loved ones about what had happened. I felt that unbecoming of an infantryman—why scare people back home?—instead I settled on my favorite topic: the weather. Oh stoic me.</p>
+<p>Half a year later I was touring Europe with a friend of mine from the same platoon. I wouldn’t say we had seen all that much action, yet there was an anger that was evident in both of us. A hundred and fifty miles per hour seemed too slow. We threw our wrath at anyone in our way. Verbal wrath, but troublesome nonetheless. Whatever I was experiencing I merely concealed by being a stranger in a strange land: the prattle of a foreign language and people going about their way provided a perfect cocoon for me. <a href="../../2017/11/military-changed-mind-forever/index.html#more-8384" class="more-link">Continue reading <span class="screen-reader-text">How Being in the Military Changed My Mind Forever</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-6512" class="post-6512 post type-post status-publish format-standard has-post-thumbnail hentry category-mental-health-stories category-ptsd tag-mental-health-diaries">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2017/08/mental-health-diary-ptsd/index.html" rel="bookmark" class="blue-title">Mental Health Diary: PTSD</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2016/02/ts-avatar3.png" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/talkspace/index.html">Talkspace</a></span><br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2017-08-18T10:01:07+00:00">August 18, 2017</time><time class="updated" datetime="2017-10-13T18:07:52+00:00">October 13, 2017</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="878" src="../../wp-content/uploads/2017/08/mental-health-diary-woman-journaling-feature_1320W_JR-1.png" class="attachment- size- wp-post-image" alt="woman journaling on table with coffee" srcset="https://www.talkspace.com/blog/wp-content/uploads/2017/08/mental-health-diary-woman-journaling-feature_1320W_JR-1.png 1320w, https://www.talkspace.com/blog/wp-content/uploads/2017/08/mental-health-diary-woman-journaling-feature_1320W_JR-1-300x200.png 300w, https://www.talkspace.com/blog/wp-content/uploads/2017/08/mental-health-diary-woman-journaling-feature_1320W_JR-1-768x511.png 768w, https://www.talkspace.com/blog/wp-content/uploads/2017/08/mental-health-diary-woman-journaling-feature_1320W_JR-1-1024x681.png 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<p>Talkspace’s Mental Health Diary series provides an intimate, anonymous week-long look inside the lives of those struggling with mental illness. Our first diary entry is from a Digital Content Producer and Journalist coping with the lingering effects of sexual abuse. Female // 30s // Los Angeles.</p>
+<p><strong>Diagnosis:</strong> PTSD; Secondary: borderline personality disorder, OCD, depression<br />
+<strong>Occupation:</strong> Digital Content Producer; Journalist<br />
+<strong>Location:</strong> Los Angeles<br />
+<strong>Medication:</strong> Luvox, Abilify, (Prozac); Xanax as needed<br />
+<strong>Therapy:</strong> Two 90-minute in-person therapy sessions a week; Talkspace therapist; Bi-weekly trauma group therapy; Weekly DBT skills group<br />
+<strong>Health Insurance:</strong> Cigna; (Blue Shield)</p>
+<h2>DAY 1</h2>
+<p><strong>7:45 a.m.</strong><br />
+I get out of bed on the fifth alarm and throw on clothing to get out the door in 10 minutes or less to make it to work on time. Basic self-care stuff baffles me, so I do the best I can in jeans and some rumpled shirt that really should be washed. <a href="../../2017/08/mental-health-diary-ptsd/index.html#more-6512" class="more-link">Continue reading <span class="screen-reader-text">Mental Health Diary: PTSD</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-6124" class="post-6124 post type-post status-publish format-standard has-post-thumbnail hentry category-mental-health-stories category-ptsd tag-sexual-abuse">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2017/06/stories-ptsd-tells/index.html" rel="bookmark" class="blue-title">The Stories PTSD Tells Me</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2017/06/Renee_Fabian.png" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/renee-fabian/index.html">Renee Fabian</a></span>, Contributor<br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2017-06-29T11:38:04+00:00">June 29, 2017</time><time class="updated" datetime="2018-09-28T14:50:06+00:00">September 28, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="880" src="../../wp-content/uploads/2017/06/woman-PTSD-darkest-day-feature_1320W_JR-1.png" class="attachment- size- wp-post-image" alt="woman on floor next to shower white towel" srcset="https://www.talkspace.com/blog/wp-content/uploads/2017/06/woman-PTSD-darkest-day-feature_1320W_JR-1.png 1320w, https://www.talkspace.com/blog/wp-content/uploads/2017/06/woman-PTSD-darkest-day-feature_1320W_JR-1-300x200.png 300w, https://www.talkspace.com/blog/wp-content/uploads/2017/06/woman-PTSD-darkest-day-feature_1320W_JR-1-768x512.png 768w, https://www.talkspace.com/blog/wp-content/uploads/2017/06/woman-PTSD-darkest-day-feature_1320W_JR-1-1024x683.png 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<blockquote><p>This piece is part of our <a href="../../tag/darkest-day/index.html" target="_blank">Darkest Day series</a>, a collection of stories from people who’ve made it through the worst of their illness and now light the way for others.</p></blockquote>
+<p>Images flash back through my mind.</p>
+<p>I am locked in a dark office in the corner of another locked room during a free class period of the high school day. I&#8217;m balanced precariously on the edge of a desk with my legs wrapped around his body, the bulge in his pants gyrating in the crook between my legs. My mind wanders and eventually lands on my aching muscles, my trembling arms and legs. They&#8217;re not going to hold much longer.</p>
+<p>He is standing fully clothed, his usual beat-up brown loafers planted on the floor. I smell his Cheer-washed dress shirt and Dial soap-scrubbed skin. His Docker’s are hemmed a couple inches too short. He is 43. I am 17. Those loafers rise and fall off the floor with every thrust of his crotch into me, the friction of fabric on fabric a barely noticeable sensation. All my attention focuses on my awkward position on this desk — my muscles ache and burn in protest.</p>
+<p>He grinds away, oblivious in ecstasy, his face turned upwards, making those moaning sounds. Finally, my body overrides my mental willpower to stay upright and my muscles collapse. I start to fall off the desk, headed toward the floor, before he catches me and props me back on the desk.</p>
+<p>Other memories follow. <a href="../../2017/06/stories-ptsd-tells/index.html#more-6124" class="more-link">Continue reading <span class="screen-reader-text">The Stories PTSD Tells Me</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-6127" class="post-6127 post type-post status-publish format-standard has-post-thumbnail hentry category-borderline-personality-disorder category-ptsd">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2017/06/ptsd-borderline-personality-disorder-gendered-divide-diagnosis/index.html" rel="bookmark" class="blue-title">PTSD and Borderline Personality Disorder: A Gendered Divide in Diagnosis?</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2017/05/christina.png" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/christinavanvuren/index.html">Christina Vanvuren</a></span>, Contributor<br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2017-06-28T11:13:05+00:00">June 28, 2017</time><time class="updated" datetime="2018-09-28T14:51:18+00:00">September 28, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="772" src="../../wp-content/uploads/2017/06/ptsd-borderline-gender-division-feature_1320W_JR-1.png" class="attachment- size- wp-post-image" alt="white male solider and black woman split image" srcset="https://www.talkspace.com/blog/wp-content/uploads/2017/06/ptsd-borderline-gender-division-feature_1320W_JR-1.png 1320w, https://www.talkspace.com/blog/wp-content/uploads/2017/06/ptsd-borderline-gender-division-feature_1320W_JR-1-300x175.png 300w, https://www.talkspace.com/blog/wp-content/uploads/2017/06/ptsd-borderline-gender-division-feature_1320W_JR-1-768x449.png 768w, https://www.talkspace.com/blog/wp-content/uploads/2017/06/ptsd-borderline-gender-division-feature_1320W_JR-1-1024x599.png 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<p>As with many types of traumatic or mental disorders, certain criteria must be met to receive a diagnosis. Following the structure of these guidelines is meant to allow for an accurate and unbiased determination. However, when it comes to the differentiation between Post-Traumatic Stress Disorder (PTSD) and Borderline Personality Disorder (BPD), the question of whether men and women are diagnosed differently has been raised.</p>
+<p>According to NAMI, the National Alliance on Mental Illness, <a href="https://www.nami.org/Learn-More/Mental-Health-Conditions/Borderline-Personality-Disorder" target="_blank">an estimated 1.6% to 5.9% of adults in the U.S. have BPD</a>. And of those actually diagnosed, 75% were women, despite the fact that men are just as likely to display symptoms. A non-profit organization, PTSD United, found that roughly 8% of Americans have PTSD. Additionally, <a href="http://www.ptsdunited.org/ptsd-statistics-2/" target="_blank">1 out of 9 females</a> in the U.S. have PTSD, while the rate for males is about half that. These statistics alone call for us to question whether there is a divide in diagnosis based on gender. Before we can safely address the issue of gender, though, it’s important to look at the symptoms and characteristics that are used to diagnose both Borderline Personality Disorder and Post-Traumatic Stress Disorder.</p>
+<p>For a mental health professional to diagnose a patient with BPD, they must display at least 5 of the <a href="https://www.nami.org/Learn-More/Mental-Health-Conditions/Borderline-Personality-Disorder#sthash.clNofmOp.dpuf" target="_blank">qualifying symptoms</a>. These include unstable <a href="../relationships/index.html" target="_blank">relationships</a> altering between idealization and devaluation, frantic efforts to avoid social abandonment, a distorted self-image that affects emotional stability, impulsive behaviors, suicidal and self-harming behavior, periods of <a href="../depression/index.html" target="_blank">depression</a>, irritability, or <a href="../anxiety/index.html" target="_blank">anxiety</a> that last between a few hours to a few days, chronic boredom or feelings of emptiness, <a href="../../2017/06/anger-emotions-run-life/index.html" target="_blank">uncontrollable anger</a>, and dissociative feelings. Most psychological research indicates the causes are genetic, environmental (from the experience of a traumatic event), neurological, or a combination of the three. <a href="../../2017/06/ptsd-borderline-personality-disorder-gendered-divide-diagnosis/index.html#more-6127" class="more-link">Continue reading <span class="screen-reader-text">PTSD and Borderline Personality Disorder: A Gendered Divide in Diagnosis?</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-6119" class="post-6119 post type-post status-publish format-standard has-post-thumbnail hentry category-ptsd tag-history">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2017/06/the-history-of-ptsd/index.html" rel="bookmark" class="blue-title">The History of PTSD</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2017/06/Renee_Fabian.png" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/renee-fabian/index.html">Renee Fabian</a></span>, Contributor<br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2017-06-27T11:25:26+00:00">June 27, 2017</time><time class="updated" datetime="2017-10-12T16:33:48+00:00">October 12, 2017</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="990" src="../../wp-content/uploads/2017/06/PTSD-history-feature_1320W_JR.png" class="attachment- size- wp-post-image" alt="soldier holding another in his arms" srcset="https://www.talkspace.com/blog/wp-content/uploads/2017/06/PTSD-history-feature_1320W_JR.png 1320w, https://www.talkspace.com/blog/wp-content/uploads/2017/06/PTSD-history-feature_1320W_JR-300x225.png 300w, https://www.talkspace.com/blog/wp-content/uploads/2017/06/PTSD-history-feature_1320W_JR-768x576.png 768w, https://www.talkspace.com/blog/wp-content/uploads/2017/06/PTSD-history-feature_1320W_JR-1024x768.png 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<blockquote><p>June is PTSD Awareness Month. To participate in raising awareness and challenging the stigma of mental illness, we are publishing several pieces that show what it means to live with PTSD.</p></blockquote>
+<p>Soldier&#8217;s heart. Shell shock. Combat exhaustion. Traumatic neurosis. Gross stress disorder. Combat fatigue. Rape trauma syndrome. Post Vietnam syndrome. It’s gone by many names, but post-traumatic stress disorder symptoms have been cataloged for thousands of years. In fact, descriptions of PTSD can be traced to <a href="http://traumadissociation.com/ptsd/history-of-post-traumatic-stress-disorder.html" target="_blank">ancient texts</a> such as <em>The Iliad</em> and <em>The Odyssey</em>.</p>
+<p>Soldiers from nearly every war, accident victims, and survivors of natural disasters, rape, and child abuse have exhibited the classic signs of PTSD, including reliving the event, avoidance, negative beliefs, and hyperarousal.</p>
+<p>To best tell PTSD’s story, World Wars I and II — and particularly the Vietnam War and Women’s Movement in the 1970s — best capture the evolution of the diagnosis, treatment, and popular perception of what is now code 309.81 in the <em>Diagnostic and Statistical Manual of Mental Disorders</em>: PTSD. <a href="../../2017/06/the-history-of-ptsd/index.html#more-6119" class="more-link">Continue reading <span class="screen-reader-text">The History of PTSD</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-6113" class="post-6113 post type-post status-publish format-standard has-post-thumbnail hentry category-ptsd tag-lifeboost">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2017/06/happens-brain-ptsd-flashback/index.html" rel="bookmark" class="blue-title">What Happens in Your Brain During a PTSD Flashback?</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2017/04/tiffany_headshot.jpg" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/tiffanychi/index.html">Tiffany Chi</a></span>, Contributor<br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2017-06-26T11:29:35+00:00">June 26, 2017</time><time class="updated" datetime="2018-06-25T17:28:44+00:00">June 25, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="800" height="534" src="../../wp-content/uploads/2017/06/ptsd-flashback-brain.png" class="attachment- size- wp-post-image" alt="Woman looking downtrodden" srcset="https://www.talkspace.com/blog/wp-content/uploads/2017/06/ptsd-flashback-brain.png 800w, https://www.talkspace.com/blog/wp-content/uploads/2017/06/ptsd-flashback-brain-300x200.png 300w, https://www.talkspace.com/blog/wp-content/uploads/2017/06/ptsd-flashback-brain-768x513.png 768w" sizes="(max-width: 800px) 100vw, 800px" /> 
+
+</div>
+<p>When American soldiers came home from the Vietnam War, <a href="https://www.ptsd.va.gov/public/ptsd-overview/basics/history-of-ptsd-vets.asp" target="_blank" rel="nofollow">many found it hard to return to normal life</a>. They were haunted by nightmares; unable to shake the images of explosions and death from their minds, even while awake. They struggled with feelings of <a href="../anxiety/index.html" target="_blank">anxiety</a>, <a href="../depression/index.html" target="_blank">depression</a>, and <a href="../../2017/06/anger-emotions-run-life/index.html" target="_blank">anger</a>; confused about how to to make sense of what they had witnessed. In 1980, the afflictions of these soldiers — along with <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3181836/" target="_blank" rel="nofollow">research on the psychological impact of trauma</a> on Holocaust survivors, rape victims, and others — led the American Psychiatric Association to define a new condition called Post Traumatic Stress Disorder (PTSD) in the DSM.</p>
+<p>Although people often associate PTSD with veterans affected by the horrors of war, the condition can develop in anyone who has experienced a dangerous, shocking, or life-threatening event such as rape, childhood abuse, or a serious accident. According to the National Institute of Mental Health, PTSD will affect <a href="https://www.nimh.nih.gov/health/statistics/prevalence/post-traumatic-stress-disorder-among-adults.shtml" target="_blank" rel="nofollow">6.8%</a> of U.S. adults in their lifetime. The condition is defined by symptoms like <a href="../../2017/04/anxiety-attack-vs-panic-attack-one/index.html" target="_blank">panic attacks</a>, depression, and insomnia, but one of the most characteristic and debilitating symptoms of PTSD is something called “flashbacks.” <a href="../../2017/06/happens-brain-ptsd-flashback/index.html#more-6113" class="more-link">Continue reading <span class="screen-reader-text">What Happens in Your Brain During a PTSD Flashback?</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article><div class='wp-pagenavi' role='navigation'>
+<span aria-current='page' class='current'>1</span><a class="page larger" title="Page 2" href="page/2/index.html">2</a><a class="nextpostslink" rel="next" href="page/2/index.html">›</a>
+</div>
+</main>
+</section>
+</div>
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info">
+<div class="footer-row">
+<ul class="footer-menu">
+<li class="footer-links"><a class="inet" href="../../index.html">Blog</a></li>
+<li class="footer-links"><a class="inet" href="../../../public/contact-us.html">Contact Us</a></li>
+<li class="footer-links"><a class="inet" href="https://help.talkspace.com/hc/en-us">FAQ</a></li>
+<li class="footer-links"><a class="inet" href="https://talkspace.workable.com/" target="_blank">Careers</a></li>
+<li class="footer-links"><a class="inet" href="../../../public/privacy-policy.html">Privacy Policy</a></li>
+<li class="footer-links"><a class="inet" href="../../../join-as-a-therapist.html">Therapist? Join Us!</a></li>
+<li class="footer-links"><a class="inet" href="../../../online-therapy/press/index.html">Press</a></li>
+</ul>
+</div>
+<div class="footer-row">
+<ul class="footer-menu">
+<li class="footer-links"><a class="inet" href="https://giftcard.talkspace.com/">Gift Card</a></li>
+<li class="footer-links"><a class="inet" href="../../../online-therapy/unlimited-messaging-therapy/index.html">Unlimited Messaging Therapy</a></li>
+<li class="footer-links"><a class="inet" href="../../../online-therapy/index.html">Online Therapy</a></li>
+<li class="footer-links"><a class="inet" href="../../../online-therapy/assessments/index.html">Assessments</a></li>
+<li class="footer-links"><a class="inet" href="../../../online-therapy/lgbt/index.html">LGBT</a></li>
+</ul>
+</div>
+<div class="footer-row">
+<ul class="footer-menu">
+<li class="footer-links"><a class="inet" href="../../../online-therapy/veterans/index.html">Veterans</a></li>
+<li class="footer-links"><a class="inet" href="../../../online-therapy/couples-therapy/index.html">Couples Therapy</a></li>
+<li class="footer-links"><a class="inet" href="../../../online-therapy/therapy-for-business/index.html">Therapy for Business</a></li>
+</ul>
+</div>
+<div class="row sep" style="display: none;">
+<ul>
+<li><a href="../../index.html">Blog</a> </li>
+<li><a class="inet" href="../../../public/contact-us.html">Contact us</a> </li>
+<li><a href="http://support.talkspace.com/help_center">FAQ</a> </li>
+<li><a class="inet" href="../../../public/terms.html">Our terms</a> </li>
+<li><a class="inet" href="../../../public/privacy-policy.html">Privacy policy</a> </li>
+<li><a class="inet" href="../../../public/therapist.html">Join us</a> </li>
+</ul>
+</div>
+<ul class="list-inline">
+<li class="social-inline">
+<a href="https://www.facebook.com/Talkspacetherapy" target="_blank" title="Facebook" class="social-icons">
+<img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Media_FB_25x25.png" alt="Facebook">
+</a>
+</li>
+<li class="social-inline">
+<a href="https://twitter.com/talkspace" target="_blank" title="Twitter" class="social-icons">
+<img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Medial_Twtr_25x25.png" alt="Twitter">
+</a>
+</li>
+<li class="social-inline">
+<a href="https://www.instagram.com/talkspace/?hl=en" target="_blank" title="Instagram" class="social-icons">
+<img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Medial_insta_25x25.png" alt="Instagram" data-pin-nopin="true">
+</a>
+</li>
+<li class="social-inline">
+<a href="https://www.pinterest.com/talkspace" target="_blank" title="Pinterest" class="social-icons">
+<img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Medial_Pntrst_25x25.png" alt="Pinterest">
+</a>
+</li>
+<li class="social-inline">
+<a href="https://www.linkedin.com/company/talkspace-online-therapy" target="_blank" title="LinkedIn" class="social-icons">
+<img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Medial_LI_25x25.png" alt="LinkedIn">
+</a>
+</li>
+</ul>
+<div class="row social" style="display: none;">
+<ul>
+<li> <a href="https://www.facebook.com/Talkspacetherapy" target="_blank" title="Facebook"> <img alt="Facebook" class="img-responsive" width="28" height="28" src="http://cdn.talkspace.com/homepage/images/social-icons/Facebook_Icon_28X28@2x.png?ver5" /> </a></li>
+<li> <a href="https://twitter.com/talkspace" target="_blank" title="Twitter"> <img alt="Twitter" class="img-responsive" width="30" height="28" src="http://cdn.talkspace.com/homepage/images/social-icons/Twitter_Icon_30X28@2x.png?ver5" /> </a> </li>
+<li> <a href="https://www.pinterest.com/talkspace" target="_blank" title="Pinterest"> <img alt="Pinterest" class="img-responsive" width="28" height="28" src="http://cdn.talkspace.com/homepage/images/social-icons/Pinterest_Icon_28X28@2x.png?ver5" /> </a></li>
+<li> <a href="../../index.html" target="_blank" title="Tumblr"> <img alt="Tumblr" class="img-responsive" width="28" height="28" src="http://cdn.talkspace.com/homepage/images/social-icons/Tumblr_Icon_28X28@2x.png?ver5" /> </a> </li>
+</ul>
+</div>
+<div class="warning"> If you are in a life threatening situation, do NOT use this site.<br>
+Call the 24-hr National Suicide Prevention Lifeline at 1.800.273.8255.<br>
+Your call will be routed to the crisis center near you. If your issue is an emergency, call 911 or go to your nearest emergency room. </div>
+</div>
+
+</footer>
+
+</div>
+
+<script>(function() {function addEventListener(element,event,handler) {
+	if(element.addEventListener) {
+		element.addEventListener(event,handler, false);
+	} else if(element.attachEvent){
+		element.attachEvent('on'+event,handler);
+	}
+}function maybePrefixUrlField() {
+	if(this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+		this.value = "http://" + this.value;
+	}
+}
+
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if( urlFields && urlFields.length > 0 ) {
+	for( var j=0; j < urlFields.length; j++ ) {
+		addEventListener(urlFields[j],'blur',maybePrefixUrlField);
+	}
+}/* test if browser supports date fields */
+var testInput = document.createElement('input');
+testInput.setAttribute('type', 'date');
+if( testInput.type !== 'date') {
+
+	/* add placeholder & pattern to all date fields */
+	var dateFields = document.querySelectorAll('.mc4wp-form input[type="date"]');
+	for(var i=0; i<dateFields.length; i++) {
+		if(!dateFields[i].placeholder) {
+			dateFields[i].placeholder = 'YYYY-MM-DD';
+		}
+		if(!dateFields[i].pattern) {
+			dateFields[i].pattern = '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])';
+		}
+	}
+}
+
+})();</script><script type='text/javascript' src='../../wp-content/themes/twentyfifteen/js/skip-link-focus-fixd01e.js?ver=20141010'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/themes/twentyfifteen/js/functions8337.js?ver=20150330'></script>
+<script type='text/javascript' src='../../wp-includes/js/wp-embed.mind87f.js?ver=4.9.9'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mc4wp_forms_config = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.min5b31.js?ver=4.3.1'></script>
+<!--[if lte IE 9]>
+<script type='text/javascript' src='https://www.talkspace.com/blog/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.3.1'></script>
+<![endif]-->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ae0508e4dc","applicationID":"80290978","transactionName":"blxVZEVVV0JQBk0IW1cWdlNDXVZfHgRLAlxQT1I=","queueTime":0,"applicationTime":260,"atts":"QhtWEg1PREw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<!-- Mirrored from www.talkspace.com/blog/category/ptsd/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Dec 2018 16:02:20 GMT -->
+</html>

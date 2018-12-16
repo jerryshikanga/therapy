@@ -1,0 +1,222 @@
+
+/* iPads (portrait and landscape) */
+@media
+only screen and (max-width : 1024px),
+only screen and (max-device-width : 1024px) {
+    .default_welcome_therapy #page-footer-copyright {
+        width: auto;
+    }
+    
+    .therapistWrapper {
+        background-position: left top;
+        background-size: auto auto;
+    }
+    .therapistInnerWrapper {
+        width: auto;
+        margin: 0 0 0 25px;
+    }    
+    
+    .therapistWrapper.t1388 {
+        background-image:url('../images/landingpage/1388-tablet.png');
+    }
+    .therapistWrapper.t2992 {
+        background-image:url('../images/landingpage/2992-tablet.png');
+    }
+    .therapistWrapper.t5000 {
+        background-image:url('../images/landingpage/5000-tablet.png');
+    }   
+    .therapistWrapper.joReview {
+        background-image:url('../images/landingpage/joReview-tablet.jpg');
+    }     
+    
+    .blockUI > h1 {
+        font-size: 30px !important;
+    }
+}
+ 
+
+ 
+/* iPads (landscape) */
+@media
+only screen and (max-width : 1024px) and (orientation : landscape),
+only screen and (max-device-width : 1024px) and (orientation : landscape) {
+    
+    .therapistWrapper {
+        background-position: right top;
+        background-size: cover;
+    }    
+    .joReviewComment{
+        display: none;
+    }
+    
+}
+
+
+ 
+/* iPads (portrait) */
+@media
+only screen and (max-width : 1024px) and (orientation : portrait),
+only screen and (max-device-width : 1024px) and (orientation : portrait) {
+
+    .therapistWrapper {
+        height: 609px;
+    }
+    .therapistInnerWrapper {
+        height: 536px;
+    }     
+    
+    #landing-page-therapist .pageTitle {
+        font-size: 47px;
+        line-height: 57px;
+    }
+    #landing-page-therapist .pageSubtitle {
+        font-size: 24px;
+        line-height: 30px;
+    }    
+    .detailsWrapper {
+        font-size: 20px;
+    }
+    .therapistWrapper.t2992 .detailsWrapper {
+        width: 300px;
+    }
+        
+    #landing-page-therapist .bottomLogo {
+        width: 117px;
+        bottom: 20px;
+    }
+    
+    .therapistWrapper.t5000 .detailsWrapper {
+        margin-top: 77px;
+    }    
+    
+    #landing-page-therapist .bubble-content {
+        width: 403px;
+    }
+    
+    .bubble-middle-content {
+        min-height: 93px;
+    }
+    .smallBubbleWrapper #bubbleTextarea {
+        max-height: 93px;
+    }
+    .smallBubbleWrapper #bubbleTextareaMask {
+        font-size: 24px;
+    }
+    .smallBubbleWrapper .submitBtn {
+        font-size: 20px;
+        right: 11px;
+    }
+    
+    
+    .default_welcome_therapy #nav-what-is-talktala .homepageContainer {
+        width: auto;
+    }   
+    .default_welcome_therapy .whatIsTalktala {
+        margin: 0 25px 0 20px;
+        width: 723px;
+    }
+    .default_welcome_therapy .whatIsTalktala .rightPart, .default_welcome_therapy .whatIsTalktala .leftPart {
+        width: auto;
+    }
+    .default_welcome_therapy .whatIsTalktala p.tmargin-30 {
+        margin-top: 15px !important;
+    }
+    .default_welcome_therapy .whatIsTalktala .leftPart .rightTitle p {
+        display: inline;
+        line-height: 25px;
+    }
+    .default_welcome_therapy .whatIsTalktala .title {
+        font-size: 45px;
+        padding-top: 30px;
+    }
+    .default_welcome_therapy .whatIsTalktala .rightTitle {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    
+    #landing-page-therapist #askAQuestionContainer {
+        margin-top: 13px;
+    }   
+    #landing-page-therapist .askQuestionWrap, #landing-page-therapist .postQuestion, #landing-page-therapist .postQuestion .topBubble, #landing-page-therapist .postQuestion .middleBubble, #landing-page-therapist .postQuestion .bottomBubble, #landing-page-therapist .inlinePurchaseProduct, #landing-page-therapist .ippMainWrapper > div {
+        width: 759px;
+    }
+    #landing-page-therapist .postQuestion {
+        padding-bottom: 0;
+    }
+    
+    #landing-page-therapist .postQuestion .middleBubble{
+        background: url("../images/landingpage/bubble/middleBubble.png") repeat-y scroll left top transparent !important;
+        min-height: 82px;
+    }
+    #landing-page-therapist .postQuestion .topBubble{
+        background: url("../images/landingpage/bubble/topBubble.png") no-repeat scroll left top transparent;
+        height: 20px;
+    }
+    #landing-page-therapist .postQuestion .bottomBubble{
+        height: 43px;
+        background: url("../images/landingpage/bubble/bottomBubble.png") no-repeat scroll left top transparent;
+    }    
+    #landing-page-therapist #homePageTextarea {
+        width: 692px;
+        max-height: 82px;
+    }
+    #landing-page-therapist #homePageQuestionMask {
+        width: 724px;    
+    }
+    
+    .blockUI > h1 {
+        font-size: 23px !important;
+    }    
+    
+    #landing-page-therapist #nav-what-is-talktala {
+        background-color: #F6F5F1; 
+    }
+    .joReviewComment{
+        display: none;
+    }
+}
+
+
+ 
+/* Android Tablet (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) {
+
+}
+
+
+ 
+/* Android Tablet (landscape) */
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (orientation : landscape) {
+
+}
+
+ 
+/* Android Tablet (portrait) */
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (orientation : portrait) {
+
+}
+
+/* for smaller resolutions */
+@media
+only screen and (max-width : 768px),
+only screen and (max-device-width : 768px) {
+    .default_welcome_therapy .wrapper.grayBackground, .default_welcome_therapy .homepageSection {
+        min-width: 450px;
+    }
+    #landing-page-therapist .therapistWrapper,.default_welcome_therapy #page-footer  {
+        min-width: 450px;
+    }
+    .default_welcome_therapy .homepageContainer {
+        width: auto;
+        min-width: 450px;
+    }
+    .default_welcome_therapy .whatIsTalktala .rightPart, .default_welcome_therapy .whatIsTalktala .leftPart {
+        width: auto;
+    }
+    .default_welcome_therapy .whatIsTalktala {
+        width: auto;
+    }
+    .default_welcome_therapy .detailsWrapper {
+        width: auto;
+    }
+}

@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<!-- Mirrored from www.talkspace.com/online-therapy/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Dec 2018 15:47:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script src="../cdn-cgi/apps/head/pPkyCGpXOiX9s9rsG_uVgd8zFIo.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<link rel="pingback" href="xmlrpc.html" />
+<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+<script>var et_site_url='index.html';var et_post_id='3078';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script><title>Talkspace | Online Therapy</title>
+
+<meta name="description" content="This guide will tell you everything you need to know about online therapy: what it is, how it works and how you should handle it." />
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="What is Online Therapy? | Talkspace" />
+<meta property="og:description" content="This guide will tell you everything you need to know about online therapy: what it is, how it works and how you should handle it." />
+<meta property="og:url" content="https://www.talkspace.com/online-therapy/" />
+<meta property="og:site_name" content="Talkspace" />
+<meta property="og:image" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2017/01/bullet_2x-21x21.png" />
+<meta property="og:image" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2017/01/bullet-2_2x-6x6.png" />
+<meta property="og:image" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2017/01/secure-white_2x-95x97.png" />
+<meta property="og:image" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2017/01/1-green_2x-27x27.png" />
+<meta property="og:image" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2017/01/2-green_2x-27x27.png" />
+<meta property="og:image" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2017/01/3-green_2x-27x27.png" />
+<meta property="og:image" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2017/01/4-green_2x-27x27.png" />
+<meta property="og:image" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2017/01/5-green_2x-27x27.png" />
+<meta property="og:image" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2017/01/applestore_2x1-162x54.png" />
+<meta property="og:image" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2017/01/googlestore_2x1-162x54.png" />
+<meta property="og:image" content="//cdn.talkspace.com/homepage/images/social-icons/Social_Media_FB_25x25.png" />
+<meta property="og:image" content="//cdn.talkspace.com/homepage/images/social-icons/Social_Medial_Twtr_25x25.png" />
+<meta property="og:image" content="//cdn.talkspace.com/homepage/images/social-icons/Social_Medial_insta_25x25.png" />
+<meta property="og:image" content="//cdn.talkspace.com/homepage/images/social-icons/Social_Medial_Pntrst_25x25.png" />
+<meta property="og:image" content="//cdn.talkspace.com/homepage/images/social-icons/Social_Medial_LI_25x25.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="This guide will tell you everything you need to know about online therapy: what it is, how it works and how you should handle it." />
+<meta name="twitter:title" content="What is Online Therapy? | Talkspace" />
+<meta name="twitter:domain" content="Talkspace" />
+<meta name="twitter:image" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2017/01/bullet_2x-21x21.png" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/www.talkspace.com\/online-therapy\/","name":"Talkspace","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.talkspace.com\/online-therapy\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/www.talkspace.com\/online-therapy\/","sameAs":[],"name":"Talkspace","logo":"http:\/\/talkspace.com\/online-therapy\/wp-content\/uploads\/2015\/07\/unnamed-1.png"}</script>
+
+<link rel='dns-prefetch' href='../index.html' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Talkspace &raquo; Feed" href="feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Talkspace &raquo; Comments Feed" href="comments/feed/index.html" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.talkspace.com\/online-therapy\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<meta content="Divi v.3.9" name="generator" /><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='divi-style-css' href='wp-content/themes/Divi/style.dev7868.css?ver=3.9' type='text/css' media='all' />
+<link rel='stylesheet' id='et-builder-googlefonts-cached-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic&amp;ver=4.9.9#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='et-shortcodes-responsive-css-css' href='wp-content/themes/Divi/epanel/shortcodes/css/shortcodes_responsive7868.css?ver=3.9' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css' href='wp-content/themes/Divi/includes/builder/styles/magnific_popup7868.css?ver=3.9' type='text/css' media='all' />
+<link rel='stylesheet' id='ms-main-css' href='wp-content/plugins/masterslider/public/assets/css/masterslider.main9066.css?ver=2.14.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ms-custom-css' href='wp-content/uploads/masterslider/custom0dd0.css?ver=8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='wp-includes/css/dashicons.mind87f.css?ver=4.9.9' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.html?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
+<link rel='shortlink' href='index.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed26da.json?url=https%3A%2F%2Fwww.talkspace.com%2Fonline-therapy%2F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed9799?url=https%3A%2F%2Fwww.talkspace.com%2Fonline-therapy%2F&amp;format=xml" />
+<script>var ms_grabbing_curosr='wp-content/plugins/masterslider/public/assets/css/common/grabbing.ico',ms_grab_curosr='wp-content/plugins/masterslider/public/assets/css/common/grab.ico';</script>
+<meta name="generator" content="MasterSlider 2.14.2 - Responsive Touch Image Slider" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link rel="shortcut icon" href="https://cdn.talkspace.com/homepage/images/icons/favicon_rebranded.png?ver5" /><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M9F7GF');</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="../homepage/css/auth7839.css?v=1.2">
+
+<style>
+            .modal-backdrop {
+                z-index: 0;
+            }
+/*
+            .confirmAgeLabel {
+                background-image: url('https://www.talkspace.com/homepage/images/auth_mark_default.png') !important;
+                background-position: left center !important;
+                background-size: 21px !important;
+                background-repeat: no-repeat !important;
+            }
+*/
+        </style>
+<script>
+	jQuery(function($){
+		$('.logo_container a').attr('href','../index.html');
+	});
+</script><link rel="icon" href="wp-content/uploads/2017/03/favicon.png" sizes="32x32" />
+<link rel="icon" href="wp-content/uploads/2017/03/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="wp-content/uploads/2017/03/favicon.png" />
+<meta name="msapplication-TileImage" content="https://www.talkspace.com/online-therapy/wp-content/uploads/2017/03/favicon.png" />
+<link rel="stylesheet" id="et-core-unified-cached-inline-styles" href="wp-content/cache/et/3078/et-core-unified-15446436136684.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" />
+</head>
+<body class="home page-template-default page page-id-3078 custom-background _masterslider _msp_version_2.14.2 et_button_no_icon et_pb_button_helper_class et_fullwidth_nav et_fixed_nav et_show_nav et_cover_background et_pb_gutter et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns1 et_header_style_left et_pb_pagebuilder_layout et_right_sidebar et_divi_theme">
+<div id="page-container">
+<header id="main-header" data-height-onload="40">
+<div class="container clearfix et_menu_container">
+<div class="logo_container">
+<span class="logo_helper"></span>
+<a href="index.html">
+<img src="wp-content/uploads/2018/09/TS_nav_logo.png" alt="Talkspace" id="logo" data-height-percentage="40" />
+</a>
+</div>
+<div id="et-top-navigation" data-height="40" data-fixed-height="40">
+<nav id="top-menu-nav">
+<ul id="top-menu" class="nav"><li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="http://talkspace.com/blog">BLOG</a></li>
+<li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="https://www.youtube.com/embed/YYBEuaM_gEc">OUR VIDEO</a></li>
+<li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="../auth/login.html">SIGN IN</a></li>
+</ul> </nav>
+<div id="et_mobile_nav_menu">
+<div class="mobile_nav closed">
+<span class="select_page">Select Page</span>
+<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+</div>
+</div> </div> 
+</div> 
+<div class="et_search_outer">
+<div class="container et_search_form_container">
+<form role="search" method="get" class="et-search-form" action="https://www.talkspace.com/online-therapy/">
+<input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" /> </form>
+<span class="et_close_search_field"></span>
+</div>
+</div>
+</header> 
+<div id="et-main-area">
+<div id="main-content">
+<article id="post-3078" class="post-3078 page type-page status-publish hentry">
+<div class="entry-content">
+<div class="et_pb_section et_pb_section_0 et_pb_fullwidth_section et_section_regular">
+<section class="et_pb_module et_pb_fullwidth_header et_pb_fullwidth_header_0 et_pb_bg_layout_light et_pb_text_align_center">
+<div class="et_pb_fullwidth_header_container center">
+<div class="header-content-container center">
+<div class="header-content">
+<div class="et_pb_header_content_wrapper"><h2 class="h2-large h2-large-lg">Online Therapy<br /> <span class="h2-large-thin">What You Need To Know</span></h2></div>
+</div>
+</div>
+</div>
+<div class="et_pb_fullwidth_header_overlay"></div>
+<div class="et_pb_fullwidth_header_scroll"></div>
+</section>
+</div> <div class="et_pb_section et_pb_section_1 et_section_regular">
+<div class="et_pb_with_border et_pb_row et_pb_row_0 et_pb_equal_columns et_pb_gutters1">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_0    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_0 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="vc_col-sm-6 col-tocontents wpb_column column_container ">
+<div class="clearboth"></div>
+<div class="mk-shortcode mk-padding-shortcode" style="height: 66px;"></div>
+<div class="clearboth"></div>
+<div class="wpb_single_image wpb_content_element link-icon vc_align_left">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey"><img class="vc_single_image-img " title="bullet_2x" src="wp-content/uploads/2017/01/bullet_2x-21x21.png" alt="bullet_2x" width="21" height="21" /></div>
+</div>
+</div>
+<div class="mk-text-block " style="margin-bottom: 0px; text-align: left;">
+<p><a href="#common-reasons">Common Reasons Why People Prefer Online Therapy</a></p>
+</div>
+<div class="wpb_single_image wpb_content_element link-icon vc_align_left">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey"><img class="vc_single_image-img " title="bullet_2x" src="wp-content/uploads/2017/01/bullet_2x-21x21.png" alt="bullet_2x" width="21" height="21" /></div>
+</div>
+</div>
+<div class="mk-text-block " style="text-align: left;">
+<p><a href="#video-texting">The Difference Between Video Chats and Texting Therapy</a></p>
+</div>
+<div class="wpb_single_image wpb_content_element link-icon vc_align_left">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey"><img class="vc_single_image-img " title="bullet_2x" src="wp-content/uploads/2017/01/bullet_2x-21x21.png" alt="bullet_2x" width="21" height="21" /></div>
+</div>
+</div>
+<div class="mk-text-block " style="margin-bottom: 0px; text-align: left;">
+<p><a href="#online-therapists">Finding the Right Network of Online Therapists</a></p>
+</div>
+<div class="wpb_single_image wpb_content_element link-icon vc_align_left">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey"><img class="vc_single_image-img " title="bullet_2x" src="wp-content/uploads/2017/01/bullet_2x-21x21.png" alt="bullet_2x" width="21" height="21" /></div>
+</div>
+</div>
+<div class="mk-text-block " style="text-align: left;">
+<p><a href="#ethical-therapist">Is Your Online Therapist Ethical?</a></p>
+</div>
+<div class="wpb_single_image wpb_content_element link-icon vc_align_left">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey"><img class="vc_single_image-img " title="bullet_2x" src="wp-content/uploads/2017/01/bullet_2x-21x21.png" alt="bullet_2x" width="21" height="21" /></div>
+</div>
+</div>
+<div class="mk-text-block " style="text-align: left;">
+<p><a href="#security">Keeping Your Online Therapy Safe and Secure</a></p>
+</div>
+<div class="wpb_single_image wpb_content_element link-icon vc_align_left">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey"><img class="vc_single_image-img " title="bullet_2x" src="wp-content/uploads/2017/01/bullet_2x-21x21.png" alt="bullet_2x" width="21" height="21" /></div>
+</div>
+</div>
+<div class="mk-text-block " style="text-align: left;">
+<p><a href="#faq">Frequently Asked Questions About Therapy Online</a></p>
+</div>
+<div class="wpb_single_image wpb_content_element link-icon vc_align_left">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey"><img class="vc_single_image-img " title="bullet_2x" src="wp-content/uploads/2017/01/bullet_2x-21x21.png" alt="bullet_2x" width="21" height="21" /></div>
+</div>
+</div>
+<div class="mk-text-block " style="text-align: left;">
+<p><a href="#how-we-live">Therapy for How We Live Today</a></p>
+<div class="clearboth"></div>
+</div>
+</div>
+</div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_1    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_1 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<h1>What is Online Therapy?</h1>
+<p>Online therapy is the delivery of mental health counseling via the Internet. People also know it as e-therapy, distance therapy, Internet therapy and web therapy. Therapists and online therapy networks use a variety of mediums such as apps for texting, video chatting, voice messaging and audio messaging.</p>
+<p><a href="http://ps.psychiatryonline.org/doi/abs/10.1176/appi.ps.201100206" target="_blank" rel="noopener">Studies</a> have proven the efficacy of therapy via the internet to the point where it has become a viable alternative and supplement to in-office therapy. There are even people who can afford and make time for in-office therapy but choose online therapy.</p>
+<p><a class="et_pb_button" href="#" data-toggle="modal" data-target="#registration-lightbox">Try Talkspace Now ›</a></p>
+</div>
+</div> 
+</div> 
+</div> 
+</div> <div id="common-reasons" class="et_pb_section et_pb_section_2 et_section_regular">
+<div class="et_pb_row et_pb_row_1">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_2    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_2 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<h2 style="text-align: center;">Here are some common reasons why people prefer online therapy:</h2>
+<p style="text-align: center;">(or use it as an alternative or supplement to in-office therapy)</p>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_2 et_pb_equal_columns">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_3    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_3 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<ul class="teal-bullets">
+<li>In-office therapy is expensive<br />
+(average $75-150 per session) — e-therapy gets as low as $49 a week, depending on the service and plan you choose</li>
+<li>The commute can be inconvenient or impossible</li>
+<li>Some e-therapy providers do not require insurance</li>
+<li>People worry about the stigma of in-office therapy</li>
+<li>Clients are concerned people they know will see them enter or leave a therapist’s office</li>
+<li>Clients are more comfortable and open while at home</li>
+<li>Text or message-based therapy allows clients more time to structure their thoughts</li>
+<li>It is easier for clients to cancel, reschedule or change their therapist within a network of online therapists</li>
+<li>Clients who want shorter sessions prefer it</li>
+</ul>
+</div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_4    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_4 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<ul class="teal-bullets">
+<li>Some clients feel therapy via the Internet provides greater confidentiality</li>
+<li>Clients don’t have to cancel if they get sick</li>
+<li>Extra benefits for clients who will encounter less “triggers” if they stay home</li>
+<li>It benefits people who cannot drive to a therapist’s office</li>
+<li>It is a convenient option for people with disabilities</li>
+<li>People in abusive relationship who want to receive therapy without their partner knowing</li>
+</ul>
+<div class="teal-divider"></div>
+<p>There are unique benefits for therapists as well:</p>
+<ul class="teal-bullets">
+<li>More time to respond to clients and form better answers</li>
+<li>Easy to instantly send resources via links</li>
+<li>Therapists can travel more often</li>
+</ul>
+</div>
+</div> 
+</div> 
+</div> 
+</div> <div id="video-texting" class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_3">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_5    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_5 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<h2 style="text-align: center;">The Difference Between Video Chats and Texting Therapy</h2>
+<p>&nbsp;
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_4">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_6    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_6 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<p>When people hear about therapy via the Internet, they first think of video chats facilitating the same therapy they would receive in an office. Nonetheless, e-therapy also includes text-based psychotherapy: clients and therapists exchanging an unlimited amount of text messages via the phone, an online therapy network or an app. There are no sessions. Instead, therapists or the online therapy network they work with usually charge a weekly, monthly or yearly rate.</p>
+<p>Millions of people choose text-based therapy because it removes even more barriers that often prevent potential clients from committing to therapy.</p>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_5">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_7    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_7 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="wpb_row vc_row row-no-margin vc_col-md-6 barrier-left vc_row-fluid mk-fullwidth-false attched-false vc_row-fluid">
+<div class="vc_col-sm-12 flex-2-row-sm wpb_column column_container ">
+<div class="mk-text-block top-row" style="margin-bottom: 0px; text-align: center;">
+<h3>Barrier #1: Sessions</h3>
+<div class="clearboth"></div>
+</div>
+<div class="mk-text-block barrier-text" style="margin-bottom: 0px; text-align: center;">
+<p>Even when patients don’t have to commute, it can be hard to schedule sessions. People are sometimes not able to section off an hour of their day due to other commitments that can pop up at any time. The texting approach means no canceling, rescheduling or missing sessions, which saves therapists and clients time, stress and money.</p>
+</div>
+</div>
+</div>
+</div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_8    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_8 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="wpb_row vc_row row-no-margin vc_col-md-6 barrier-right vc_row-fluid mk-fullwidth-false attched-false vc_row-fluid">
+<div class="vc_col-sm-12 flex-2-row-sm wpb_column column_container ">
+<div class="mk-text-block top-row" style="margin-bottom: 0px; text-align: center;">
+<h3>Barrier #2: Privacy</h3>
+<div class="clearboth"></div>
+</div>
+<div class="mk-text-block barrier-text" style="margin-bottom: 0px; text-align: center;">
+<p>When clients video chat, they need to find a place where no one can hear them. This can be difficult, and there’s the risk of thinking no one can eavesdrop when they actually can.</p>
+</div>
+</div>
+</div>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_6">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_9    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_9 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="wpb_row vc_row row-no-margin vc_col-md-6 barrier-left vc_row-fluid mk-fullwidth-false attched-false vc_row-fluid">
+<div class="vc_col-sm-12 flex-2-row-sm wpb_column column_container ">
+<div class="mk-text-block top-row" style="margin-bottom: 0px; text-align: center;">
+<h3>Barrier #3: Stigma from Face-to-Face Interactions</h3>
+<div class="clearboth"></div>
+</div>
+<div class="mk-text-block barrier-text" style="margin-bottom: 0px; text-align: center;">
+<p>Revealing your darkest secrets and fears can be scary enough without having to look a therapist in the eyes while you do it. Not having the face-to-face interaction of video chatting allows many clients to open up and make progress more quickly.</p>
+</div>
+</div>
+</div>
+</div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_10    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_10 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="wpb_row vc_row row-no-margin vc_col-md-6 barrier-right vc_row-fluid mk-fullwidth-false attched-false vc_row-fluid">
+<div class="vc_col-sm-12 flex-2-row-sm wpb_column column_container ">
+<div class="mk-text-block top-row" style="margin-bottom: 0px; text-align: center;">
+<h3>Barrier #4: Price Can Still Be an Issue</h3>
+<div class="clearboth"></div>
+</div>
+<div class="mk-text-block barrier-text" style="margin-bottom: 0px; text-align: center;">
+<p>Using video chatting to receive the same therapy often means going through the same health insurance obstacles and paying comparable prices. It can cost more than $100.</p>
+</div>
+</div>
+</div>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_7">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_11    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_11 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="mk-text-block " style="margin-bottom: 0px; text-align: left;">
+<h3>Why Clients and Therapists Often Prefer Text-Based Psychotherapy</h3>
+</div>
+<div class="mk-text-block diff-para" style="margin-bottom: 0px; text-align: left;">
+<p>Shattering more barriers isn’t the only reason people choose texting therapy. In the same way video chatting works best for many clients and therapists, people prefer texting therapy for the following reasons:</p>
+</div>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_8">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_12    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_12 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="wpb_row vc_row blue-bullets row-no-margin vc_row-fluid mk-fullwidth-false attched-false vc_row-fluid">
+<div class="vc_col-sm-6 diff-bullets wpb_column column_container ">
+<div class="mk-text-block " style="margin-bottom: 0px; text-align: left;">
+<ul>
+<li><span style="color: #000000;">Some people express themselves better by writing rather than talking.</span></li>
+<li><span style="color: #000000;">It is easy to look at previous messages and progress. Clients and therapists do not need to take notes.</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_13    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_13 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="wpb_row vc_row blue-bullets row-no-margin vc_row-fluid mk-fullwidth-false attched-false vc_row-fluid">
+<div class="vc_col-sm-6 diff-bullets wpb_column column_container ">
+<div class="mk-text-block " style="margin-bottom: 0px; text-align: left;">
+<ul>
+<li><span style="color: #000000;">They already enjoy texting, spend a lot of time doing it and feel texting therapy fits that lifestyle.</span></li>
+<li><span style="color: #000000;">Texting therapy is similar to journaling or keeping a diary.</span></li>
+<li><span style="color: #000000;">Therapists and clients can take more time to respond to difficult questions or issues.</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_9">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_14    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_14 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<h3>Does Text-Based Therapy Work?</h3>
+<p>There are several studies that prove the efficacy of texting used in psychotherapy. Here are a few we have curated:</p>
+<p><a href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(09)61257-5/abstract" target="_blank" rel="noopener">Therapist-delivered Internet psychotherapy for depression in primary care: a randomized controlled trial<br />
+</a><em>The Lancet</em></p>
+<p><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3837629/" target="_blank" rel="noopener">Prevention of Eating Disorders in At-risk College Women<br />
+</a><em>National Library of Medicine</em></p>
+<p><a href="http://talkspace.com/online-therapy/wp-content/uploads/2015/06/Talkspace-Preliminary-Research-Study.pdf" target="_blank" rel="noopener">A Preliminary Study of Talkspace’s Text-Based Psychotherapy<br />
+</a><em>Columbia University</em>
+</div>
+</div> 
+</div> 
+</div> 
+</div> <div id="online-therapists" class="et_pb_section et_pb_section_4 et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_10">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_15    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_15 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<h2 style="text-align: center; font-family: Abril Fatface; font-weight: 400; font-style: normal;"><span style="color: #ffffff;">Finding the Right Network of Online Therapists</span></h2>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_11">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_16    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_16 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="vc_col-sm-6 wpb_column column_container vc_custom_1447439537485 ">
+<div class="mk-text-block " style="margin-bottom: 0px; text-align: left;">
+<p><span style="color: #ffffff;">Finding a therapist without a network is possible but frustratingly difficult without a referral from a friend or family member. You have to search for in-office therapists via in-office therapy networks or Google searches and check page-by-page to see which ones offer their services online. But there are dozens of networks, so you’ll need to keep some tips in mind while you search and choose the best fit:</span></p>
+<div class="clearboth"></div>
+</div>
+</div>
+</div>
+</div> <div class="et_pb_module et_pb_image et_pb_image_0 et_always_center_on_mobile">
+<span class="et_pb_image_wrap"><img src="wp-content/uploads/2018/05/live-video_2x.png" alt="" /></span>
+</div>
+</div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_17    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_17 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="vc_col-sm-6 right-col wpb_column column_container ">
+<div class="mk-text-block " style="margin-bottom: 0px; text-align: left;">
+<ul>
+<li><span style="color: #ffffff;">There is a difference between therapy and coaching, counseling, consulting, etc. Ensure the network you choose only offers licensed therapists. If their certifications are not displayed, you can ask the network to provide them.</span></li>
+<li><span style="color: #ffffff;">Think about your price range and whether you want to bother with health insurance. Some sites do not require health insurance and are more cost-effective without using it.</span></li>
+<li><span style="color: #ffffff;">Does it comply with the the Health Insurance Portability and Accountability Act of 1996 [<a style="color: #ffffff;" href="http://www.hhs.gov/ocr/privacy/" target="_blank" rel="noopener">HIPAA</a>]? You can ask site administrators to provide evidence if it is not listed on the site. This is relevant even if the site does not require health insurance.</span></li>
+<li><span style="color: #ffffff;">Do you prefer only texting/messaging, only video chatting or being able to switch between both?</span></li>
+<li><span style="color: #ffffff;">Do you want the option of being confidential?</span></li>
+<li><span style="color: #ffffff;">Do you want a matching agent to help you or would you rather stick with a search engine?</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div> 
+</div> 
+</div> 
+</div> <div id="ethical-therapist" class="et_pb_section et_pb_section_5 et_section_regular">
+<div class="et_pb_row et_pb_row_12">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_18    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_18 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<h2 style="text-align: center; font-family: Abril Fatface; font-weight: 400; font-style: normal;">Is Your Online Therapist Ethical?</h2>
+<div class="clearboth"></div>
+<div class="mk-text-block sm-hide" style="text-align: center;">
+<p>In-office and online therapists follow a code of ethics set by large psychological organizations and the<br />
+bodies that licensed them. For those who don’t want to read the documents,<br />
+which can be lengthy, here are some general rules these codes cover:</p>
+</div>
+<div class="mk-text-block sm-show" style="text-align: center;">
+<p>In-office and online therapists follow a code of ethics set by large psychological organizations and the bodies that licensed them. For those who don’t want to read the documents, which can be lengthy, here are some general rules these codes cover:</p>
+</div>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_13">
+<div class="et_pb_column et_pb_column_1_4 et_pb_column_19    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_19 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="vc_single_image-wrapper vc_box_border_grey" style="text-align: center;"><img class="vc_single_image-img " title="bullet-2_2x" src="wp-content/uploads/2017/01/bullet-2_2x-6x6.png" alt="bullet-2_2x" width="6" height="6" /></div>
+<div class="mk-text-block " style="text-align: center;">
+<p>An online therapist must protect your confidentiality and records of your sessions</p>
+<div class="clearboth"></div>
+</div>
+</div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_4 et_pb_column_20    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_20 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="vc_col-sm-3 wpb_column column_container vc_custom_1447369502258 ">
+<div class="wpb_single_image wpb_content_element vc_custom_1484152419389 vc_align_center">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey" style="text-align: center;"><img class="vc_single_image-img " title="bullet-2_2x" src="wp-content/uploads/2017/01/bullet-2_2x-6x6.png" alt="bullet-2_2x" width="6" height="6" /></div>
+</div>
+</div>
+<div class="mk-text-block " style="text-align: center;">
+<p>An online therapist can only interact with you in a therapeutic relationship, not in a personal or sexual one</p>
+<div class="clearboth"></div>
+</div>
+</div>
+</div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_4 et_pb_column_21    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_21 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="vc_col-sm-3 wpb_column column_container vc_custom_1447369509801 ">
+<div class="wpb_single_image wpb_content_element vc_custom_1484152429919 vc_align_center">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey" style="text-align: center;"><img class="vc_single_image-img " title="bullet-2_2x" src="wp-content/uploads/2017/01/bullet-2_2x-6x6.png" alt="bullet-2_2x" width="6" height="6" /></div>
+</div>
+</div>
+<div class="mk-text-block " style="text-align: center;">
+<p>An online therapist cannot misrepresent his or her credentials, services or fees</p>
+</div>
+</div>
+</div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_4 et_pb_column_22    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_22 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="vc_col-sm-3 wpb_column column_container vc_custom_1447369516986 ">
+<div class="wpb_single_image wpb_content_element vc_custom_1484152463056 vc_align_center">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey" style="text-align: center;"><img class="vc_single_image-img " title="bullet-2_2x" src="wp-content/uploads/2017/01/bullet-2_2x-6x6.png" alt="bullet-2_2x" width="6" height="6" /></div>
+</div>
+</div>
+<div class="mk-text-block " style="text-align: center;">
+<p>An online therapist cannot make false or misleading claims about what therapy provides</p>
+<div class="clearboth"></div>
+</div>
+</div>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_14">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_23    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_23 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="mk-text-block " style="text-align: center;">
+<p><span style="font-weight: 400;">And here are some of these codes:</span></p>
+<div class="clearboth"></div>
+</div>
+<div class="wpb_row vc_row row-no-margin vc_row-fluid mk-fullwidth-true attched-false vc_row-fluid">
+<div class="vc_col-sm-10 vc_col-lg-offset-2 vc_col-lg-8 vc_col-sm-offset-1 vc_col-xs-12 wpb_column column_container ">
+<div class="wpb_row vc_row row-no-margin vc_row-fluid mk-fullwidth-false attched-false vc_row-fluid">
+<div class="vc_col-sm-10 vc_col-sm-offset-1 blue-border-col codes-col wpb_column column_container vc_custom_1484152692678 ">
+<div class="mk-text-block " style="margin-bottom: 0px; text-align: left;">
+<p><a href="http://www.apa.org/ethics/code/" target="_blank" rel="noopener">Ethical Principles of Psychologists and Code of Conduct<br />
+</a><em>American Psychological Association</em></p>
+<p>&nbsp;</p>
+<p><a href="https://www.counseling.org/resources/aca-code-of-ethics.pdf" target="_blank" rel="noopener">Code of Ethics<br />
+</a><em>American Counseling Association</em></p>
+<p>&nbsp;</p>
+<p><a href="https://www.socialworkers.org/pubs/code/default.asp" target="_blank" rel="noopener">Code of Ethics<br />
+</a><em>National Association of Social Workers</em></p>
+<p>&nbsp;</p>
+<p><a href="https://www.aamft.org/iMIS15/AAMFT/Content/legal_ethics/code_of_ethics.aspx" target="_blank" rel="noopener">Code of Ethics<br />
+</a><em>American Association for Marriage and Family Therapy</em></p>
+<p>&nbsp;</p>
+<p><a href="http://www.nbcc.org/Certification/Ethics" target="_blank" rel="noopener">Ethics Policies and Procedures<br />
+</a><em>National Board of Certified Counselors</em></p>
+</div>
+</div>
+</div>
+<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+<div class="wpb_wrapper"><a name="3"></a></div>
+</div>
+</div>
+</div>
+</div>
+</div> 
+</div> 
+</div> 
+</div> <div id="security" class="et_pb_section et_pb_section_6 et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_15">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_24    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_24 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="vc_single_image-wrapper vc_box_border_grey" style="text-align: center;"><img class="vc_single_image-img " title="secure-white_2x" src="wp-content/uploads/2017/01/secure-white_2x-95x97.png" alt="secure-white_2x" width="95" height="97" /></div>
+<p>&nbsp;</p>
+<div class="vc_custom_heading">
+<h2 style="text-align: center; font-family: Abril Fatface; font-weight: 400; font-style: normal;"><span style="color: #ffffff;">Keeping Your Online Therapy Safe and Secure</span></h2>
+<p>&nbsp;</p>
+</div>
+<div class="wpb_row vc_row vc_row-fluid mk-fullwidth-false attched-false vc_row-fluid">
+<div class="vc_col-sm-8 vc_col-sm-offset-2 wpb_column column_container ">
+<div class="mk-text-block " style="text-align: center;">
+<p><span style="color: #ffffff;">Joining a therapy network with advanced security technology is likely to keep the content of your sessions safe and be HIPAA compliant. You can also insist on using certain tools and services to securely connect with online therapists who work outside of a network.</span></p>
+</div>
+</div>
+</div>
+<div class="mk-text-block " style="text-align: center;">
+<div class="clearboth"></div>
+</div>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_16">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_25    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_25 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<p style="text-align: center;"><span style="color: #ffffff;">There are also safety measures you can take:</span></p>
+<p>&nbsp;</p>
+<div class="vc_col-sm-6 wpb_column column_container ">
+<div class="mk-text-block " style="text-align: left;">
+<ul>
+<li><span style="color: #ffffff;">Always log out of your account if you use a computer at work or at the library</span></li>
+<li><span style="color: #ffffff;">Use a personal computer if possible</span></li>
+<li><span style="color: #ffffff;">Make sure payment forms are secure</span></li>
+<li><span style="color: #ffffff;">Have passcodes for your device</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_26    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_26 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="vc_col-sm-6 wpb_column column_container ">
+<div class="mk-text-block " style="text-align: left;">
+<ul>
+<li><span style="color: #ffffff;">Protect your password and consider making a new password only for therapy rather than reusing an old one</span></li>
+<li><span style="color: #ffffff;">Don’t leave your computer out and open to others</span></li>
+<li><span style="color: #ffffff;">Ensure you are in a sound-proof environment when doing video chat sessions and use earbuds or headphones</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div> 
+</div> 
+</div> 
+</div> <div id="faq" class="et_pb_section et_pb_section_7 et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_17">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_27    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_27 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<div class="vc_col-sm-10 vc_col-lg-offset-2 vc_col-lg-8 vc_col-sm-offset-1 vc_col-xs-12 wpb_column column_container ">
+<div class="vc_custom_heading">
+<h2 style="text-align: center; font-family: Abril Fatface; font-weight: 400; font-style: normal;">Frequently Asked Questions About Therapy Online</h2>
+<p>&nbsp;</p>
+</div>
+<div class="wpb_single_image wpb_content_element num-icon vc_custom_1484153425965 vc_align_center">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey"><img class="vc_single_image-img " title="1-green_2x" src="wp-content/uploads/2017/01/1-green_2x-27x27.png" alt="1-green_2x" width="27" height="27" />   <span style="color: #3a3a3c; font-family: Roboto, sans-serif; font-size: 18px;">Does therapy via the internet work? Does it work as well as in-office therapy?</span></div>
+</div>
+</div>
+<div class="mk-text-block " style="text-align: left;">
+<p>In-office therapy works better for some people, but online therapy is an equally viable treatment and works for the vast majority of clients.</p>
+<p>Here are two studies you may find interesting:</p>
+</div>
+<div class="mk-text-block blank-bullet tall-link" style="text-align: left;">
+<ul>
+<li><span style="color: #000000;"><a style="color: #000000;" href="http://dx.doi.org/10.1176/appi.ps.201100206" target="_blank" rel="noopener">http://dx.doi.org/10.1176/appi.ps.201100206</a></span><br /> <span style="color: #000000;"> <em>Linda Godleski, M.D.; Adam Darkins, M.D., M.P.H.; John Peters, M.S. (2014) Outcomes of 98,609 U.S. Department of Veterans Affairs Patients Enrolled in Telemental Health Services, 2006–2010</em></span></li>
+<li><span style="color: #000000;"><a style="color: #000000;" href="http://www.ncbi.nlm.nih.gov/pubmed/20183695" target="_blank" rel="noopener">http://www.ncbi.nlm.nih.gov/pubmed/20183695</a></span><br /> <span style="color: #000000;"> <em>Andersson, G., &amp; Cuijpers, P. (2009). Internet-based and other computerized psychological treatments for adult depression: A meta-analysis. Cognitive Behaviour Therapy, 38(4), 196-205.</em></span></li>
+</ul>
+</div>
+<div class="wpb_single_image wpb_content_element num-icon vc_custom_1484153439844 vc_align_center">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey"><img class="vc_single_image-img " title="2-green_2x" src="wp-content/uploads/2017/01/2-green_2x-27x27.png" alt="2-green_2x" width="27" height="27" />   <span style="color: #3a3a3c; font-family: Roboto, sans-serif; font-size: 18px;">Are online therapists licensed?</span></div>
+</div>
+</div>
+<div class="mk-text-block " style="margin-bottom: 0px; text-align: left;">
+<p>All online therapists are licensed, but not all people who call themselves “online therapists” are licensed (same goes with in-office therapists). Here are some ways you can verify their authenticity:</p>
+</div>
+<div class="mk-text-block " style="margin-bottom: 0px; text-align: left;">
+<ul>
+<li><span style="color: #000000;">Most online therapy networks display the therapist’s license number or will provide it to you upon request.</span></li>
+<li><span style="color: #000000;">Websites such as <span style="color: #00c1a7;"><a style="color: #00c1a7;" href="https://www.psychologytoday.com/" target="_blank" rel="noopener">Psychology Today</a></span>, <span style="color: #00c1a7;"><a style="color: #00c1a7;" href="http://www.goodtherapy.org/" target="_blank" rel="noopener">Good Therapy</a></span> and <span style="color: #00c1a7;"><a style="color: #00c1a7;" href="http://psychcentral.com/" target="_blank" rel="noopener">Psych Central</a></span> provide credibility for licensed therapists. Most online therapists or therapists who take in-person and online patients will have a listing on one of these sites even if they don’t mention online options.</span></li>
+<li><span style="color: #000000;">You can ask your therapist to help you understand what their license means and how to verify it. Don’t worry, they won’t be offended. Therapists understand the need to protect yourself as a consumer.</span></li>
+</ul>
+</div>
+<div class="wpb_single_image wpb_content_element num-icon vc_custom_1484153452056 vc_align_center">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey"><img class="vc_single_image-img " title="3-green_2x" src="wp-content/uploads/2017/01/3-green_2x-27x27.png" alt="3-green_2x" width="27" height="27" />   <span style="color: #3a3a3c; font-family: Roboto, sans-serif; font-size: 18px;">Can I communicate in-office and online with the same therapist?</span></div>
+</div>
+</div>
+<div class="mk-text-block " style="margin-bottom: 0px; text-align: left;">
+<p>Yes. There are many therapists who see their clients both in-person and online. They often start by only meeting with the client in their office but then move to a hybrid approach that makes therapy more convenient and flexible.</p>
+<p>Therapist <a href="http://www.serenemindpsych.com/" target="_blank" rel="noopener">Stephanie Moir</a> told Talkspace most of her online clients began as in-office clients. Problems with traffic, weather, tight work schedules and commuting to pick up their children, Moir said, are common reasons why clients supplement their therapy with online sessions.</p>
+<p>On the other hand, therapist <a href="https://www.linkedin.com/in/tanairyfernandez" target="_blank" rel="noopener">Tanairy Fernandez</a> said she has a mix of clients who began online and only use that medium, clients who only meet in-office and clients who do both. Some of her online clients found her through a therapy network while others connected by searching independently.</p>
+<p>&nbsp;</p>
+</div>
+<div class="wpb_single_image wpb_content_element num-icon vc_custom_1484153466190 vc_align_center">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey"></div>
+<div class="vc_single_image-wrapper vc_box_border_grey"><img class="vc_single_image-img " title="4-green_2x" src="wp-content/uploads/2017/01/4-green_2x-27x27.png" alt="4-green_2x" width="27" height="27" />   <span style="color: #3a3a3c; font-family: Roboto, sans-serif; font-size: 18px;">Is therapy secure on the Internet? Will my privacy be protected?</span></div>
+</div>
+</div>
+<div class="mk-text-block " style="margin-bottom: 0px; text-align: left;">
+<p>You will receive greater security assurance if you sign up with an online therapist via a network. Individual online therapists will keep your information confidential, but they might need to rely on services with less security. After all, it’s easier for a company to afford a high-tech online security system with industry-standard encryption and authentication measures along with extra layers of passcode protection.</p>
+<p>Ethical rules for licensed therapists require they protect your privacy. With the exception of several rare situations (such as clients being at risk of harming themselves or others), they will not reveal the content of your conversations to others.</p>
+<p>&nbsp;</p>
+</div>
+<div class="wpb_single_image wpb_content_element num-icon vc_custom_1484153480119 vc_align_center">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey"></div>
+<div class="vc_single_image-wrapper vc_box_border_grey"><img class="vc_single_image-img " title="5-green_2x" src="wp-content/uploads/2017/01/5-green_2x-27x27.png" alt="5-green_2x" width="27" height="27" />   <span style="color: #3a3a3c; font-family: Roboto, sans-serif; font-size: 18px;">Who should not use e-therapy?</span></div>
+</div>
+</div>
+<div class="mk-text-block " style="margin-bottom: 0px; text-align: left;">
+<p>Like in-office therapy, people who are an immediate threat to themselves or others should call a suicide hotline or seek psychiatric treatment before committing to therapy.</p>
+<p>There are age limitations depending on the therapist or therapy network you consult. Many therapists accept clients under 18 with or without parental consent. Most therapy networks require the person be 18 or older.</p>
+</div>
+</div>
+</div>
+</div> 
+</div> 
+</div> 
+</div> <div id="how-we-live" class="et_pb_section et_pb_section_8 et_section_regular">
+<div class="et_pb_row et_pb_row_18">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_28    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_28 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<h2 style="text-align: left; font-family: Abril Fatface; font-weight: 400; font-style: normal;">Therapy for How We Live Today</p>
+</h2>
+<p>Online therapy is a way for more people to receive a valuable service in a different way, one that better suits their needs and preferences. It’s the natural outcome of advancing technology to provide what we want.</p>
+<p>One in five Americans struggle with mental illness but only one third of this population seeks treatment, according to the <a href="http://www2.nami.org/ContentManagement/ContentDisplay.cfm?ContentFileID=5148" target="_blank" rel="noopener">National Alliance on Mental Illness</a>. Then there are the people who could benefit from therapy but don’t think they need it because they don’t live with mental illness. Online therapy is about helping these people, so it’s time we learned the facts.</p>
+<h3 style="text-align: left;">Ready to try online therapy?</h3>
+<p><a class="et_pb_button" href="#" data-toggle="modal" data-target="#registration-lightbox">Try Talkspace Now ›</a></p>
+<div class="wpb_single_image wpb_content_element app_icon vc_custom_1484330309978 vc_align_left">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey"><a href="https://app.adjust.com/fs33hk" target="_blank" rel="noopener noreferrer"><img class="vc_single_image-img " title="applestore_2x" src="wp-content/uploads/2017/01/applestore_2x1-162x54.png" alt="applestore_2x" width="162" height="54" /></a></div>
+</div>
+</div>
+<div class="wpb_single_image wpb_content_element app_icon vc_custom_1484330323601 vc_align_left">
+<div class="wpb_wrapper">
+<div class="vc_single_image-wrapper vc_box_border_grey"><a href="https://app.adjust.com/s5tim2"><img class="vc_single_image-img " title="googlestore_2x" src="wp-content/uploads/2017/01/googlestore_2x1-162x54.png" alt="googlestore_2x" width="162" height="54" /></a></div>
+</div>
+</div>
+<p>&nbsp;</p>
+</div>
+</div> <div class="et_pb_module et_pb_code et_pb_code_0">
+<div class="et_pb_code_inner">
+<a name="7">
+</div> 
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_29    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_1 et_always_center_on_mobile">
+<span class="et_pb_image_wrap"><img src="wp-content/uploads/2017/01/phones-2_2x.png" alt="" /></span>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_section et_pb_section_9 et_section_regular">
+<div class="et_pb_row et_pb_row_19">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_30    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_29 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info">
+<div class="footer-row">
+<ul class="footer-menu">
+<li class="footer-links"><a class="inet" href="../blog/index.html">Blog</a></li>
+<li class="footer-links"><a class="inet" href="../public/contact-us.html">Contact Us</a></li>
+<li class="footer-links"><a class="inet" href="https://help.talkspace.com/hc/en-us" target="_blank" rel="noopener noreferrer">FAQ</a></li>
+<li class="footer-links"><a class="inet" href="http://talkspace.workable.com/" target="_blank" rel="noopener">Careers</a></li>
+<li class="footer-links"><a class="inet" href="../public/privacy-policy.html">Privacy Policy</a></li>
+<li class="footer-links"><a class="inet" href="../join-as-a-therapist.html">Therapist? Join Us!</a></li>
+<li class="footer-links"><a class="inet" href="press/index.html">Press</a></li>
+<li class="footer-links"><a class="inet" href="https://giftcard.talkspace.com/">Gift Card</a></li>
+</ul>
+</div>
+<div class="footer-row">
+<ul class="footer-menu">
+<li class="footer-links"><a class="inet" href="unlimited-messaging-therapy/index.html">Unlimited Messaging Therapy</a></li>
+<li class="footer-links"><a class="inet" href="index.html">Online Therapy</a></li>
+<li class="footer-links"><a class="inet" href="assessments/index.html">Assessments</a></li>
+<li class="footer-links"><a class="inet" href="lgbt/index.html">LGBT</a></li>
+<li class="footer-links"><a class="inet" href="veterans/index.html">Veterans</a></li>
+<li class="footer-links"><a class="inet" href="couples-therapy/index.html">Couples Therapy</a></li>
+<li class="footer-links"><a class="inet" href="therapy-for-business/index.html">Therapy for Business</a></li>
+</ul>
+</div>
+<ul class="list-inline">
+<li class="social-inline"><a href="https://www.facebook.com/Talkspacetherapy/" target="_blank" rel="noopener noreferrer" title="Talkspace Facebook"><img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Media_FB_25x25.png" alt="Facebook"></a></li>
+<li class="social-inline"><a href="https://twitter.com/talkspace" target="_blank" rel="noopener noreferrer" title="Talkspace Twitter"><img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Medial_Twtr_25x25.png" alt="Twitter"></a></li>
+<li class="social-inline"><a href="https://www.instagram.com/talkspace/?hl=en" target="_blank" rel="noopener noreferrer" title="Talkspace Instagram"><img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Medial_insta_25x25.png" alt="Instagram" data-pin-nopin="true"></a></li>
+<li class="social-inline"><a href="https://www.pinterest.com/talkspace/" target="_blank" rel="noopener noreferrer" title="Talkspace Pinterest"><img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Medial_Pntrst_25x25.png" alt="Pinterest"></a></li>
+<li class="social-inline"><a href="https://www.linkedin.com/company/talkspace-online-therapy" target="_blank" rel="noopener noreferrer" title="Talkspace LinkedIn"><img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Medial_LI_25x25.png" alt="LinkedIn"></a></li>
+</ul>
+<div class="warning">If you are in a life threatening situation, do NOT use this site.<br /> Call the 24-hr National Suicide Prevention Lifeline at 1.800.273.8255.<br /> Your call will be routed to the crisis center near you. If your issue is an emergency, call 911 or go to your nearest emergency room.</div>
+</div>
+</footer>
+</div>
+</div> 
+</div> 
+</div> 
+</div>  </div> 
+</article> 
+</div> 
+<footer id="main-footer">
+<div id="footer-bottom">
+<div class="container clearfix">
+</div> 
+</div>
+</footer> 
+</div> 
+</div> 
+<script type="text/javascript">
+		var et_animation_data = [];
+	</script>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9F7GF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="modal fade" id="registration-lightbox" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="#registration-lightbox" aria-hidden="true">
+<div class="modal-dialog registration-lightbox">
+<div class="modal-content row" id="registrationBox">
+<div class="hidden-xs-down">
+<a href="#" id="rl-close-dialog" class="pull-right roboto-light visible-xs" data-dismiss="modal"><img src="../homepage/images/close_responsive.png" /></a>
+<a href="#" id="rl-close-dialog" class="pull-right roboto-light hidden-xs" data-dismiss="modal"><img src="../homepage/images/close.png" /></a>
+<div class="logoWrap">
+<img class="visible-xs" src="../homepage/images/logo_2x.png" alt="logo" />
+<img class="hidden-xs" src="../homepage/images/ts-logo_2x.png" alt="logo" />
+</div>
+</div>
+<div class="col-12 nopadding registration-form-body">
+<div class="row registration-title">
+<h2 class="create-account">Create an Account</h2>
+<div class="log-in">or <a href="../auth/login.html">Log in</a></div>
+<div class="pull-right" id="rl-top" style="z-index: 400; position: relative;">
+</div>
+</div>
+<div class="row nopadding">
+<div id="rl-wrapper" class="col-xs-12 roboto-light">
+<div id="rl-bubble" class="col-xs-12 roboto-light">
+<div class="authFormRow">
+<div class="input-error username"></div>
+<input type="email" name="email" id="username" value="" class="user-input" maxlength="80" autocomplete="off" onfocus="focusEmailBorder()" onkeydown="emailPlaceholderUp()" onblur="emailPlaceholderDown(); focusoutEmailBorder();" autocomplete="off">
+<span class="placeholder username">Email</span>
+</div>
+<div class="authFormRow">
+<div class="input-error r-password"></div>
+<input type="password" name="password" id="r-password" value="" class="user-input" autocomplete="off" onfocus="showPassHint(); focusPassBorder();" onkeydown="passwordPlaceholderUp()" onblur="hidePassHint(); passwordPlaceholderDown(); focusoutPassBorder();" autocomplete="off">
+<span class="placeholder r-password">Password</span>
+<div class="info-field password roboto">8 character minimum, no special characters</div>
+</div>
+<div class="authFormRow">
+<div class="input-error r-nickname"></div>
+<input type="text" name="pseudonym" id="r-nickname" value="" class="user-input" maxlength="50" autocomplete="off" onfocus="showNickHint(); focusNickBorder();" onkeydown="nicknamePlaceholderUp()" onblur="hideNickHint(); nicknamePlaceholderDown(); focusoutNickBorder();" style="border-bottom: 2px solid rgb(196, 196, 196);" autocomplete="off">
+<span class="placeholder r-nickname">Nickname</span>
+<div class="info-field nickname roboto">This will be the name your therapist sees</div>
+</div>
+<div class="authFormRow">
+<div class="checkbox">
+<input type="checkbox" name="r-terms" id="r-terms"> <label class="roboto-light confirmAgeLabel" for="r-terms">I am over 18 and agree to the <br>
+<a href="../public/terms.html" class="inet" target="_blank">terms of use</a> and <a href="../public/privacy-policy.html" class="inet" target="_blank">privacy policy</a></label>
+</div>
+</div>
+<div class="authFormRow submitBtn">
+<input class="buttonClassNew btn btn-primary green-btn login-modal" id="rl-register-btn" type="submit" value="Sign Up">
+<div class="ajaxloader greenAjaxLoader" onclick="return false;"><a>Sign Up</a> <i class="fa fa-circle-o-notch fa-spin fa-fw"></i></div>
+<div class="input-error general-error"></div>
+</div>
+<ul class="store-icon-registration">
+<li>
+<a href="https://app.adjust.io/l6yexx" target="_blank"><img src="../homepage/images/appstore-text_2x.png" alt="Get Talkspace on the App Store"></a>
+</li>
+<li>
+<a href="https://app.adjust.io/kw4oz4" target="_blank"><img src="../homepage/images/googleplay-text_2x.png" alt="Get Talkspace on Google Play"></a>
+</li>
+</ul>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><script type='text/javascript' src='wp-content/themes/Divi/includes/builder/scripts/frontend-builder-global-functions7868.js?ver=3.9'></script>
+<script type='text/javascript' src='wp-content/themes/Divi/includes/builder/scripts/jquery.mobile.custom.min7868.js?ver=3.9'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/themes/Divi/js/custom7868.js?ver=3.9'></script>
+<script type='text/javascript' src='wp-content/themes/Divi/includes/builder/scripts/jquery.fitvids7868.js?ver=3.9'></script>
+<script type='text/javascript' src='wp-content/themes/Divi/includes/builder/scripts/waypoints.min7868.js?ver=3.9'></script>
+<script type='text/javascript' src='wp-content/themes/Divi/includes/builder/scripts/jquery.magnific-popup7868.js?ver=3.9'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_pb_custom = {"ajaxurl":"https:\/\/www.talkspace.com\/online-therapy\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.talkspace.com\/online-therapy\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.talkspace.com\/online-therapy\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"c5f18052ea","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"ef2dcd0579","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","is_builder_plugin_used":"","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","is_ab_testing_active":"","page_id":"3078","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":""};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/themes/Divi/includes/builder/scripts/frontend-builder-scripts7868.js?ver=3.9'></script>
+<script type='text/javascript' src='wp-content/themes/Divi/core/admin/js/common7868.js?ver=3.9'></script>
+<script type='text/javascript' src='wp-includes/js/wp-embed.mind87f.js?ver=4.9.9'></script>
+<script src="../homepage/js/handlebars-v4.0.5c619.js?v=1.0"></script>
+<script src="https://cdn.talkspace.com/js/reg.js"></script>
+<script>
+  function showPassHint() {
+    $(".info-field.password").addClass("active");
+  }
+  function hidePassHint() {
+    $(".info-field.password").removeClass("active");
+  }
+  function showNickHint() {
+    $(".info-field.nickname").addClass("active");
+  }
+  function hideNickHint() {
+    $(".info-field.nickname").removeClass("active");
+  }
+  function focusEmailBorder() {
+    if ($(".input-error.username").text().trim().length == 0) {
+      $("#username").css("border-color", "#0FC1A7");
+    }
+  }
+  function focusPassBorder() {
+    if ($(".input-error.r-password").text().trim().length == 0) {
+      $("#r-password").css("border-color", "#0FC1A7");
+    }
+  }
+  function focusNickBorder() {
+    if ($(".input-error.r-nickname").text().trim().length == 0) {
+      $("#r-nickname").css("border-color", "#0FC1A7");
+    }
+  }
+  function focusVoucherBorder() {
+    if ($(".input-error.r-accessCode").text().trim().length == 0) {
+      $("#r-accessCode").css("border-color", "#0FC1A7");
+    }
+  }
+  function focusoutEmailBorder() {
+    if ($(".input-error.username").text().trim().length == 0) {
+      $("#username").css("border-color", "#C4C4C4");
+    }
+  }
+  function focusoutPassBorder() {
+    if ($(".input-error.r-password").text().trim().length == 0) {
+      $("#r-password").css("border-color", "#C4C4C4");
+    }
+  }
+  function focusoutNickBorder() {
+    if ($(".input-error.r-nickname").text().trim().length == 0) {
+      $("#r-nickname").css("border-color", "#C4C4C4");
+    }
+  }
+  function focusoutVoucherBorder() {
+    if ($(".input-error.r-accessCode").text().trim().length == 0) {
+      $("#r-accessCode").css("border-color", "#C4C4C4");
+    }
+  }
+  function emailPlaceholderUp() {
+    if ($(".input-error.username").text().trim().length > 0) {
+      $(".placeholder.username").addClass("hidden");
+    } else {
+      $(".placeholder.username").addClass("up");
+    }
+  }
+  function passwordPlaceholderUp() {
+    if ($(".input-error.r-password").text().trim().length > 0) {
+      $(".placeholder.r-password").addClass("hidden");
+    } else {
+      $(".placeholder.r-password").addClass("up");
+    }
+  }
+  function nicknamePlaceholderUp() {
+    if ($(".input-error.r-nickname").text().trim().length > 0) {
+      $(".placeholder.r-nickname").addClass("hidden");
+    } else {
+      $(".placeholder.r-nickname").addClass("up");
+    }
+  }
+  function voucherPlaceholderUp() {
+    if ($(".input-error.r-accessCode").text().trim().length > 0) {
+      $(".placeholder.r-voucher").addClass("hidden");
+    } else {
+      $(".placeholder.r-voucher").addClass("up");
+    }
+  }
+  function emailPlaceholderDown() {
+    if ($('#username').val() == '') {
+      $(".placeholder.username").removeClass("up");
+      $(".placeholder.username").removeClass("hidden");
+    }
+  }
+  function passwordPlaceholderDown() {
+    if ($('#r-password').val() == '') {
+      $(".placeholder.r-password").removeClass("up");
+      $(".placeholder.r-password").removeClass("hidden");
+    }
+  }
+  function nicknamePlaceholderDown() {
+    if ($('#r-nickname').val() == '') {
+      $(".placeholder.r-nickname").removeClass("up");
+      $(".placeholder.r-nickname").removeClass("hidden");
+    }
+  }
+  function voucherPlaceholderDown() {
+    if ($('#r-accessCode').val() == '') {
+      $(".placeholder.r-voucher").removeClass("up");
+      $(".placeholder.r-voucher").removeClass("hidden");
+    }
+  }
+</script>
+
+<script>
+  $(document).ready(function(){
+    $("body").bind("click", ".modal-dialog", function(e) {
+      if ($(e.target.children).hasClass('modal-dialog')) {
+        // Registration modal
+        if ($('#registration-lightbox').hasClass('in')) {
+          $('#registration-lightbox').modal('toggle');
+        }
+      }
+    });
+  });
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ae0508e4dc","applicationID":"84446818","transactionName":"blxVZEVVV0JQBk0IW1cWdlNDXVZfHhVYBlE=","queueTime":0,"applicationTime":451,"atts":"QhtWEg1PREw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.talkspace.com/online-therapy/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Dec 2018 15:47:46 GMT -->
+</html>

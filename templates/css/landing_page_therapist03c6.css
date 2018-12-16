@@ -1,0 +1,944 @@
+.therapistWrapper {
+    height: 910px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+}
+.therapistInnerWrapper {
+    width: 1000px;
+    height: 837px;
+    margin: 0 auto;
+    padding-top: 73px;
+    font-family: 'Swis721 Lt BT';
+    color: #FFFCFC;
+}
+
+#landing-page-therapist .pageTitle {
+    margin-bottom: 3px;
+    font-size: 60px;
+    line-height: 70px;
+}
+#landing-page-therapist .pageSubtitle {
+    font-size: 32px;
+    line-height: 38px;
+}
+#landing-page-therapist .bottomLogo {
+    bottom: 25px;
+    left: 0;
+}
+
+.therapistWrapper.t5000 {
+    background:url('../images/landingpage/5000.png') 50% 40% / cover no-repeat, linear-gradient(270deg, rgb(121,121,121) 0%, rgb(241,238,235) 100%);
+    background:url('../images/landingpage/5000.png') 50% 40% no-repeat #ABA9A8\0/;
+}
+.therapistWrapper.t1388 {
+    background:url('../images/landingpage/1388.png') 50% 40% / cover no-repeat, linear-gradient(270deg, rgb(121,121,121) 0%, rgb(241,238,235) 100%);
+    background:url('../images/landingpage/1388.png') 50% 40% no-repeat #ABA9A8\0/;
+}
+.therapistWrapper.t2992 {
+    background:url('../images/landingpage/2992.png') 50% 40% / cover no-repeat, linear-gradient(270deg, rgb(121,121,121) 0%, rgb(241,238,235) 100%);
+    background:url('../images/landingpage/2992.png') 50% 40% no-repeat #ABA9A8\0/;
+} 
+.therapistWrapper.joReview {
+    background:url('../images/landingpage/joReview.jpg') 50% 40% / cover no-repeat, linear-gradient(270deg, rgb(121,121,121) 0%, rgb(241,238,235) 100%);
+    background:url('../images/landingpage/joReview.jpg') 50% 40% no-repeat #ABA9A8\0/;
+} 
+::i-block-chrome, .therapistWrapper.t5000{
+    background:url('../images/landingpage/5000.png') 50% 40% no-repeat #ABA9A8;
+    -webkit-background-size: cover;
+}
+::i-block-chrome, .therapistWrapper.t1388{
+    background:url('../images/landingpage/1388.png') 50% 40% no-repeat #ABA9A8;
+    -webkit-background-size: cover;
+}
+::i-block-chrome, .therapistWrapper.t2992{
+    background:url('../images/landingpage/2992.png') 50% 40% no-repeat #ABA9A8;
+    -webkit-background-size: cover;
+}
+::i-block-chrome, .therapistWrapper.joReview{
+    background:url('../images/landingpage/joReview.jpg') 50% 40% no-repeat #ABA9A8;
+    -webkit-background-size: cover;
+}
+:root .therapistWrapper.t5000{
+    background:url('../images/landingpage/5000.png') 50% 40% no-repeat #ABA9A8\9;
+    background-size:cover;
+}
+:root .therapistWrapper.t1388{
+    background:url('../images/landingpage/1388.png') 50% 40% no-repeat #ABA9A8\9;
+    background-size:cover;
+}
+:root .therapistWrapper.t2992{
+    background:url('../images/landingpage/2992.png') 50% 40% no-repeat #ABA9A8\9;
+    background-size:cover;
+}
+:root .therapistWrapper.joReview{
+    background:url('../images/landingpage/joReview.jpg') 50% 40% no-repeat #ABA9A8\9;
+    background-size:cover;
+}
+.therapistWrapper.t5000 .smallBubbleWrapper {
+}
+.therapistWrapper.t1388 .smallBubbleWrapper {
+}
+.therapistWrapper.t2992 .smallBubbleWrapper {
+}
+
+#landing-page-therapist .homepageContainer {
+    padding: 0 0 30px 0;
+}
+
+#landing-page-therapist .bubble-content {
+    width: 504px;
+    margin-top: 24px; 
+}
+.bubble-top-left {
+    background: url("../images/landingpage/bubble/top_left.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 20px;
+    width: 20px;    
+}
+.bubble-top-right {
+    background: url("../images/landingpage/bubble/top_right.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: right;
+    height: 20px;
+    width: 20px;    
+}
+.bubble-top-repeat {
+    background: url("../images/landingpage/bubble/top_repeat.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;    
+}
+
+.bubble-left-repeat {
+    background: url("../images/landingpage/bubble/left_repeat.png") repeat-y scroll left center rgba(0, 0, 0, 0);
+}
+.bubble-middle-content {
+    background: #FFFFFF;
+    margin: 0 10px;
+    min-height: 119px;
+}
+.bubble-right-repeat {
+    background: url("../images/landingpage/bubble/right_repeat.png") repeat-y scroll right center rgba(0, 0, 0, 0);
+}
+
+
+.bubble-bottom-left {
+    background: url("../images/landingpage/bubble/bottom_left.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 20px;
+    width: 20px;    
+}
+.bubble-bottom-right {
+    background: url("../images/landingpage/bubble/bottom_right.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: right;
+    height: 20px;
+    width: 20px;    
+}
+.bubble-bottom-repeat {
+    background: url("../images/landingpage/bubble/bottom_repeat.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;    
+}
+.bubble-bottom-arrow {
+    background: url("../images/landingpage/bubble/arrow_bottom.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    width: 48px;
+    height: 28px;
+    z-index: 2;
+    top: 47%;
+    right: 7%;
+    
+    /*
+    background: url("../images/landingpage/bubble/arrow_bottom.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+height: 28px;
+right: 39px;
+top: 9px;
+width: 48px;
+z-index: 2;
+*/
+}
+
+.smallBubbleWrapper, .smallBubbleWrapper .bubbleTop, .smallBubbleWrapper .bubbleMiddle, .smallBubbleWrapper .bubbleBottom {
+    width: 504px;
+}
+.smallBubbleWrapper .bubbleTop {
+    background: url("../images/landingpage/bubble-top.png") no-repeat scroll left top transparent;
+    height: 24px;
+}
+.smallBubbleWrapper .bubbleMiddle {
+    background: url("../images/landingpage/bubble-middle.png") repeat-y scroll left top transparent !important;
+    min-height: 119px;
+}
+.smallBubbleWrapper .bubbleBottom {
+    height: 43px;
+    background: url("../images/landingpage/bubble-bottom.png") no-repeat scroll left top transparent;
+}
+.smallBubbleWrapper .submitBtn {
+    border-radius: 30px 30px 30px 30px;
+    /*bottom: -58px;*/
+    bottom: -76px;
+    font-size: 24px;
+    padding: 10px 24px;
+    position: absolute;
+    right: -7px;
+}
+.smallBubbleWrapper #bubbleTextarea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 0 none;
+    color: #5B554E;
+    font-family: 'Swis721 BT';
+    font-size: 24px;
+    margin: 0 0 0 15px;
+    resize: none;
+    /*width: 470px;*/
+    width: 95%;
+    transition: height 0.2s;
+    -webkit-transition: height 0.2s; 
+    -moz-transition: height 0.2s; 
+    max-height: 113px;
+    height: 34px;  
+}
+.smallBubbleWrapper #bubbleTextareaMask {
+    color: #979595;
+    cursor: text;
+    font-family: 'Swis721 Lt BT';
+    font-size: 30px;
+    font-style: italic;
+    height: 114px;
+    left: 7px;
+    /*padding-left: 10px;*/
+    position: absolute;
+    top: 6px;
+    /*width: 485px;*/    
+    width: 100%;    
+}  
+
+.smallBubbleWrapper #bubbleTextareaLimit {
+    font-family: Helvetica, Verdana, Arial;
+    font-size: 22px;
+    color: #9B9B9B;
+    text-align: center;
+    width: 77px;
+}
+.smallBubbleWrapper #bubbleTextareaMask > div {
+    line-height: 44px;
+    max-height: 88px;
+    max-width: 930px;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+    margin-top: -15px; 
+}
+
+.detailsWrapper {
+    font-size: 22px;
+    width: 600px;
+    margin-top: 85px;
+    margin-bottom: 10px;
+}
+::i-block-chrome, .detailsWrapper {
+    font-size: 20px;
+}
+
+.therapistWrapper.t5000 .detailsWrapper {
+    margin-top: 100px
+} 
+.therapistWrapper.t1388 .detailsWrapper {
+} 
+.therapistWrapper.t2992 .detailsWrapper {
+    color: #564F49;   
+} 
+.detailsWrapper span {
+    margin-left: 10px;
+    font-weight: bold;    
+}
+
+#landing-page-therapist #startFree {
+    width: auto;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 26px;
+    height: 60px;
+    margin: 0;
+    padding: 0 24px 1px;
+}
+#landing-page-therapist .landingButtonContainer {
+  margin: 25px auto 0;
+  width: 200px;
+}
+.new-landing #landing-page-therapist .landingButtonContainer {
+  margin: 0;
+  width: auto;    
+}
+#landing-page-therapist .askQuestionWrap {
+    width: 1000px;
+    margin: 0 auto;
+    display: none;
+}
+  
+#landing-page-therapist .advertiser-icons {
+    margin: -74px auto 14px;
+    width: 1000px;    
+}
+#landing-page-therapist .advertiser-icons img {
+    opacity: 0.7; 
+}
+.default_welcome_index #nav-what-is-talktala .homepageContainer {
+    padding-bottom: 205px;
+}
+#landing-page-therapist #nav-what-is-talktala {
+    padding-bottom: 45px;
+}
+.new-landing #landing-page-therapist #nav-what-is-talktala {
+    padding-bottom: 0;
+}
+
+.default_welcome_therapy #page-footer-copyright {
+    font-family: 'HelveticaLight';
+    font-size: 16px;
+}
+
+.new-landing .therapistInnerWrapper {
+    padding-top: 28px;
+}
+.new-landing #landing-page-therapist .pageTitle {
+    font-size: 40.18px;
+    margin: 0;
+    padding-top: 25px;
+}
+.new-landing #landing-page-therapist .pageSubtitle {
+    font-size: 23.4px;
+    margin-bottom: 14px;
+}
+.new-landing .detailsWrapper {
+    font-size: 17px;
+    margin-top: 160px !important;
+}
+.new-landing .detailsWrapper.appStoreLink {
+    margin-top: 113px !important;
+}
+
+.new-landing .t2992 .detailsWrapper.appStoreLink {
+    margin-top: 71px !important;
+}
+
+.new-landing .detailsWrapper span {
+    font-weight: inherit;
+}
+.new-landing .therapistWrapper.t2992 .detailsWrapper {
+    color: #58514A;
+}
+.new-landing #landing-page-therapist .bottomLogo {
+    position: static;
+    margin-top: 64px;
+}
+
+.new-landing .ajaxloader.pcfBtnSubmitBox {
+    background-position: 90% 18px;
+    float: right;
+    margin-top: 29px;
+    padding: 13px 32px 13px 15px;
+}
+#landing-page-therapist .pcFlow  .pcfPrivacyTitle{
+    color: #58514A;
+}
+#landing-page-therapist .t2992 .pcFlow  .pcfPrivacyTitle {
+    color: #696868;
+}
+.new-landing #landing-page-therapist .t5000 .pcFlow .pcfPrivacyTitle {
+    color: #FFFFFF;
+}
+
+#landing-page-therapist #nav-what-is-talktala .commonButton {
+    padding: 12px 40px 14px 40px;
+}
+#welcomeNewAskTop .pcfWrapper .pcfBox .inputInlineLabel{
+    font-size: 23px;
+}
+#landing-page-therapist .pcfBoxWrapper .inputInlineLabel{
+    font-size: 23px;
+}
+.joReviewComment {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 27px;
+    width: 405px;
+    color: #ffffff;
+    float: right;
+    margin-right: 66px;
+    bottom: 47px;
+    right: 0;
+}
+
+.lp {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 25px;
+    width: 325px;
+    color: #ffffff;
+    float: right;
+    margin-right: 95px;
+    bottom: -17px;
+    right: 0;
+}
+
+/*
+landing page therapy-now
+*/
+.default_welcome-now_therapy #whatIsTalktala .howItWorksDesc {
+    color: #867c7c;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.default_welcome-now_therapy .title.open-sans-regular {
+    color: #000;
+    font-size: 50px;
+    line-height: 43.92px;
+}
+
+.default_welcome-now_therapy #nav-what-is-talktala {
+    border-bottom: 1px solid #867C7C;
+}
+
+.default_welcome-now_therapy .commonButton.landingButtonClass {
+    margin-bottom: -22px;
+    padding: 8px 15px;
+    font-size: 24px;
+    line-height: 27.14px;
+}
+
+.default_welcome-now_therapy .new-landing .whatIsTalktala .title {
+    padding: 60px 0px 5px;
+}
+
+.default_welcome-now_therapy #whatIsTalktala .howItWorksDesc div.secondRow {
+    margin-top: 0px;
+}
+
+.default_welcome-now_therapy .therapistInnerWrapper {
+    margin: 0px 102px;
+}
+
+.default_welcome-now_therapy .new-landing .therapistInnerWrapper {
+    padding-top: 37px;
+}
+
+.default_welcome-now_therapy .landing-page-logo {
+    margin-bottom: 76px;
+}
+
+.default_welcome-now_therapy .pageTitle {
+    width: 560px;
+    font-size: 43px;
+    line-height: 55px;
+    margin-bottom: 20px;
+}
+
+.default_welcome-now_therapy .jen .pageTitle {
+    width: 560px;
+    font-size: 43px;
+    line-height: 55px;
+    margin-bottom: 14px;
+}
+
+.default_welcome-now_therapy .pageSubtitle {
+    width: 560px;
+    font-size: 23px;
+    line-height: 30px;
+}
+.default_welcome-now_therapy .jen .pageSubtitle {
+    font-size: 22px;
+    line-height: 27px;
+    width: 535px;
+    margin-left: 20px;
+}
+
+.default_welcome-now_therapy .jen .pageSubtitle ul li {
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.default_welcome-now_therapy .pcfBoxWrapper {
+    width: 550px;
+    margin-top: 18px;
+}
+
+.default_welcome-now_therapy #questionText,.pcfPrivacyTitle,.title.open-sans-regular,#whatIsTalktala .howItWorksDesc
+    {
+    font-family: 'Roboto', 'Serif';
+    font-weight: 300;
+    font-style: normal;
+}
+
+.default_welcome-now_therapy .pcfPrivacyTitle {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: -2px;
+    margin-top: 2px;
+    padding: 0;
+    font-family: 'Roboto', 'Serif';
+}
+
+.default_welcome-now_therapy #questionText {
+    color: #B2B4B7;
+    line-height: 20px;
+}
+
+.new-landing .default_welcome-now_therapy  .pcfBoxWrapper .buttonStartFree.boxSubmit {
+    font-family: 'Roboto', 'Serif';
+    padding: 12px 19px 14px;
+    margin-top: 35px;
+    font-weight: 400;
+    line-height: 27.14px;    
+}
+
+.new-landing .default_welcome-now_therapy .jen .pcfBoxWrapper .buttonStartFree.boxSubmit {
+    font-family: 'Roboto', 'Serif';
+    padding: 11px 19px 15px;
+    margin-top: 30px;
+    font-weight: 400;
+    line-height: 23.4px;
+    font-size: 24px;
+}
+
+.default_welcome-now_therapy #questionText {
+    margin-top: -7px;
+    margin-left: -3px;
+    font-size: 24px;
+}
+public.new-landing .default_welcome-now_therapy #questionText {
+    margin-top: -14px;
+    margin-left: -3px;
+    font-size: 24px;
+}
+
+.default_welcome-now_therapy .richard,
+.default_welcome-now_therapy .kristin,
+.default_welcome-now_therapy .jo,
+.default_welcome-now_therapy .chris,
+.default_welcome-now_therapy .james,
+.default_welcome-now_therapy .soul,
+.default_welcome-now_therapy .sam,
+.default_welcome-now_therapy .jen {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.default_welcome-now_therapy .richard {
+    background-image: url('../images/landingpage/richard.jpg');
+}
+
+.default_welcome-now_therapy .jo {
+    background-image: url('../images/landingpage/jo.jpg');
+}
+
+.default_welcome-now_therapy .james {
+    background-image: url('../images/landingpage/james.jpg');
+}
+
+.default_welcome-now_therapy .kristin {
+    background-image: url('../images/landingpage/kristin.jpg');
+}
+
+.default_welcome-now_therapy .chris {
+    background-image: url('../images/landingpage/chris.jpg');
+}
+.default_welcome-now_therapy .soul {
+    background-image: url('../images/landingpage/bk_soul_1300.jpg');
+}
+.default_welcome-now_therapy .sam {
+    background-image: url('../images/landingpage/bk_sam_1300.jpg');
+}
+.default_welcome-now_therapy .jen {
+    background-image: url('../images/landingpage/jen_1300.jpg');
+}
+.senior_design .lp {
+    bottom: 10px;
+    font-size: 20px;
+    line-height: 27px;
+    margin-right: 29px;
+    width: 410px;
+}
+
+.senior_design .jen .lp {
+    margin-bottom: 98px;
+    margin-right: 265px;
+}
+
+.senior_design .jen .lp .bmargin-30{
+    margin-bottom: 27px;
+}
+
+.senior_design {
+-webkit-text-size-adjust: 100%!important;
+}
+.senior_design .default_welcome-now_therapy .therapistInnerWrapper {
+    margin: 0 227px;
+}
+.new-landing.senior_design .therapistInnerWrapper {
+    padding-top: 28px;
+}
+
+.senior_design .default_welcome-now_therapy .landing-page-logo {
+    margin-bottom: 56px;
+}
+
+.senior_design .default_welcome-now_therapy .jen .landing-page-logo {
+    margin-bottom: -3px;
+    margin-top: 12px;
+}
+
+.senior_design .default_welcome-now_therapy .pageTitle {
+    line-height: 50px;
+    width: 581px;
+}
+
+.senior_design .default_welcome-now_therapy .jen .pageTitle {
+    line-height: 40px;
+    width: 600px;
+    color: #D310AA;
+    font-size: 35px;
+}
+.senior_design .default_welcome-now_therapy .jen .appIcon {
+    margin-top: 26px;
+}
+.senior_design .default_welcome-now_therapy .pcfBoxWrapper {
+    width: 550px;
+}
+.senior_design .default_welcome-now_therapy .pcfPrivacyTitle {
+    text-transform: capitalize;
+    padding-left: 35px;
+}
+.senior_design .default_welcome-now_therapy .title.open-sans-regular {
+    font-size: 60px;
+    line-height: 31px;
+    padding: 50px 0 0;
+}
+.senior_design .default_welcome-now_therapy #whatIsTalktala .howItWorksDesc {
+    font-size: 19px;
+    line-height: 27px;
+    width: 900px;
+}
+.senior_design.new-landing #nav-what-is-talktala .homepageContainer {
+    padding-bottom: 55px;
+}
+.senior_design.new-landing .userReviewLandingPageContainer {
+    width: 100%;
+}
+.senior_design .default_welcome-now_therapy .pcfBoxWrapper {
+    margin-top: 32px;
+}
+.senior_design.public.new-landing .default_welcome-now_therapy .pcfBox:before,
+.senior_design.public.new-landing .default_welcome-now_therapy .pcfBox:after {
+    left: 86%;
+}
+.therapy-now-landing-logo {
+    height: 93px;
+    width: 245px;
+    background: url('../images/landingpage/logo.png') no-repeat;
+}
+
+.jen .pcfPrivacyText {
+    position: absolute;
+}
+
+.jen .therapy-now-landing-logo, .ios .jen .therapy-now-landing-logo {
+    height: 93px;
+    width: 245px;
+    background: url('../images/landingpage/logojen.png') no-repeat;
+}
+
+.jen .pcfBox {
+    height: 114px;
+}
+
+.jen .pcfBox .pcfTextarea {
+    height: 140px;
+}
+
+.therapistWrapper.jen {
+    height: 784px;
+}
+
+.senior_design .default_welcome-now_therapy #nav-what-is-talktala {
+    padding-top: 10px;
+}
+
+.senior_design .default_welcome-now_therapy .jen .pcfBoxWrapper {
+    margin-top: 19px;
+}
+.default_welcome-now_therapy .pcfPrivacy{
+    position: absolute;
+    padding-left: 0px;
+}
+/*
+end landing page therapy now
+*/
+.public.new-landing .default_welcome-now_therapy .jen .pcfRegisterSubmit .buttonStartFree.boxSubmit {
+    padding:4px 19px 9px 21px;
+}
+
+.default_welcome-now_therapy .jen #questionText {
+    line-height: 24px;
+}
+.default_welcome-now_therapy .pcfRegisterField #email::-webkit-input-placeholder {
+    line-height: 36px;
+}
+.default_welcome-now_therapy .pcfRegisterField #email::-moz-placeholder {
+    line-height: 36px;
+}
+.default_welcome-now_therapy .pcfRegisterField #email:-ms-input-placeholder {
+    line-height: 36px;
+}
+.default_welcome-now_therapy .pcfRegisterField #password_v2::-webkit-input-placeholder {
+    line-height: 36px;
+}
+.default_welcome-now_therapy .pcfRegisterField #password_v2::-moz-placeholder {
+    line-height: 36px;
+}
+.default_welcome-now_therapy .pcfRegisterField #password_v2:-ms-input-placeholder {
+    line-height: 36px;
+}
+.default_welcome-now_therapy .pcfRegisterField #pseudonym::-webkit-input-placeholder {
+    line-height: 36px;
+}
+.default_welcome-now_therapy .pcfRegisterField #pseudonym::-moz-placeholder {
+    line-height: 36px;
+}
+.default_welcome-now_therapy .pcfRegisterField #pseudonym:-ms-input-placeholder {
+    line-height: 36px;
+}
+.yellow-bubble .therapistWrapper.t2992{
+    background-image: url('../images/landingpage/yellow-bubble-background.png')!important;
+}
+::i-block-chrome, .yellow-bubble .therapistWrapper.t2992{
+    background-image: url('../images/landingpage/yellow-bubble-background.png')!important;
+    -webkit-background-size: cover;
+}
+
+.new-landing .yellow-bubble#landing-page-therapist .pageTitle,
+.new-landing .yellow-bubble#landing-page-therapist .pageSubtitle {
+    font-size: 36px;
+}
+.yellow-bubble .commonButton {
+    background-color: #fdc13b;
+    border-color: #fdc13b;
+}
+.yellow-bubble .commonButton:hover {
+    background-color: #FFD15B;
+    border: 2px solid #FFD15B;
+}
+
+.yellow-bubble .commonButton:active,.yellow-bubble .commonButton.selected {
+    background-color: #FFD15B;
+    color: #FFFFFF;
+    border: 2px solid #FFD15B;
+}
+.yellow-bubble .pcfBox:before {
+    border-top-color: #ffc225;
+}
+.yellow-bubble .pcfBox {
+    border-color: #fdc13b;
+    border-style: solid;
+}
+.yellow-bubble .ajaxloader {
+    background: #FFFFFF url("../images/common/yellow-ajax-loader.gif") no-repeat 90% 16px;
+    color: #fdc13b!important;
+    padding: 12px 32px 14px 12px;
+    border: 2px solid #fdc13b;   
+}
+.yellow-bubble,
+.yellow-bubble div,
+.yellow-bubble span,
+.yellow-bubble a {
+     font-family: 'Roboto', serif!important;
+}
+.yellow-bubble .pcfPrivacyTitle {
+    color: #FFFFFF!important;
+}
+.yellow-bubble .detailsWrapper {
+    display: none;
+}
+.yellow-bubble .secondRow {
+    margin-top: 20px!important;
+}
+.yellow-bubble .howItWorksDesc {
+    line-height: 27px;
+}
+.yellow-bubble .pageSubtitle {
+    font-weight: normal;
+}
+.yellow-bubble .pcfRegisterField .user-input.error {
+    border: 1px solid #DBDBD8;
+}
+.yellow-bubble .buttonStartFree-container .buttonStartFree {
+    padding: 7px 22px 12px 22px;
+    margin-right: 0px;
+}
+.yellow-bubble .landing-page-logo {
+    margin-left: -3px;
+}
+
+.new-landing .yellow-bubble .pcfBoxWrapper .buttonStartFree.boxSubmit {
+    margin-top: 60px;
+    padding: 6px 19px 12px;
+}
+
+
+@media only screen and (max-width : 1024px),
+/* iPad 1-4 in landscape */
+(min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    
+    .new-landing .yellow-bubble .pcfRegisterSubmit .ajaxloader {
+        padding: 10px 25px 13px 17px;
+        background-position: 95% 16px;
+    }
+    
+    .appsIcons {
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (max-width : 1024px),
+/* iPad 1-4 in portrait */
+(min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    
+    .new-landing .yellow-bubble .pcfRegisterSubmit .ajaxloader {
+        padding: 10px 25px 13px 17px;
+        background-position: 95% 16px;
+    }
+    
+    .appsIcons {
+        margin-top: -10px;
+    }
+}
+
+@media
+only screen and (max-width : 640px), /* browser */
+only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), /* iPhone 5 */
+only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+    
+    .new-landing .yellow-bubble .pcfRegisterSubmit .ajaxloader {
+        padding: 8px 25px 11px 17px;
+        background-position: 95% 15px !important;
+    }
+    
+    .new-landing .yellow-bubble .pcfBoxWrapper .buttonStartFree.boxSubmit {
+        margin-top: 60px;
+        padding: 7px 19px 11px;
+    }    
+    
+}
+
+@media
+only screen and (max-width : 640px), /* browser */
+only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape), /* iPhone 5 */
+only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
+    
+    .new-landing .yellow-bubble .pcfRegisterSubmit .ajaxloader {
+        padding: 8px 25px 11px 17px;
+        background-position: 95% 12px;
+    }
+}
+
+.appGooglePlayIcon {
+    margin-left: 5px;
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+    .appsIcons.kristen-page {
+        margin-top: 60px;
+        position: absolute;
+        right: -150px;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+    .appsIcons {
+        margin-top: 15px;
+    }
+    
+    .appsIcons.kristen-page {
+        margin-top: 36px;
+        position: absolute;
+        right: -239px;
+    }
+}
+
+/*iPhone 6+ Portrait*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) { 
+    .appsIcons.kristen-page {
+        margin-top: 36px;
+        position: absolute;
+        right: -280px;
+    }
+    
+    #page-footer {
+        width: 100% !important;
+    }
+    
+    .footerSuicicePrevention {
+        font-size: 12px;
+    }
+    
+}
+
+/*iPhone 6+ landscape*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) { 
+
+    .appsIcons.kristen-page {
+        margin-top: 33px;
+        position: absolute;
+        right: -110px;
+    }
+    
+    .therapistWrapper.t2992 {
+        background-position: 50% 40%;
+    }
+    
+    .new-landing #landing-page-therapist .t2992 .pcFlow .pcfPrivacyTitle, .detailsWrapper.relative.roboto.appStoreLink {
+        color: #555555 !important;
+    }
+    
+    .footerSuicicePrevention {
+        font-size: 12px;
+    }
+    
+    .public.new-landing #landing-page-therapist .therapistWrapper {
+        height: 580px !important;
+    }
+    
+    .public.new-landing .pcfBox {
+        height: 190px !important;
+        width: 500px !important;
+    }
+    
+    .new-landing .t2992 .detailsWrapper.appStoreLink {
+        margin-top: 170px !important;
+    }
+    
+    .public.new-landing .pcfWrapper {
+        width: 540px !important;
+    }
+    
+    .new-landing .therapistInnerWrapper {
+        padding-top: 75px !important;
+    }
+}
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    
+    .appsIcons.kristen-page {
+        margin-top: 37px;
+        position: absolute;
+        right: -220px;
+    }
+}

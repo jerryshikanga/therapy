@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
+
+<!-- Mirrored from www.talkspace.com/blog/page/10/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Dec 2018 16:07:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"><script src="../../../cdn-cgi/apps/head/pPkyCGpXOiX9s9rsG_uVgd8zFIo.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="icon" href="http://cdn.talkspace.com/homepage/images/icons/favicon_rebranded.ico?ver5" />
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback" href="../../../index.html">
+<!--[if lt IE 9]>
+	<script src="https://www.talkspace.com/blog/wp-content/themes/twentyfifteen/js/html5.js"></script>
+	<![endif]-->
+<script>(function(){document.documentElement.className='js'})();</script>
+<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Page 10 &#8211; #1 Mental Health Blog &#8211; Talkspace</title>
+
+<link rel="canonical" href="../../2018/08/5-ways-turn-day-around-now/page/10/index.html" />
+<link rel="prev" href="../../2018/08/5-ways-turn-day-around-now/page/9/index.html" />
+<link rel="next" href="../../2018/08/5-ways-turn-day-around-now/page/11/index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.talkspace.com/blog/2018/08/5-ways-turn-day-around-now/" />
+<meta property="og:site_name" content="#1 Mental Health Blog - Talkspace" />
+<meta property="og:image" content="https://www.talkspace.com/blog/wp-content/uploads/2018/08/5-ways-turn-day-around-now_1320w_rm-1.jpg" />
+<meta property="og:image:secure_url" content="https://www.talkspace.com/blog/wp-content/uploads/2018/08/5-ways-turn-day-around-now_1320w_rm-1.jpg" />
+<meta property="og:image:width" content="1320" />
+<meta property="og:image:height" content="990" />
+<meta property="og:image:alt" content="A smiling fox with his eyes closed" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@talkspace" />
+<meta name="twitter:image" content="https://www.talkspace.com/blog/wp-content/uploads/2018/08/5-ways-turn-day-around-now_1320w_rm-1.jpg" />
+
+<link rel='dns-prefetch' href='../../../index.html' />
+<link rel='dns-prefetch' href='http://a.optmnstr.com/' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="#1 Mental Health Blog - Talkspace &raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="#1 Mental Health Blog - Talkspace &raquo; Comments Feed" href="../../comments/feed/index.html" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.talkspace.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='easy_author_image-css' href='../../wp-content/plugins/easy-author-image/css/easy-author-imaged87f.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-public-css-main-css' href='../../wp-content/plugins/tweetthis/assets/css/public-maind87f.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-public-css-theme-css' href='../../wp-content/plugins/tweetthis/assets/css/themes/lightd87f.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css' href='../../wp-content/plugins/wp-pagenavi/pagenavi-css44fd.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-fonts-css' href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css' href='../../wp-content/themes/twentyfifteen/genericons/genericonscf1b.css?ver=3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css' href='../../wp-content/themes/twentyfifteen-child/styled87f.css?ver=4.9.9' type='text/css' media='all' />
+<style id='twentyfifteen-style-inline-css' type='text/css'>
+
+		/* Custom Sidebar Text Color */
+		.site-title a,
+		.site-description,
+		.secondary-toggle:before {
+			color: #222f2d;
+		}
+
+		.site-title a:hover,
+		.site-title a:focus {
+			color: #222f2d; /* Fallback for IE7 and IE8 */
+			color: rgba( 34, 47, 45, 0.7);
+		}
+
+		.secondary-toggle {
+			border-color: #222f2d; /* Fallback for IE7 and IE8 */
+			border-color: rgba( 34, 47, 45, 0.1);
+		}
+
+		.secondary-toggle:hover,
+		.secondary-toggle:focus {
+			border-color: #222f2d; /* Fallback for IE7 and IE8 */
+			border-color: rgba( 34, 47, 45, 0.3);
+		}
+
+		.site-title a {
+			outline-color: #222f2d; /* Fallback for IE7 and IE8 */
+			outline-color: rgba( 34, 47, 45, 0.3);
+		}
+
+		@media screen and (min-width: 59.6875em) {
+			.secondary a,
+			.dropdown-toggle:after,
+			.widget-title,
+			.widget blockquote cite,
+			.widget blockquote small {
+				color: #222f2d;
+			}
+
+			.widget button,
+			.widget input[type="button"],
+			.widget input[type="reset"],
+			.widget input[type="submit"],
+			.widget_calendar tbody a {
+				background-color: #222f2d;
+			}
+
+			.textwidget a {
+				border-color: #222f2d;
+			}
+
+			.secondary a:hover,
+			.secondary a:focus,
+			.main-navigation .menu-item-description,
+			.widget,
+			.widget blockquote,
+			.widget .wp-caption-text,
+			.widget .gallery-caption {
+				color: rgba( 34, 47, 45, 0.7);
+			}
+
+			.widget button:hover,
+			.widget button:focus,
+			.widget input[type="button"]:hover,
+			.widget input[type="button"]:focus,
+			.widget input[type="reset"]:hover,
+			.widget input[type="reset"]:focus,
+			.widget input[type="submit"]:hover,
+			.widget input[type="submit"]:focus,
+			.widget_calendar tbody a:hover,
+			.widget_calendar tbody a:focus {
+				background-color: rgba( 34, 47, 45, 0.7);
+			}
+
+			.widget blockquote {
+				border-color: rgba( 34, 47, 45, 0.7);
+			}
+
+			.main-navigation ul,
+			.main-navigation li,
+			.secondary-toggle,
+			.widget input,
+			.widget textarea,
+			.widget table,
+			.widget th,
+			.widget td,
+			.widget pre,
+			.widget li,
+			.widget_categories .children,
+			.widget_nav_menu .sub-menu,
+			.widget_pages .children,
+			.widget abbr[title] {
+				border-color: rgba( 34, 47, 45, 0.1);
+			}
+
+			.dropdown-toggle:hover,
+			.dropdown-toggle:focus,
+			.widget hr {
+				background-color: rgba( 34, 47, 45, 0.1);
+			}
+
+			.widget input:focus,
+			.widget textarea:focus {
+				border-color: rgba( 34, 47, 45, 0.3);
+			}
+
+			.sidebar a:focus,
+			.dropdown-toggle:focus {
+				outline-color: rgba( 34, 47, 45, 0.3);
+			}
+		}
+	
+</style>
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='https://www.talkspace.com/blog/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='https://www.talkspace.com/blog/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='mc4wp-form-basic-css' href='../../wp-content/plugins/mailchimp-for-wp/assets/css/form-basic.min5b31.css?ver=4.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='../../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<script type='text/javascript' src='../../wp-content/plugins/ns-comment-validator/public/js/jquery.validate.mind87f.js?ver=4.9.9'></script>
+<script type='text/javascript' src='../../wp-content/plugins/tweetthis/assets/js/tweet-this-boxd87f.js?ver=4.9.9'></script>
+<script type='text/javascript' data-cfasync="false" id="omapi-script" async="async" src='https://a.optmnstr.com/app/js/api.min.js'></script>
+<link rel='https://api.w.org/' href='../../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../index.html?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 4.9.9" />
+<style type="text/css">#commentform p.error,
+                  #commentform span.error,
+                  #commentform div.error,
+                  #commentform label.error{
+                    color:#FF0000;
+                    font-size:.9em;
+                    font-style:italic;
+                  }</style><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #f8f8f8; }
+</style>
+<link rel="icon" href="../../wp-content/uploads/2017/03/favicon.png" sizes="32x32" />
+<link rel="icon" href="../../wp-content/uploads/2017/03/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="../../wp-content/uploads/2017/03/favicon.png" />
+<meta name="msapplication-TileImage" content="https://www.talkspace.com/blog/wp-content/uploads/2017/03/favicon.png" />
+<style type="text/css" id="wp-custom-css">
+			.module-head .module-filter {
+	display: none;
+}
+
+.post-content .entry-content  a {
+	color: #0FC1A7 !important;
+	text-decoration: underline;
+} 
+
+#main-content .container a:hover {
+	text-decoration: underline;
+	color: #0fc1a7 !important;
+}
+
+#main-content .et_pb_extra_column_main .et_pb_text_inner h2 {
+	font-size: 45px;
+}
+
+.module {
+	border-top-color: #F4F5FA !important;
+}
+
+.module-head h1 {
+	color: #73788b !important;
+}
+
+.module-head .module-filter {
+	display: none;
+}
+
+.module .tabbed-post ul li{
+	color: rgba(0,0,0,.5);
+}
+
+.post-thumbnail {
+	background-color: #b8c1d1 !important;	
+}
+
+.tabbed-post-module .tabs ul li {
+	color: #73788b !important;
+}
+
+.entry-title .et-accent-color {
+	color: #0fc1a7 !important;
+}
+
+.post-header .entry-title {
+	font-size: 45px;
+}
+
+.post-content .entry-content  a {
+	color: #0FC1A7 !important;
+	text-decoration: underline;
+}
+
+.post-wrap h2 {
+	font-size: 38px;
+	margin: 50px 0 25px 0;
+}
+
+.post-wrap h3 {
+	font-size: 22px;
+	color: #73788b;
+	margin: 30px 0 25px 0;
+}
+
+@media only screen and (max-width: 480px) {
+       h1 { font-size: 30px !important;}
+       h2 { font-size: 24px !important; }
+       h3 { font-size: 20px !important; }
+     }
+
+@media only screen and (max-width: 640px) {
+	#et-info .et-top-search .et-search-field {
+    border: 1px solid;
+    border-color: #d4d4d4;
+		color: #003E47;
+}
+} 		</style>
+<link href='https://fonts.googleapis.com/css?family=Roboto:500,400italic,100,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
+</head>
+<body class="blog paged custom-background paged-10">
+
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M9F7GF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'http://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M9F7GF');</script>
+
+<div class="header">
+<div class="header-left">
+<a href="../../../index.html"><img src="http://cdn.talkspace.com/homepage/images/Logo_140X40@2x.png?ver5" width="140" height="40" alt="talkspace"></a>
+</div>
+<div class="header-right">
+<ul class="nav navbar-nav roboto-light">
+<li class=""><a class="inet" target="" href="../../index.html">BLOG</a></li>
+<li class=""><a target="_blank" " href="https://www.youtube.com/embed/YYBEuaM_gEc">OUR VIDEO</a></li>
+<li class=""><a class="inet" href="../../../auth/login.html">SIGN IN</a></li>
+</ul>
+</div>
+</div>
+<div id="page" class="hfeed site">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<div id="sidebar" class="sidebar">
+<header id="masthead" class="site-header" role="banner">
+<div class="site-branding">
+<p class="site-title"><a href="../../../index.html" rel="home">#1 Mental Health Blog &#8211; Talkspace</a></p>
+<p class="site-description">Therapy For How We Live Today</p>
+<button class="secondary-toggle">Menu and widgets</button>
+</div>
+</header>
+<div id="secondary" class="secondary">
+<div id="widget-area" class="widget-area" role="complementary">
+<aside id="text-3" class="widget widget_text"> <div class="textwidget"><div style="text-align: center;"><a href="https://lp.talkspace.com/online-therapy-with-a-licensed-therapist?utr_source=Blog&amp;utr_medium=CPC&amp;utr_campaign=BLOG_CTA_RHC&amp;utr_adgroup=right-hand-rail&amp;var=promo-b&amp;partner=Talkspace%20Blog&amp;code=BLOG45" target="_blank"><img src="../../wp-content/uploads/2016/11/CTA%402x.png" alt="Learn More About Talkspace"></a></div></div>
+</aside><aside id="text-6" class="widget widget_text"> <div class="textwidget"><div style="text-align: center;"><a href="https://courses.talkspace.com/?utr_source=Blog&amp;utr_medium=CPC&amp;utr_campaign=BLOG_CTA_RHC&amp;utr_adgroup=right-hand-rail" target="_blank"><img src="../../wp-content/uploads/2018/11/TS-Ecourse-CTA-rev.png" alt="The Talkspace Guide to Overcoming Stress At Work. Enroll Now."></a></div></div>
+</aside><aside id="text-2" class="widget widget_text"> <div class="textwidget"><script>(function() {
+	if (!window.mc4wp) {
+		window.mc4wp = {
+			listeners: [],
+			forms    : {
+				on: function (event, callback) {
+					window.mc4wp.listeners.push({
+						event   : event,
+						callback: callback
+					});
+				}
+			}
+		}
+	}
+})();
+</script><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-3367 mc4wp-form-basic" method="post" data-id="3367" data-name="Default sign-up form"><div class="mc4wp-form-fields"><p>
+<label style="font-weight: 300; font-size: 13px; letter-spacing: 0; line-height: 18px; color: #979797; text-align: center;">
+<span style="font-weight: 700; font-size: 17px; letter-spacing: 0; line-height: 23px; color: #00CAB6;">Join thousands of readers</span><br>
+Subscribe to our weekly digest and get posts in your inbox every week.</label>
+<input type="email" id="mc4wp_email" name="EMAIL" placeholder="Enter email address" required />
+</p>
+<p>
+<input type="submit" value="Subscribe" />
+</p></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1544802400" /><input type="hidden" name="_mc4wp_form_id" value="3367" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div></form></div>
+</aside><aside id="text-5" class="widget widget_text"><h2 class="widget-title">Get the Talkspace App</h2> <div class="textwidget"><a href="https://app.adjust.io/l6yexx" style="width: 48%; text-decoration: none; display: inline-block; border: 0; margin-right: 1%;"><img src="../../wp-content/uploads/2016/11/apple%402x-5.png"></a><a href="https://app.adjust.io/kw4oz4" style="width: 48%; text-decoration: none; display: inline-block; border: 0; margin-left: 1%;"><img src="../../wp-content/uploads/2016/11/google%402x-5.png"></a></div>
+</aside> <aside id="recent-posts-2" class="widget widget_recent_entries"> <h2 class="widget-title">Recent Posts</h2> <ul>
+<li>
+<a href="../../2018/12/relationship-control-dominant-person/index.html">When One Person Controls the Relationship</a>
+</li>
+<li>
+<a href="../../2018/12/relationship-chemistry-consistency/index.html">Chemistry or Consistency: What Makes for a Better Relationship</a>
+</li>
+<li>
+<a href="../../2018/12/dealing-with-distant-people/index.html">6 Ways to Deal With People Who Are Distant</a>
+</li>
+<li>
+<a href="../../2018/12/commitment-issues-reasons/index.html">5 Reasons for Your Commitment Issues</a>
+</li>
+<li>
+<a href="../../2018/12/does-exercise-help-depression-and-anxiety/index.html">Can You Really Exercise Away Depression and Anxiety?</a>
+</li>
+</ul>
+</aside><aside id="nav_menu-4" class="widget widget_nav_menu"><h2 class="widget-title">Featured Posts</h2><div class="menu-boost-links-container"><ul id="menu-boost-links" class="menu"><li id="menu-item-9809" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9809"><a href="../../2016/11/therapist-psychotherapist-complete-definition/index.html">What Is a Therapist? – The Complete Definition</a></li>
+<li id="menu-item-9808" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9808"><a href="../../2017/04/anxiety-attack-vs-panic-attack-one/index.html">Anxiety Attack vs. Panic Attack: Which One Are You Having?</a></li>
+<li id="menu-item-9806" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9806"><a href="../../2017/04/dealing-depression-need-know/index.html">Dealing With Depression: What You Need to Know</a></li>
+<li id="menu-item-9807" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9807"><a href="../../2017/05/mental-health-counselor/index.html">What Is a Mental Health Counselor?</a></li>
+<li id="menu-item-9811" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9811"><a href="../../2015/02/everything-you-need-to-know-about-couples-therapy/index.html">Everything You Need to Know About Couples Therapy</a></li>
+</ul></div></aside><aside id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2> <ul>
+<li class="cat-item cat-item-1279"><a href="../../category/abuse/index.html">Abuse</a>
+</li>
+<li class="cat-item cat-item-1045"><a href="../../category/addiction/index.html">Addiction</a>
+</li>
+<li class="cat-item cat-item-1293"><a href="../../category/anger/index.html">Anger</a>
+</li>
+<li class="cat-item cat-item-190"><a href="../../category/anxiety/index.html">Anxiety</a>
+</li>
+<li class="cat-item cat-item-1046"><a href="../../category/bipolar-disorder/index.html">Bipolar Disorder</a>
+</li>
+<li class="cat-item cat-item-1299"><a href="../../category/body-dysmorphic-disorder/index.html">Body Dysmorphic Disorder</a>
+</li>
+<li class="cat-item cat-item-1051"><a href="../../category/borderline-personality-disorder/index.html">Borderline Personality Disorder</a>
+</li>
+<li class="cat-item cat-item-1295"><a href="../../category/bullying/index.html">Bullying</a>
+</li>
+<li class="cat-item cat-item-1291"><a href="../../category/career/index.html">Career</a>
+</li>
+<li class="cat-item cat-item-1277"><a href="../../category/counselor/index.html">Counselor</a>
+</li>
+<li class="cat-item cat-item-962"><a href="../../category/dating/index.html">Dating</a>
+</li>
+<li class="cat-item cat-item-89"><a href="../../category/depression/index.html">Depression</a>
+</li>
+<li class="cat-item cat-item-1288"><a href="../../category/domestic-violence/index.html">Domestic Violence</a>
+</li>
+<li class="cat-item cat-item-990"><a href="../../category/eating-disorders-body-image/index.html">Eating Disorders &amp; Body Image</a>
+</li>
+<li class="cat-item cat-item-3"><a href="../../category/family-children/index.html">Family &amp; Children</a>
+</li>
+<li class="cat-item cat-item-965"><a href="../../category/fun-posts/index.html">Fun Posts</a>
+</li>
+<li class="cat-item cat-item-1268"><a href="../../category/general/index.html">General</a>
+</li>
+<li class="cat-item cat-item-932"><a href="../../category/going-to-therapy/index.html">Going to Therapy</a>
+</li>
+<li class="cat-item cat-item-1286"><a href="../../category/grief/index.html">Grief</a>
+</li>
+<li class="cat-item cat-item-1272"><a href="../../category/happiness/index.html">Happiness</a>
+</li>
+<li class="cat-item cat-item-468"><a href="../../category/lgbtq/index.html">LGBTQ</a>
+</li>
+<li class="cat-item cat-item-5"><a href="../../category/life-hacks/index.html">Life Hacks</a>
+</li>
+<li class="cat-item cat-item-964"><a href="../../category/lifestyle-wellness/index.html">Lifestyle &amp; Wellness</a>
+</li>
+<li class="cat-item cat-item-1280"><a href="../../category/loneliness/index.html">Loneliness</a>
+</li>
+<li class="cat-item cat-item-1294"><a href="../../category/marriage/index.html">Marriage</a>
+</li>
+<li class="cat-item cat-item-991"><a href="../../category/mental-health-stories/index.html">Mental Health Stories</a>
+</li>
+<li class="cat-item cat-item-1052"><a href="../../category/mental-health-warriors/index.html">Mental Health Warriors</a>
+</li>
+<li class="cat-item cat-item-1033"><a href="../../category/mindfulness/index.html">Mindfulness</a>
+</li>
+<li class="cat-item cat-item-1283"><a href="../../category/minority/index.html">Minority</a>
+</li>
+<li class="cat-item cat-item-1281"><a href="../../category/motivation/index.html">Motivation</a>
+</li>
+<li class="cat-item cat-item-1108"><a href="../../category/ocd/index.html">OCD</a>
+</li>
+<li class="cat-item cat-item-933"><a href="../../category/online-therapy-technology/index.html">Online Therapy &amp; Technology</a>
+</li>
+<li class="cat-item cat-item-1285"><a href="../../category/panic-attack/index.html">Panic Attack</a>
+</li>
+<li class="cat-item cat-item-1278"><a href="../../category/parenting/index.html">Parenting</a>
+</li>
+<li class="cat-item cat-item-1057"><a href="../../category/perfectionism/index.html">Perfectionism</a>
+</li>
+<li class="cat-item cat-item-1300"><a href="../../category/perfectionist/index.html">Perfectionist</a>
+</li>
+<li class="cat-item cat-item-1082"><a href="../../category/personality-disorders/index.html">Personality Disorders</a>
+</li>
+<li class="cat-item cat-item-1287"><a href="../../category/phobias/index.html">Phobias</a>
+</li>
+<li class="cat-item cat-item-956"><a href="../../category/politics-mental-health/index.html">Politics &amp; Mental Health</a>
+</li>
+<li class="cat-item cat-item-1270"><a href="../../category/psychology/index.html">Psychology</a>
+</li>
+<li class="cat-item cat-item-1297"><a href="../../category/psychopath/index.html">Psychopath</a>
+</li>
+<li class="cat-item cat-item-1072"><a href="../../category/ptsd/index.html">PTSD</a>
+</li>
+<li class="cat-item cat-item-963"><a href="../../category/recovery/index.html">Recovery</a>
+</li>
+<li class="cat-item cat-item-2"><a href="../../category/relationships/index.html">Relationships</a>
+</li>
+<li class="cat-item cat-item-1298"><a href="../../category/resilience/index.html">Resilience</a>
+</li>
+<li class="cat-item cat-item-1098"><a href="../../category/schizophrenia/index.html">Schizophrenia</a>
+</li>
+<li class="cat-item cat-item-1274"><a href="../../category/self-esteem/index.html">Self esteem</a>
+</li>
+<li class="cat-item cat-item-961"><a href="../../category/sex/index.html">Sex</a>
+</li>
+<li class="cat-item cat-item-1282"><a href="../../category/sleep/index.html">Sleep</a>
+</li>
+<li class="cat-item cat-item-928"><a href="../../category/social-media-use/index.html">Social Media Use</a>
+</li>
+<li class="cat-item cat-item-1296"><a href="../../category/sociopath/index.html">Sociopath</a>
+</li>
+<li class="cat-item cat-item-4"><a href="../../category/stigma/index.html">Stigma</a>
+</li>
+<li class="cat-item cat-item-69"><a href="../../category/stress/index.html">Stress</a>
+</li>
+<li class="cat-item cat-item-941"><a href="../../category/talkspace/index.html">Talkspace</a>
+</li>
+<li class="cat-item cat-item-1301"><a href="../../category/teens/index.html">Teens</a>
+</li>
+<li class="cat-item cat-item-1269"><a href="../../category/therapy/index.html">Therapy</a>
+</li>
+<li class="cat-item cat-item-1290"><a href="../../category/therapy-mental-health/index.html">Therapy / Mental Health</a>
+</li>
+<li class="cat-item cat-item-1273"><a href="../../category/topical/index.html">Topical</a>
+</li>
+<li class="cat-item cat-item-1292"><a href="../../category/trauma/index.html">Trauma</a>
+</li>
+<li class="cat-item cat-item-1"><a href="../../category/uncategorized/index.html">Uncategorized</a>
+</li>
+<li class="cat-item cat-item-1271"><a href="../../category/wellness/index.html">Wellness</a>
+</li>
+<li class="cat-item cat-item-1087"><a href="../../category/workplace-mental-health/index.html">Workplace Mental Health</a>
+</li>
+</ul>
+</aside> </div>
+</div>
+</div>
+<div id="content" class="site-content">
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<header>
+<h1 class="page-title screen-reader-text"></h1>
+</header>
+<article id="post-10574" class="post-10574 post type-post status-publish format-standard has-post-thumbnail hentry category-happiness">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2018/08/5-ways-turn-day-around-now/index.html" rel="bookmark" class="blue-title">5 Ways to Turn Your Day Around NOW</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2017/10/Reina-Gattuso-Head-Shot.jpg" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/reina-gattuso/index.html">Reina Gattuso</a></span>, Contributor<br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2018-08-16T10:00:27+00:00">August 16, 2018</time><time class="updated" datetime="2018-09-11T11:57:56+00:00">September 11, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="990" src="../../wp-content/uploads/2018/08/5-ways-turn-day-around-now_1320w_rm-1.jpg" class="attachment- size- wp-post-image" alt="A smiling fox with his eyes closed" srcset="https://www.talkspace.com/blog/wp-content/uploads/2018/08/5-ways-turn-day-around-now_1320w_rm-1.jpg 1320w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/5-ways-turn-day-around-now_1320w_rm-1-300x225.jpg 300w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/5-ways-turn-day-around-now_1320w_rm-1-768x576.jpg 768w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/5-ways-turn-day-around-now_1320w_rm-1-1024x768.jpg 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<p>Science knows the secret to happiness — and it’s a lot more simple than you’d think.</p>
+<p>That, at least, was the message of a recent <i>New York </i>article that summarized the scientific consensus on what makes humans happy. And, well: turns out that you could probably guess the answers. Beyond having your basic needs met, money, as your mom probably could have told you, does not buy happiness — though it can buy free time to do what you want, which does make you happier. Gratitude is good. Social connection is important. Doing things for others makes us feel better about ourselves.</p>
+<p>This is all well and good for the long term. Sure, we all plan to incorporate more family time into our days, take up a hobby, and give back. But when you’re having a crappy day, it’s not enough to plan for the future — you want to know how can the research on happiness can make your day better <i>now</i>.</p>
+<p> <a href="../../2018/08/5-ways-turn-day-around-now/index.html#more-10574" class="more-link">Continue reading <span class="screen-reader-text">5 Ways to Turn Your Day Around NOW</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-10569" class="post-10569 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized category-wellness">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2018/08/5-daily-habits-that-are-actually-hurting-your-mental-health/index.html" rel="bookmark" class="blue-title">5 Daily Habits That Are Actually Hurting Your Mental Health</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2018/07/hope-alcocer_headshot.jpg" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/hopealcocer/index.html">Hope Alcocer</a></span><br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2018-08-15T10:00:23+00:00">August 15, 2018</time><time class="updated" datetime="2018-09-11T11:58:49+00:00">September 11, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="880" src="../../wp-content/uploads/2018/08/5-daily-habits-that-are-actually-hurting-your-mental-health_1320w_rm-1.jpg" class="attachment- size- wp-post-image" alt="two men and a woman staring at phones while waiting on a train platform" srcset="https://www.talkspace.com/blog/wp-content/uploads/2018/08/5-daily-habits-that-are-actually-hurting-your-mental-health_1320w_rm-1.jpg 1320w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/5-daily-habits-that-are-actually-hurting-your-mental-health_1320w_rm-1-300x200.jpg 300w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/5-daily-habits-that-are-actually-hurting-your-mental-health_1320w_rm-1-768x512.jpg 768w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/5-daily-habits-that-are-actually-hurting-your-mental-health_1320w_rm-1-1024x683.jpg 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<p>If you’re anything like me, you have a routine set in place from the moment you wake up.</p>
+<p><i>Open eyes. </i></p>
+<p><i>Check the dog&#8230;yep, still breathing. </i></p>
+<p><i>Roll over and check on my boyfriend — yup, he’s still breathing, too. </i></p>
+<p><i>From there, I immediately grab my phone and open each social media app to see what breaking news I’ve missed over the last, oh, six hours, and then begin my day. </i></p>
+<p>Some of my routines, the morning workout, might be beneficial, but the more I work on my mental health, the more I realize that some of my <a href="../../2018/04/ways-youre-making-life-harder-than-needs-be/index.html" target="_blank" rel="nofollow">daily habits</a> could potentially be harming my well-being. Charles Duhigg, author of <i>The Power of Habit </i>and former business writer for the New York<i> Times</i>, writes that “Routines are the organizational analogue of habits,” and that starting new habits can be as difficult as breaking bad ones — but that harnessing the power of routine can have powerful effects on both productivity and our mental state.</p>
+<p> <a href="../../2018/08/5-daily-habits-that-are-actually-hurting-your-mental-health/index.html#more-10569" class="more-link">Continue reading <span class="screen-reader-text">5 Daily Habits That Are Actually Hurting Your Mental Health</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-10564" class="post-10564 post type-post status-publish format-standard has-post-thumbnail hentry category-anxiety">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2018/08/3-ways-city-living-increases-anxiety/index.html" rel="bookmark" class="blue-title">3 Ways City Living Increases Your Anxiety</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2018/03/Bio-Photo-e1520863537462-300x300.jpg" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/jessica-dubois-maahs/index.html">Jessica DuBois-Maahs</a></span>, Contributor<br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2018-08-14T10:00:04+00:00">August 14, 2018</time><time class="updated" datetime="2018-09-11T12:01:25+00:00">September 11, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="880" src="../../wp-content/uploads/2018/08/3-ways-city-living-increases-anxiety_1320W_RM-1.jpg" class="attachment- size- wp-post-image" alt="Times Square New York City" srcset="https://www.talkspace.com/blog/wp-content/uploads/2018/08/3-ways-city-living-increases-anxiety_1320W_RM-1.jpg 1320w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/3-ways-city-living-increases-anxiety_1320W_RM-1-300x200.jpg 300w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/3-ways-city-living-increases-anxiety_1320W_RM-1-768x512.jpg 768w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/3-ways-city-living-increases-anxiety_1320W_RM-1-1024x683.jpg 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<p>Many are drawn to big cities for their vibrant culture and promise of better career opportunities — just ask the <a href="https://www.citylab.com/equity/2012/03/us-urban-population-what-does-urban-really-mean/1589/" target="_blank" rel="nofollow">80 percent</a> of the U.S. population that lives in an urban area. And while the allure of “city lights” can both inspire and provide an escape from the monotony of more rural environments, the constant crowds, congestion, and noise can actually trigger and worsen a person’s anxiety.</p>
+<p>It is widely understood that many who live in a city experience daily stress, such as public transportation issues and rapidly rising rent costs, but research reveals the stress of urban living is more than just a daily annoyance — it significantly impacts a person’s mental health. So what is it about the city that makes a person’s anxiety spike?</p>
+<p>There are three primary ways.</p>
+<p> <a href="../../2018/08/3-ways-city-living-increases-anxiety/index.html#more-10564" class="more-link">Continue reading <span class="screen-reader-text">3 Ways City Living Increases Your Anxiety</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-10559" class="post-10559 post type-post status-publish format-standard has-post-thumbnail hentry category-wellness">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2018/08/12-best-ways-spend-mental-health-day-according-therapist/index.html" rel="bookmark" class="blue-title">The 12 Best Ways to Spend a Mental Health Day (According to a Therapist)</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2016/10/Jor-El-Caraballo-290x300.png" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/jor-el-caraballo/index.html">Jor-El Caraballo</a></span>, Talkspace Therapist<br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2018-08-13T10:00:22+00:00">August 13, 2018</time><time class="updated" datetime="2018-09-11T12:05:17+00:00">September 11, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="880" src="../../wp-content/uploads/2018/08/12-best-ways-spend-mental-health-day-according-therapist_1320W_RM-1-e1533936091968.jpg" class="attachment- size- wp-post-image" alt="Man laying in hammock with dog laying head on lap" /> 
+
+</div>
+<p>Everyone has their own way of embracing self-care and addressing their mental health. It&#8217;s important for your mental well-being and can provide a valuable reset that leaves you more positive and productive going forward. Today, we’re sharing some secret tips from a therapist on the best way you can spend your mental health day.</p>
+<p> <a href="../../2018/08/12-best-ways-spend-mental-health-day-according-therapist/index.html#more-10559" class="more-link">Continue reading <span class="screen-reader-text">The 12 Best Ways to Spend a Mental Health Day (According to a Therapist)</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-10554" class="post-10554 post type-post status-publish format-standard has-post-thumbnail hentry category-anxiety category-depression">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2018/08/what-flaking-on-plans-says-about-your-mental-health/index.html" rel="bookmark" class="blue-title">What Flaking on Plans Says About Your Mental Health</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2017/07/Ashley-Laderer-1-square.png" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/ashley-laderer/index.html">Ashley Laderer</a></span>, Contributor<br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2018-08-10T10:00:56+00:00">August 10, 2018</time><time class="updated" datetime="2018-10-03T11:58:05+00:00">October 3, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="880" src="../../wp-content/uploads/2018/08/what-flaking-on-plans-says-about-your-mental-health_1320W_RM-1.jpg" class="attachment- size- wp-post-image" alt="Woman watching tv on couch messily eating popcorn" srcset="https://www.talkspace.com/blog/wp-content/uploads/2018/08/what-flaking-on-plans-says-about-your-mental-health_1320W_RM-1.jpg 1320w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/what-flaking-on-plans-says-about-your-mental-health_1320W_RM-1-300x200.jpg 300w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/what-flaking-on-plans-says-about-your-mental-health_1320W_RM-1-768x512.jpg 768w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/what-flaking-on-plans-says-about-your-mental-health_1320W_RM-1-1024x683.jpg 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<p>I can’t lie — I love how good it feels to flake on plans I really didn’t want any part of in the first place. Sweet relief! (But I swear, I really don’t do this often.)</p>
+<p>However, I’ll be the first to admit that my plan cancelling is usually the result of something that runs a little deeper than the desire to stay in my PJs and be lazy on the couch. In fact, flakiness — especially sudden-onset flakiness — can sometimes be an indicator of something going on with your mental health.</p>
+<p> <a href="../../2018/08/what-flaking-on-plans-says-about-your-mental-health/index.html#more-10554" class="more-link">Continue reading <span class="screen-reader-text">What Flaking on Plans Says About Your Mental Health</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-10549" class="post-10549 post type-post status-publish format-standard has-post-thumbnail hentry category-relationships">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2018/08/people-pleasing-negatively-affect-mental-health/index.html" rel="bookmark" class="blue-title">How Does People Pleasing Negatively Affect Your Mental Health?</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2017/10/Reina-Gattuso-Head-Shot.jpg" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/reina-gattuso/index.html">Reina Gattuso</a></span>, Contributor<br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2018-08-09T10:00:54+00:00">August 9, 2018</time><time class="updated" datetime="2018-09-11T12:08:31+00:00">September 11, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="874" src="../../wp-content/uploads/2018/08/people-pleasing-negatively-affect-mental-health_1320W_RM-1.jpg" class="attachment- size- wp-post-image" alt="a hamster with its front paws together" srcset="https://www.talkspace.com/blog/wp-content/uploads/2018/08/people-pleasing-negatively-affect-mental-health_1320W_RM-1.jpg 1320w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/people-pleasing-negatively-affect-mental-health_1320W_RM-1-300x199.jpg 300w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/people-pleasing-negatively-affect-mental-health_1320W_RM-1-768x509.jpg 768w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/people-pleasing-negatively-affect-mental-health_1320W_RM-1-1024x678.jpg 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<p>Imagine walking down a crowded street. You’re strolling along, minding your own business, when suddenly someone who is texting while walking (a <a href="https://www.wsj.com/articles/texting-while-walking-isnt-funny-anymore-1455734501" target="_blank" rel="nofollow">dangerous pastime</a>!) bumps right into you. You know that person bumped into you and not the other way around. You know that it wasn’t your fault and that it was, in fact, their fault.</p>
+<p>Do you say sorry?</p>
+<p> <a href="../../2018/08/people-pleasing-negatively-affect-mental-health/index.html#more-10549" class="more-link">Continue reading <span class="screen-reader-text">How Does People Pleasing Negatively Affect Your Mental Health?</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-10531" class="post-10531 post type-post status-publish format-standard has-post-thumbnail hentry category-career">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2018/08/why-successful-people-struggle-with-mental-illness/index.html" rel="bookmark" class="blue-title">Why Successful People Struggle with Mental Illness</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2017/06/Renee_Fabian.png" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/renee-fabian/index.html">Renee Fabian</a></span>, Contributor<br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2018-08-08T10:00:22+00:00">August 8, 2018</time><time class="updated" datetime="2018-10-03T11:50:30+00:00">October 3, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="880" src="../../wp-content/uploads/2018/08/why-successful-people-struggle-with-mental-illness_1320W_RM-1.png" class="attachment- size- wp-post-image" alt="actor jim carrey wearing dark glasses" srcset="https://www.talkspace.com/blog/wp-content/uploads/2018/08/why-successful-people-struggle-with-mental-illness_1320W_RM-1.png 1320w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/why-successful-people-struggle-with-mental-illness_1320W_RM-1-300x200.png 300w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/why-successful-people-struggle-with-mental-illness_1320W_RM-1-768x512.png 768w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/why-successful-people-struggle-with-mental-illness_1320W_RM-1-1024x683.png 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<p>It doesn’t take long to assemble an impressive list of successful people who also struggle with mental illness. Comedian/actor <a href="http://www.ladbible.com/mental-health/celebrity-interesting-funnyman-jim-carrey-opens-up-about-his-mental-health-battles-20171123" target="_blank" rel="nofollow">Jim Carrey</a> experienced clinical depression, <i>Harry Potter </i>author <a href="https://themighty.com/2015/08/5-times-j-k-rowling-got-real-about-depression/" target="_blank" rel="nofollow">J.K. Rowling</a> also combatted depression, entrepreneur/business mogul/founder of CNN <a href="https://www.forbes.com/2003/01/30/cx_da_0130topnews.html#542bf339712f" target="_blank" rel="nofollow">Ted Turner</a> lives with bipolar disorder, accomplished athlete <a href="http://www.cnn.com/2008/HEALTH/conditions/04/15/herschel.walker.did/index.html" target="_blank" rel="nofollow">Herschel Walker</a> revealed he has dissociative identity disorder, and <a href="http://www.brianwilson.com/news/2012/11/30/brian-featured-in-people-magazine" target="_blank" rel="nofollow">Brian Wilson </a>of Beach Boys fame has been diagnosed with schizoaffective disorder.</p>
+<p> <a href="../../2018/08/why-successful-people-struggle-with-mental-illness/index.html#more-10531" class="more-link">Continue reading <span class="screen-reader-text">Why Successful People Struggle with Mental Illness</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-10542" class="post-10542 post type-post status-publish format-standard has-post-thumbnail hentry category-career">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2018/08/boss-affecting-mental-health/index.html" rel="bookmark" class="blue-title">Is Your Boss Affecting Your Mental Health?</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2018/07/hope-alcocer_headshot.jpg" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/hopealcocer/index.html">Hope Alcocer</a></span><br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2018-08-07T10:00:50+00:00">August 7, 2018</time><time class="updated" datetime="2018-10-03T11:51:21+00:00">October 3, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="879" src="../../wp-content/uploads/2018/08/boss-affecting-mental-health_1320W_RM-1.jpg" class="attachment- size- wp-post-image" alt="woman leading a meeting in a conference room" srcset="https://www.talkspace.com/blog/wp-content/uploads/2018/08/boss-affecting-mental-health_1320W_RM-1.jpg 1320w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/boss-affecting-mental-health_1320W_RM-1-300x200.jpg 300w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/boss-affecting-mental-health_1320W_RM-1-768x511.jpg 768w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/boss-affecting-mental-health_1320W_RM-1-1024x682.jpg 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<p>One-third of our life is spent at work. That’s nearly <a href="https://www.businessinsider.com/disturbing-facts-about-your-job-2011-2" target="_blank" rel="nofollow">90,000 hours</a> of life. Suffice it to say that if you are spending that much time at work, it needs to be a positive environment that does not compromise your mental health. And the relationship with your boss is maybe the most vital piece for a healthy workplace.</p>
+<p> <a href="../../2018/08/boss-affecting-mental-health/index.html#more-10542" class="more-link">Continue reading <span class="screen-reader-text">Is Your Boss Affecting Your Mental Health?</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-10527" class="post-10527 post type-post status-publish format-standard has-post-thumbnail hentry category-career">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2018/08/what-to-do-if-you-lose-it-at-work/index.html" rel="bookmark" class="blue-title">What to Do if You &#8216;Lose It&#8217; at Work</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2017/07/wendy-wisner-bio-pic-square-1.png" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/wendy-wisner/index.html">Wendy Wisner</a></span>, Contributor<br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2018-08-06T10:00:20+00:00">August 6, 2018</time><time class="updated" datetime="2018-10-03T11:49:48+00:00">October 3, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="813" src="../../wp-content/uploads/2018/08/lose-it-at-work_1320W_RM-1.jpg-.jpg" class="attachment- size- wp-post-image" alt="man in business suit crying" srcset="https://www.talkspace.com/blog/wp-content/uploads/2018/08/lose-it-at-work_1320W_RM-1.jpg-.jpg 1320w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/lose-it-at-work_1320W_RM-1.jpg--300x185.jpg 300w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/lose-it-at-work_1320W_RM-1.jpg--768x473.jpg 768w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/lose-it-at-work_1320W_RM-1.jpg--1024x631.jpg 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<p>It’s no wonder that work stresses so many of us out. Americans work longer hours with less vacation time<a href="https://abcnews.go.com/US/story?id=93364&amp;page=1" target="_blank" rel="nofollow"> than anyone in the developed world</a>. This can make it difficult to balance work life with family life, friendships, and your own emotional and physical self-care.</p>
+<p>For some of us, this stress can take a real toll on our performance at work, and when stress reaches a breaking point, some of us are apt to “lose it” — perhaps lashing out at colleagues, acting unreasonably, or losing our tempers.</p>
+<p> <a href="../../2018/08/what-to-do-if-you-lose-it-at-work/index.html#more-10527" class="more-link">Continue reading <span class="screen-reader-text">What to Do if You &#8216;Lose It&#8217; at Work</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+<article id="post-10516" class="post-10516 post type-post status-publish format-standard has-post-thumbnail hentry category-therapy category-wellness">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../2018/08/therapists-caring-for-their-mental-health/index.html" rel="bookmark" class="blue-title">4 Therapists Open Up About Caring for Their Mental Health</a></h2> <div class="article-info">
+<div class="author-avatar">
+<img class="avatar avatar-45 photo" width="64" height="64" src="../../wp-content/uploads/2016/02/ts-avatar3.png" /> </div>
+<span class="author vcard"><span class="screen-reader-text">Author </span>By <a class="url fn n author-underline" href="../../author/talkspace/index.html">Talkspace</a></span><br><span class="article-date"><span class="screen-reader-text">Posted: </span><time class="entry-date published" datetime="2018-08-03T10:15:04+00:00">August 3, 2018</time><time class="updated" datetime="2018-09-11T12:35:45+00:00">September 11, 2018</time></span> </div>
+</header>
+<div class="entry-content">
+<div class="post-thumbnail">
+<img width="1320" height="881" src="../../wp-content/uploads/2018/08/therapists-caring-for-their-mental-health_1320W_JW-1.jpg" class="attachment- size- wp-post-image" alt="A group of people puts their hands in a circle" srcset="https://www.talkspace.com/blog/wp-content/uploads/2018/08/therapists-caring-for-their-mental-health_1320W_JW-1.jpg 1320w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/therapists-caring-for-their-mental-health_1320W_JW-1-300x200.jpg 300w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/therapists-caring-for-their-mental-health_1320W_JW-1-768x513.jpg 768w, https://www.talkspace.com/blog/wp-content/uploads/2018/08/therapists-caring-for-their-mental-health_1320W_JW-1-1024x683.jpg 1024w" sizes="(max-width: 1320px) 100vw, 1320px" /> 
+
+</div>
+<p>Therapists provide an incredibly valuable service: helping others work through issues and roadblocks, leading them toward more positive mental health and life experiences.</p>
+<p>It’s almost superhuman how therapists work with their clients on such a deep level, while maintaining their energy at home, in their own personal lives, and confronting their own challenges.</p>
+<p>We recently asked Talkspace therapists a few questions about how they support their own mental health and wellness. Did you know that therapists also seek therapy and counseling? Their answers, and more insight into the lives of therapists, are below.</p>
+<p> <a href="../../2018/08/therapists-caring-for-their-mental-health/index.html#more-10516" class="more-link">Continue reading <span class="screen-reader-text">4 Therapists Open Up About Caring for Their Mental Health</span></a></p>
+<div class='ctx-subscribe-container ctx-personalization-container ctx_default_placement ctx-clearfix'></div><div class='ctx-social-container ctx_default_placement ctx-clearfix'></div><div class='ctx-module-container ctx_default_placement ctx-clearfix'></div><span class="ctx-article-root"></span>
+</div>
+<footer class="entry-footer">
+</footer>
+</article><div class='wp-pagenavi' role='navigation'>
+<a class="first" href="../../index.html">« First</a><a class="previouspostslink" rel="prev" href="../9/index.html">‹</a><a class="smaller page" title="Page 5" href="../5/index.html">5</a><span class='extend'></span><a class="page smaller" title="Page 9" href="../9/index.html">9</a><span aria-current='page' class='current'>10</span><a class="page larger" title="Page 11" href="../11/index.html">11</a><span class='extend'></span><a class="larger page" title="Page 15" href="../15/index.html">15</a><a class="larger page" title="Page 20" href="../20/index.html">20</a><a class="larger page" title="Page 25" href="../25/index.html">25</a><a class="larger page" title="Page 30" href="../30/index.html">30</a><a class="larger page" title="Page 35" href="../35/index.html">35</a><a class="larger page" title="Page 40" href="../40/index.html">40</a><a class="larger page" title="Page 45" href="../45/index.html">45</a><a class="larger page" title="Page 50" href="../50/index.html">50</a><a class="larger page" title="Page 55" href="../55/index.html">55</a><a class="larger page" title="Page 60" href="../60/index.html">60</a><a class="larger page" title="Page 65" href="../65/index.html">65</a><a class="larger page" title="Page 70" href="../70/index.html">70</a><a class="nextpostslink" rel="next" href="../11/index.html">›</a><a class="last" href="../79/index.html">Last »</a>
+</div>
+</main>
+</div>
+</div>
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info">
+<div class="footer-row">
+<ul class="footer-menu">
+<li class="footer-links"><a class="inet" href="../../index.html">Blog</a></li>
+<li class="footer-links"><a class="inet" href="../../../public/contact-us.html">Contact Us</a></li>
+<li class="footer-links"><a class="inet" href="https://help.talkspace.com/hc/en-us">FAQ</a></li>
+<li class="footer-links"><a class="inet" href="https://talkspace.workable.com/" target="_blank">Careers</a></li>
+<li class="footer-links"><a class="inet" href="../../../public/privacy-policy.html">Privacy Policy</a></li>
+<li class="footer-links"><a class="inet" href="../../../join-as-a-therapist.html">Therapist? Join Us!</a></li>
+<li class="footer-links"><a class="inet" href="../../../online-therapy/press/index.html">Press</a></li>
+</ul>
+</div>
+<div class="footer-row">
+<ul class="footer-menu">
+<li class="footer-links"><a class="inet" href="https://giftcard.talkspace.com/">Gift Card</a></li>
+<li class="footer-links"><a class="inet" href="../../../online-therapy/unlimited-messaging-therapy/index.html">Unlimited Messaging Therapy</a></li>
+<li class="footer-links"><a class="inet" href="../../../online-therapy/index.html">Online Therapy</a></li>
+<li class="footer-links"><a class="inet" href="../../../online-therapy/assessments/index.html">Assessments</a></li>
+<li class="footer-links"><a class="inet" href="../../../online-therapy/lgbt/index.html">LGBT</a></li>
+</ul>
+</div>
+<div class="footer-row">
+<ul class="footer-menu">
+<li class="footer-links"><a class="inet" href="../../../online-therapy/veterans/index.html">Veterans</a></li>
+<li class="footer-links"><a class="inet" href="../../../online-therapy/couples-therapy/index.html">Couples Therapy</a></li>
+<li class="footer-links"><a class="inet" href="../../../online-therapy/therapy-for-business/index.html">Therapy for Business</a></li>
+</ul>
+</div>
+<div class="row sep" style="display: none;">
+<ul>
+<li><a href="../../index.html">Blog</a> </li>
+<li><a class="inet" href="../../../public/contact-us.html">Contact us</a> </li>
+<li><a href="http://support.talkspace.com/help_center">FAQ</a> </li>
+<li><a class="inet" href="../../../public/terms.html">Our terms</a> </li>
+<li><a class="inet" href="../../../public/privacy-policy.html">Privacy policy</a> </li>
+<li><a class="inet" href="../../../public/therapist.html">Join us</a> </li>
+</ul>
+</div>
+<ul class="list-inline">
+<li class="social-inline">
+<a href="https://www.facebook.com/Talkspacetherapy" target="_blank" title="Facebook" class="social-icons">
+<img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Media_FB_25x25.png" alt="Facebook">
+</a>
+</li>
+<li class="social-inline">
+<a href="https://twitter.com/talkspace" target="_blank" title="Twitter" class="social-icons">
+<img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Medial_Twtr_25x25.png" alt="Twitter">
+</a>
+</li>
+<li class="social-inline">
+<a href="https://www.instagram.com/talkspace/?hl=en" target="_blank" title="Instagram" class="social-icons">
+<img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Medial_insta_25x25.png" alt="Instagram" data-pin-nopin="true">
+</a>
+</li>
+<li class="social-inline">
+<a href="https://www.pinterest.com/talkspace" target="_blank" title="Pinterest" class="social-icons">
+<img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Medial_Pntrst_25x25.png" alt="Pinterest">
+</a>
+</li>
+<li class="social-inline">
+<a href="https://www.linkedin.com/company/talkspace-online-therapy" target="_blank" title="LinkedIn" class="social-icons">
+<img class="img-responsive" src="http://cdn.talkspace.com/homepage/images/social-icons/Social_Medial_LI_25x25.png" alt="LinkedIn">
+</a>
+</li>
+</ul>
+<div class="row social" style="display: none;">
+<ul>
+<li> <a href="https://www.facebook.com/Talkspacetherapy" target="_blank" title="Facebook"> <img alt="Facebook" class="img-responsive" width="28" height="28" src="http://cdn.talkspace.com/homepage/images/social-icons/Facebook_Icon_28X28@2x.png?ver5" /> </a></li>
+<li> <a href="https://twitter.com/talkspace" target="_blank" title="Twitter"> <img alt="Twitter" class="img-responsive" width="30" height="28" src="http://cdn.talkspace.com/homepage/images/social-icons/Twitter_Icon_30X28@2x.png?ver5" /> </a> </li>
+<li> <a href="https://www.pinterest.com/talkspace" target="_blank" title="Pinterest"> <img alt="Pinterest" class="img-responsive" width="28" height="28" src="http://cdn.talkspace.com/homepage/images/social-icons/Pinterest_Icon_28X28@2x.png?ver5" /> </a></li>
+<li> <a href="../../index.html" target="_blank" title="Tumblr"> <img alt="Tumblr" class="img-responsive" width="28" height="28" src="http://cdn.talkspace.com/homepage/images/social-icons/Tumblr_Icon_28X28@2x.png?ver5" /> </a> </li>
+</ul>
+</div>
+<div class="warning"> If you are in a life threatening situation, do NOT use this site.<br>
+Call the 24-hr National Suicide Prevention Lifeline at 1.800.273.8255.<br>
+Your call will be routed to the crisis center near you. If your issue is an emergency, call 911 or go to your nearest emergency room. </div>
+</div>
+
+</footer>
+
+</div>
+
+<script>(function() {function addEventListener(element,event,handler) {
+	if(element.addEventListener) {
+		element.addEventListener(event,handler, false);
+	} else if(element.attachEvent){
+		element.attachEvent('on'+event,handler);
+	}
+}function maybePrefixUrlField() {
+	if(this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+		this.value = "http://" + this.value;
+	}
+}
+
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if( urlFields && urlFields.length > 0 ) {
+	for( var j=0; j < urlFields.length; j++ ) {
+		addEventListener(urlFields[j],'blur',maybePrefixUrlField);
+	}
+}/* test if browser supports date fields */
+var testInput = document.createElement('input');
+testInput.setAttribute('type', 'date');
+if( testInput.type !== 'date') {
+
+	/* add placeholder & pattern to all date fields */
+	var dateFields = document.querySelectorAll('.mc4wp-form input[type="date"]');
+	for(var i=0; i<dateFields.length; i++) {
+		if(!dateFields[i].placeholder) {
+			dateFields[i].placeholder = 'YYYY-MM-DD';
+		}
+		if(!dateFields[i].pattern) {
+			dateFields[i].pattern = '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])';
+		}
+	}
+}
+
+})();</script><script type='text/javascript' src='../../wp-content/themes/twentyfifteen/js/skip-link-focus-fixd01e.js?ver=20141010'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/themes/twentyfifteen/js/functions8337.js?ver=20150330'></script>
+<script type='text/javascript' src='../../wp-includes/js/wp-embed.mind87f.js?ver=4.9.9'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mc4wp_forms_config = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.min5b31.js?ver=4.3.1'></script>
+<!--[if lte IE 9]>
+<script type='text/javascript' src='https://www.talkspace.com/blog/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.3.1'></script>
+<![endif]-->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ae0508e4dc","applicationID":"80290978","transactionName":"blxVZEVVV0JQBk0IW1cWdlNDXVZfHgxXBVFB","queueTime":0,"applicationTime":197,"atts":"QhtWEg1PREw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<!-- Mirrored from www.talkspace.com/blog/page/10/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Dec 2018 16:07:53 GMT -->
+</html>
