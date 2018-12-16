@@ -5,5 +5,5 @@ app_name = "session"
 
 urlpatterns = [
     path("therapist/list/", views.TherapistListView.as_view(), name="therapist_list"),
-    path("session/start/therapist/<id:int>/", views.start_session, name="start_session_with_therapist")
+    path("session/start/therapist/<int:therapist_id>/", views.CreateSessionView.as_view(), name="start_session_with_therapist")
 ]

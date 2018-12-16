@@ -9,12 +9,12 @@ from djchoices import ChoiceItem, DjangoChoices
 
 # Create your models here.
 class Genders(DjangoChoices):
-    male = ChoiceItem("Male")
-    female = ChoiceItem("Female")
+    Male = ChoiceItem("Male")
+    Female = ChoiceItem("Female")
 
 
 class AbstractProfile(TimeStampedModel):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     date_of_birth = models.DateField(null=True, blank=True)
     gender = models.CharField(choices=Genders.choices, null=True, blank=True, max_length=10)
     description = models.TextField(null=True, blank=True)
@@ -33,6 +33,7 @@ class AbstractProfile(TimeStampedModel):
 
 @with_author
 class Therapist(AbstractProfile):
+    sessions = models.IntegerField(default=0)
     rating_total = models.IntegerField(default=0)
     raters = models.IntegerField(default=0)
 
