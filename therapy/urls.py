@@ -21,9 +21,10 @@ from django.conf import settings
 from profiles.views import index
 
 urlpatterns = [
-    path("", index, name="index_page"),
-    path("/", index, name="index_page"),
+    path("", index, name="home"),
+    path("/", index, name="home"),
     path('admin/', admin.site.urls),
     path("messages/", include("pinax.messages.urls", namespace="pinax_messages")),
     path("profiles/", include("profiles.urls")),
+    path("accounts/", include("django.contrib.auth.urls"))
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

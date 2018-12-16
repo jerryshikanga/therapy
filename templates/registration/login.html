@@ -1,12 +1,109 @@
 {% extends "base.html" %}
-
 {% block content %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 
-{% if form.errors %}
-<p>Your username and password didn't match. Please try again.</p>
-{% endif %}
+<!-- Mirrored from www.talkspace.com/auth/login by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Dec 2018 15:46:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script src="../../static/cdn-cgi/apps/head/pPkyCGpXOiX9s9rsG_uVgd8zFIo.js"></script><script type="text/javascript">/*build no. #252*/</script>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="p:domain_verify" content="351371caa9c91c7fb7e2cc43db54aa54" />
+<meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=yes" />
+<script type="text/javascript" src="../js/jquery.1.6.2.min03c6.js?252"></script>
+<script type="text/javascript" src="../js/jquery-ui.1.8.16.min03c6.js?252"></script>
+<script type="text/javascript" src="../js/jstz.min03c6.js?252"></script>
+<script type="text/javascript" src="../js/common_functions03c6.js?252"></script>
+<link href="../css/reset03c6.css?252" rel="stylesheet" type="text/css" />
+<link href="../fonts/stylesheet03c6.css?252" rel="stylesheet" type="text/css" />
+<link href="../css/common03c6.css?252" rel="stylesheet" type="text/css" />
+<link href="../css/jquery-ui/jquery-ui-1.8.21.custom03c6.css?252" rel="stylesheet" type="text/css" />
+<link rel="icon" href="../images/icons/favicon_rebranded1b26.ico?v2" />
+<link rel="apple-touch-icon" href="../images/appIcons/new-icon/60x60.png">
+<link rel="apple-touch-icon" href="../images/appIcons/new-icon/76x76.png">
+<link rel="apple-touch-icon" href="../images/appIcons/new-icon/120x120.png">
+<link rel="apple-touch-icon" href="../images/appIcons/new-icon/152x152.png"> <link href="../css/homepage03c6.css?252" rel="stylesheet" type="text/css" />
+<link href="../css/landing_page_therapist03c6.css?252" rel="stylesheet" type="text/css" />
+<link href="../css/tablet-device03c6.css?252" rel="stylesheet" type="text/css" />
+<link href="../css/responsive03c6.css?252" rel="stylesheet" type="text/css" />
 
-{% if next %}
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic,500italic,500' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href="../css/auth03c6.css?252" media="screen" rel="stylesheet" type="text/css"> <meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Talk with a therapist, over 50000 are getting help, get access to leading therapists who can help you overcome your day-to-day challenge. Start Now!">
+<meta name="keywords" content="Online Counseling, Professional therapy"> <meta property="og:title" content="therapy for how we live today" />
+<meta property="og:description" content="Get professional help and advice from a licensed and verified therapist. Talk about your challenges, ask questions about relationships, career, parenthood, depression, wellness and much more." />
+<meta property="og:image" content="https://www.talkspace.com/images/talktala-facebook-thumbnail.jpg" />
+<title>therapy for how we live today</title>
+<style type="text/css">
+        body{
+            font-family: "OpenSansRegular";
+        }
+    </style>
+<!--[if IE]><link href="/css/ie.css?252" type="text/css" media="screen, projection" /><![endif]-->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()
+{ (i[r].q=i[r].q||[]).push(arguments)}
+,i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-31727584-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+</head>
+<body class="public new-landing ">
+
+<script>
+    var dataLayerValue = {"user_id":0,"user_type":"","user_email":"","nickname":"","registration_channel":0,"registration_source":"","registration_campaign":"","user_funnel_variation_for_new_rooms":"","referred_by_user_id":"","registration_browser_referrer":"","registration_full_url":"","plan_name":"","therapist_id":0,"room_id":0,"room_payment_type":0,"room_purchase_type":"","room_funnel_variation":"","room_created_at":0,"room_plan_amount":0,"room_status":0,"room_created_from":0,"event":"defaultPageLoad","conversion_therapist_id":0,"module":"default","controller":"auth","action":"login"};
+    var dataLayer = []
+    if (dataLayerValue) {
+        dataLayerValue['window_url'] = window.location.href;
+        dataLayer = [dataLayerValue];
+
+    }
+
+
+</script>
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M9F7GF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'http://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M9F7GF');</script>
+
+<div class="navbar">
+<div class="navbar-logo">
+<img src="https://www.talkspace.com/images/login/ts_logo_white.png" " alt="">
+</div>
+</div>
+<div class="wrapper default_auth_login fontMelbourneRegular public grayBackground ">
+<div class="loginContainer">
+<div id="loginBox">
+<div class="logoWrap">
+<a href="https://www.talkspace.com/"><img src="https://www.talkspace.com/images/login/ts_logo.png" alt="logo" /></a>
+<div class="title">Log In</div>
+<div class="alternativeActionText switch-title roboto text-center">
+<span>or</span>
+<a id="registerLink">Create an Account</a>
+</div>
+</div>
+<div class="loginFormWrap">
+<div class="clear"></div>
+<form class="tmargin-20" id="loginForm" action="{% url 'login' %}" method="post">
+{% csrf_token %}
+<div class="authFormRow hasEditableInput">
+<div class="error"></div>
+<input placeholder="{{ form.username.label_tag }}" type="email" name="email" id="loginEmailFromPopup" autofocus />
+</div>
+<div class="authFormRow login-pass hasEditableInput">
+<div class="error">
+    {% if form.errors %}
+        <p>Your username and password didn't match. Please try again.</p>
+    {% endif %}
+    {% if next %}
     {% if user.is_authenticated %}
     <p>Your account doesn't have access to this page. To proceed,
     please login with an account that has access.</p>
@@ -14,25 +111,483 @@
     <p>Please login to see this page.</p>
     {% endif %}
 {% endif %}
-
-<form method="post" action="{% url 'login' %}">
-{% csrf_token %}
-<table>
-<tr>
-    <td>{{ form.username.label_tag }}</td>
-    <td>{{ form.username }}</td>
-</tr>
-<tr>
-    <td>{{ form.password.label_tag }}</td>
-    <td>{{ form.password }}</td>
-</tr>
-</table>
-
-<input type="submit" value="login">
-<input type="hidden" name="next" value="{{ next }}">
+</div>
+<input placeholder="{{ form.password.label_tag }}" type="password" name="password_v2" id="loginPassword_v2FromPopup" />
+<img class="pass-eye-login none" src="https://www.talkspace.com/images/login/show_password.png" alt="">
+</div>
+<input type="hidden" name="timezone" id="timezone" />
+<script type="text/javascript">
+			if (typeof jQuery != "undefined") {
+				$(document).ready(function() {
+					$("#timezone").val(_jsTimezoneName);
+				});
+			}
+		</script> <div class="authFormRow">
+<a class="forgotPassword" href="https://www.talkspace.com/auth/forgot-password">Forgot Password?</a>
+<div class="clear"></div>
+</div>
+<div class="authFormRow">
+<div class="rememberMeBox">
+<input class="left" type="checkbox" name="rememberMe" id="rememberMe" />
+    <input type="hidden" name="next" value="{{ next }}">
+<label for="rememberMe"></label>
+<div id="rememberMeLabel" class="left roboto">Remember me</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="authFormRow">
+<input class="buttonClassNew" type="submit" value="Log in" />
+<div class="clear"></div>
+</div>
+<div class="alternativeActionText roboto text-center">
+<span>or</span>
+<a href="{% url 'password_reset' %}">Lost password?</a>
+</div>
 </form>
+</div>
+</div>
+<div id="appstore-links">
+<a href="https://app.adjust.com/7jffgo" target="_blank">
+<button>
+<img src="https://www.talkspace.com/images/login/button_appstore_nobacking.png" width="128" alt="AppStore" />
+</button>
+</a>
+<a href="https://app.adjust.com/qqrhwx" target="_blank">
+<button>
+<img src="https://www.talkspace.com/images/login/button_playstore_nobacking.png" width="132" alt="GoogleStore" />
+</button>
+</a>
+</div>
+</div>
+<div class="registrationContainer none">
+<div id="registrationBox">
+<div class="logoWrap">
+<a href="https://www.talkspace.com/"><img src="https://www.talkspace.com/images/login/ts_logo.png" alt="logo" /></a>
+<div class="title">Create Account</div>
+<div class="alternativeActionText switch-title roboto text-center">
+<span>or</span>
+<a href="javascript: void(0);" id="loginLink">Log In</a>
+</div>
+</div>
+<div class="registerFormWrap">
+<div class="clear"></div>
+<form class="tmargin-20" id="registerForm" action="https://www.talkspace.com/registerpopup/basic-information" method="post">
+<div class="authFormRow hasEditableInput">
+<div class="error"></div>
+<input type="text" name="email" id="email" value="" class="user-input" maxlength="80" autocomplete="off" placeholder="Email"> </div>
+<div class="authFormRow register-pass hasEditableInput">
+<div class="error"></div>
+<input type="password" name="password_v2" id="password_v2" value="" class="user-input" autocomplete="off" placeholder="Password"> <img class="pass-eye-register none" src="https://www.talkspace.com/images/login/show_password.png" alt="">
+</div>
+<div class="info-field roboto">8 character minimum, no special characters</div>
+<div class="authFormRow hasEditableInput">
+<div class="error"></div>
+<input type="text" name="pseudonym" id="pseudonym" value="" class="user-input" maxlength="50" autocomplete="off" placeholder="Nickname"> </div>
+<div class="info-field roboto">This will be the name your therapist sees</div>
+<div class="authFormRow confirmAgeRow">
+<div>
+<input type="hidden" name="confirm_user_age" value="0"><input type="checkbox" name="confirm_user_age" id="confirm_user_age" value="1"> <label for="confirm_user_age"></label>
+<label for="confirm_user_age" class="roboto-light confirmAgeLabel">I am over 13 and agree to the <br> <a class="aTerms" target="_blank" href="https://www.talkspace.com/public/terms">Terms of Use</a> and <a class="aTerms" target="_blank" href="https://www.talkspace.com/public/privacy-policy">Privacy Policy</a></label>
+<div class="clear"></div>
+</div>
+<div class="error none"></div>
+</div>
+<input type="hidden" name="is_registration_page" value="1" />
+<input type="hidden" name="newsletter_subscription" value="1" />
+<input type="hidden" name="r_timezone" id="r_timezone" />
+<input type="hidden" id="registrationUrl" name="registrationUrl" />
+<script type="text/javascript">
+			if (typeof jQuery != "undefined") {
+				$(document).ready(function() {
+					$("#r_timezone").val(_jsTimezoneName);
+				});
+			}
+		</script>
+<div class="authFormRow submitBtn">
+<input class="buttonClassNew" type="submit" value="Sign Up" />
+</div>
+<div class="alternativeActionText roboto-light text-center">
+<span>or</span>
+<a href="javascript: void(0);" id="loginLink">Log In</a>
+</div>
+</form>
+</div>
+</div>
+<div id="appstore-links">
+<a href="https://app.adjust.com/7jffgo" target="_blank">
+<button>
+<img src="https://www.talkspace.com/images/login/button_appstore_nobacking.png" width="128" alt="AppStore" />
+</button>
+</a>
+<a href="https://app.adjust.com/qqrhwx" target="_blank">
+<button>
+<img src="https://www.talkspace.com/images/login/button_playstore_nobacking.png" width="132" alt="GoogleStore" />
+</button>
+</a>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+    var dataLayerValue = 0;
+    if (dataLayerValue && typeof dataLayer != "undefined") {
+        dataLayer.push(dataLayerValue);
+    }
 
-{# Assumes you setup the password_reset view in your URLconf #}
-<p><a href="{% url 'password_reset' %}">Lost password?</a></p>
+    addInputBlockLabel($('#email'), $('#email').attr('placeholder'));
+    addInputBlockLabel($('#password_v2'), $('#password_v2').attr('placeholder'));
+    addInputBlockLabel($('#pseudonym'), $('#pseudonym').attr('placeholder'));
 
-{% endblock %}
+
+    $('#confirm_user_age').bind('change', function() {
+        if(typeof $('#confirm_user_age').attr('checked') != 'undefined') {
+            $('#confirm_user_age + label:first-of-type').css({'background' : 'url(../images/login/auth_mark_check.png) center center no-repeat', 'background-size' : '25px'});
+        }
+        else {
+            $('#confirm_user_age + label:first-of-type').css({'background' : 'url(../images/login/auth_mark_default.png) center center no-repeat', 'background-size' : '25px'});
+        }
+    });
+
+    $('.authFormRow.register-pass input').keyup(function(event) {
+        if($('.authFormRow.register-pass input').val().length != 0) {
+            $('.pass-eye-register').removeClass('none');
+        }
+        else {
+            $('.pass-eye-register').addClass('none');
+        }
+    });
+
+    $('.pass-eye-register').bind('click', function(event) {
+        if($('.authFormRow.register-pass input').prop('type') == 'password') {
+            $('.authFormRow.register-pass input').prop('type', 'text');
+            $('.pass-eye-register').attr("src","https://www.talkspace.com/images/login/hide_password.png");
+        }
+        else {
+            $('.authFormRow.register-pass input').prop('type', 'password');
+            $('.pass-eye-register').attr("src","https://www.talkspace.com/images/login/show_password.png");
+        }
+    });
+
+    $('#registerForm').submit(function(e){
+        e.preventDefault();
+        $('#registrationUrl').val(window.location.href);
+        var formValues = $(this).serialize();
+
+        if (hasFlash()) {
+            formValues += '&hasFlash=' + true;
+        }
+        var therapistList = getURLParameter('tl');
+        if (therapistList != "null") {
+            formValues += '&therapistList=' + therapistList;
+        }
+
+        var submitBtn = $(this).find('input[type="submit"]');
+        submitBtn.ajaxLoader('show');
+
+        //auth register-participant
+        $.post($(this).attr('action'), formValues, function(data){
+            // invalid information
+            if (typeof data == 'string') {
+                submitBtn.ajaxLoader('');
+                $('.registrationContainer').html(data);
+
+                $('.registrationContainer').find(".error").each(function (idx,elem) {
+                    if ($(elem).text() !== '') {
+                        $(elem).parent('.authFormRow').addClass('input-error');
+                    }
+                });
+
+                if($('.confirmAgeRow .error').html() == 'red') {
+                    $('#confirm_user_age + label:first-of-type').css({'background' : 'url(../images/login/auth_mark_wrong.png) center center no-repeat', 'background-size' : '25px'});
+                }
+            } else if (typeof data == 'object' && data.success == true) {
+                if (data.url) {
+                    window.location.href = data.url;
+                }
+                else {
+                    window.location.href = "https://www.talkspace.com/member/dashboard";
+                }
+
+            }
+
+        });
+    });
+
+    // $('#registerForm input[type="text"], #registerForm input[type="password"]').bind('blur', function(){
+    //     var thisElem = $(this);
+    //     var errElem = thisElem.siblings('.error');
+    //     if (!thisElem.data('validationInProgress')) {
+    //         $.post('/registerpopup/validate-basic-information-element', {
+    //             name: thisElem.attr('name'),
+    //             value: thisElem.val(),
+    //             password: $('#registerForm').find('#password_v2').val()
+    //         }, function(data) {
+    //             if (data.success) {
+    //                 errElem.html('');
+    //             } else {
+    //                 errElem.html(data.message);
+    //             }
+    //             thisElem.data('validationInProgress', false);
+    //         });
+    //     }
+    // });
+
+    $('#email').select();
+
+    $('input#email, input#password_v2, input#pseudonym').bind('focus', function(e){
+        $(this).parent('.authFormRow').addClass('input-edit');
+    }).bind('blur', function(e){
+        $(this).parent('.authFormRow').removeClass('input-edit');
+    });
+
+    /*
+     * Fix IE9 HTML5 autofocus deficit
+     */
+    $('[autofocus]:not(:focus)').eq(0).focus();
+});
+
+</script></div>
+<div class="footerContainer absolute display_none">
+<ul id="page-footer-links">
+<li><a href="https://www.talkspace.com/blog">blog</a></li>
+<li><a href="https://www.talkspace.com/public/contact-us">Contact us</a></li>
+<li><a href="https://www.talkspace.com/public/terms">terms and conditions</a></li>
+<li><a href="https://www.talkspace.com/public/privacy-policy">privacy policy</a></li>
+</ul>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+    window.scroll(0, 0);
+        $('#email').bind('focus',function() {
+        $(window).scrollTop(0);
+        $(window).scrollTop(10);
+        setTimeout(function() {
+            $(window).scrollTop(0);
+        }, 100);
+    });
+        $('#registerLink').live('click',function() {
+        $('input#email').focus();
+        $('.loginContainer').hide(400, function() {
+            $(this).find('.error').empty();
+        });
+        $('.registrationContainer').show();
+        $('#email').focus();
+    });
+        $('#loginLink').live('click',function(){
+        $('.registrationContainer').hide();
+        $('.loginContainer').show();
+        $('.loginContainer #loginEmailFromPopup').focus();
+        $('.registrationContainer').hide(400, function() {
+            $(this).find('.error').empty();
+            $('#confirm_user_age + label:first-of-type').css({'background' : 'url(../images/login/auth_mark_default.png) center center no-repeat', 'background-size' : '25px'});
+        });
+    });
+
+
+    addInputBlockLabel($('#loginEmailFromPopup'), $('#loginEmailFromPopup').attr('placeholder'));
+    addInputBlockLabel($('#loginPassword_v2FromPopup'), $('#loginPassword_v2FromPopup').attr('placeholder'));
+
+    $('#loginPassword_v2FromPopup').keyup(function(event) {
+        if($('#loginPassword_v2FromPopup').val().length != 0) {
+            $('.pass-eye-login').removeClass('none');
+        }
+        else {
+            $('.pass-eye-login').addClass('none');
+        }
+    });
+
+    $('.pass-eye-login').bind('click', function(event) {
+        if($('input#loginPassword_v2FromPopup').prop('type') == 'password') {
+            $('input#loginPassword_v2FromPopup').prop('type', 'text');
+            $('.pass-eye-login').attr("src","https://www.talkspace.com/images/login/hide_password.png");
+        }
+        else {
+            $('input#loginPassword_v2FromPopup').prop('type', 'password');
+            $('.pass-eye-login').attr("src","https://www.talkspace.com/images/login/show_password.png");
+        }
+    });
+
+    $('#loginForm').submit(function(e){
+
+        if (!$(this).hasClass('loginDisabled')) {
+            $(this).addClass('loginDisabled');
+
+            e.preventDefault();
+            var postValues = $(this).serialize();
+            if (hasFlash()) {
+                postValues += '&hasFlash=' + true;
+            }
+
+
+            var submitBtn = $(this).find('input[type="submit"]');
+            submitBtn.ajaxLoader('show');
+
+            $.post($("#loginForm").attr("action"), postValues, function(data) {
+                data = $.parseJSON(data);
+
+                if (data.success == true) {
+                    var directUri = 'https://www.talkspace.com/auth/login';
+                    if (data.redirectUrl != '') {
+                        directUri = data.redirectUrl;
+                    }
+                    if (directUri.indexOf('ajax') == -1) {
+                        window.location.href = directUri;
+                    } else {
+                        window.location.reload();
+                    }
+                }
+
+                $('[id^="login"][id$="FromPopup"]').removeClass('input-error');
+
+                if (data.errorMessages) {
+                    submitBtn.ajaxLoader('');
+                    $('#loginForm').removeClass('loginDisabled');
+
+                    var html = '';
+                    for (property in data.errorMessages) {
+                        for (message in data.errorMessages[property]) {
+                            $("#login"+property.ucWords()+"FromPopup").siblings('.error').html(data.errorMessages[property][message]);
+                            $("#login"+property.ucWords()+"FromPopup").parent('.authFormRow').addClass('input-error');
+                        }
+                    }
+                }
+            });
+        }
+    });
+
+    $('#loginEmailFromPopup, #loginPassword_v2FromPopup').bind('focus', function(e){
+        $(this).parent('.authFormRow').addClass('input-edit');
+    }).bind('blur', function(e){
+        $(this).parent('.authFormRow').removeClass('input-edit');
+    });
+
+    $('#loginEmailFromPopup').focus();
+
+    $('.default_auth_login').height($(document).height());
+
+    $(window).bind('orientationchange', function(event) {
+        switch( window.orientation ) {
+            // portrait
+            case 0:
+            case 180:
+                $('.default_auth_login').height($(document).height());
+                break;
+            // landscape
+            case 90:
+            case -90:
+                $('.default_auth_login').height($(document).width());
+                break;
+        }
+    });
+
+});
+$(window).load(function() {
+    $('.default_auth_login').height($(document).height());
+    });
+$(window).resize(function() {
+    $('.default_auth_login').height($(document).height());
+    });
+
+$('#email').focus();
+/*
+ * Fix IE9 HTML5 autofocus deficit
+ */
+$('[autofocus]:not(:focus)').eq(0).focus();
+</script> </div>
+<div id="page-footer" class="display_none">
+<div id="page-footer-menu" class="pageCentered">
+<div>
+<ul id="page-footer-links" class="listmenu open-sans-regular">
+<li><a href="https://www.talkspace.com/blog">Blog</a></li>
+<li><a href="https://www.talkspace.com/public/contact-us" class="">Contact us</a></li>
+<li><a href="https://www.talkspace.com/online-therapy/faqs/">FAQ</a></li>
+<li><a href="https://www.talkspace.com/public/terms">Terms and conditions</a></li>
+<li><a href="https://www.talkspace.com/public/privacy-policy">Privacy policy</a></li>
+<li><a href="https://talkspace.com/online-therapy/join-talkspace-as-a-therapist/">Join as a Therapist</a></li>
+</ul>
+</div>
+<div>
+<ul id="page-footer-social" class="listmenu">
+<li><a href="https://www.talkspace.com/blog" target="_blank"><img src="https://www.talkspace.com/images/homepage/tumblr-icon.png" /></a></li>
+<li><a href="https://www.facebook.com/Talkspacetherapy" target="_blank"><img src="https://www.talkspace.com/images/homepage/facebook-icon.png" /></a></li>
+<li><a href="https://twitter.com/talkspace" target="_blank"><img src="https://www.talkspace.com/images/homepage/twitter-icon.png" /></a></li>
+<li><a href="https://www.pinterest.com/talkspace" target="_blank"><img src="https://www.talkspace.com/images/homepage/pinterest-icon.png" /></a></li>
+<li><a href="https://www.youtube.com/user/talktala" target="_blank"><img src="https://www.talkspace.com/images/homepage/youtube-icon.png" /></a></li>
+</ul>
+</div>
+</div>
+<div id="page-footer-suicide-notice">
+<div class="pageCentered center">
+<div class="footerSuicicePrevention">
+<p class="open-sans-semi-bold title">
+If you are in a life threatening situation, do NOT use this site.
+</p>
+<p class="open-sans-regular description">
+Call the 24-hr National Suicide Prevention Lifeline at <span>1.800.273.8255</span>.<br />
+Your call will be routed to the crisis center near you. If your issue is an emergency, call 911 or go to your nearest emergency room.
+</p>
+</div>
+</div>
+</div>
+<div id="page-footer-about" class="pageCentered">
+<div id="page-footer-secure-icons">
+<div>
+<img src="https://www.talkspace.com/images/homepage/company.jpg" alt="" />
+</div>
+</div>
+</div>
+</div><div id="latest-build-number" class="roboto none">Build #252</div>
+<script type="text/javascript">
+
+var _latestBuildNumberNs = function() {
+    var
+    element = null,
+    setElement = function(elem) {
+        element = elem;
+    },
+    keyDownEvent = function(e) {
+        /*
+        show build number
+        - on CTRL+A for non MacOS systems
+        - on CMD+A for MacOS
+        */
+        var
+        matchMacOs = navigator.appVersion.match(/macintosh/ig),
+        ctrlKeyNonMacOS = ( ! matchMacOs && e.ctrlKey ),
+        cmdKeyOnMacOS = ( matchMacOs && ! e.ctrlKey && e.metaKey );
+
+        if ( (ctrlKeyNonMacOS || cmdKeyOnMacOS) && e.keyCode == 65 && $(e.target).is('body') == true) {
+            element.show();
+        }
+    },
+    clickEvent = function(e) {
+        // hide build number on click event
+        if (element.is(':visible')) {
+            element.hide();
+        }
+    };
+
+    return {
+        setElement: setElement,
+        keyDownEvent: keyDownEvent,
+        clickEvent: clickEvent
+    };
+}();
+
+
+$(document).ready(function() {
+
+    _latestBuildNumberNs.setElement( $('#latest-build-number') );
+
+    $(document).keydown(function(e) {
+        _latestBuildNumberNs.keyDownEvent(e);
+    });
+
+    $(document).click(function(e) {
+        _latestBuildNumberNs.clickEvent(e);
+    });
+
+});
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d6af6a8e42","applicationID":"207365203","transactionName":"ZlBWbEYFXRUEBUUMDV8adVtADVwISgJUAwNEWUAXVRFHDkoKXgILXw==","queueTime":0,"applicationTime":49,"atts":"ShdVGg4fThs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+{% endblock content %}
+<!-- Mirrored from www.talkspace.com/auth/login by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Dec 2018 15:47:03 GMT -->
+</html>
