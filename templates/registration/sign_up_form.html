@@ -1,0 +1,20 @@
+{% extends 'registration/base_registration.html' %}
+
+{% block content %}
+<form action="{% url 'profiles:register' %}" method="post">
+    {% csrf_token %}
+    {% for field in form %}
+        <div class="agile-field-txt">
+            <label> {{ field.label_tag }} </label>
+            {{ field }}
+        {% if field.help_text %}
+          <small style="color: grey">{{ field.help_text }}</small>
+        {% endif %}
+        {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+        {% endfor %}
+        </div>
+    {% endfor %}
+    <input type="submit" value="SIGN UP">
+</form>
+{% endblock %}

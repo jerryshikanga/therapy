@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Jkuat Online Counselling</title>
+	<!-- Meta-Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Jkuat Online COunselling">
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta-Tags -->
+	<!-- Stylesheets -->
+	<link href="{% static '' %}css/style.css" rel='stylesheet' type='text/css' />
+	<!--// Stylesheets -->
+	<!--fonts-->
+	<link href="//fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+	<!--//fonts-->
+</head>
+
+<body>
+	<h1>JKUAT Counselling</h1>
+	<div class="w3ls-login box box--big">
+		<!-- form starts here -->
+        {% block content %}
+        {% endblock %}
+	</div>
+	<!-- //form ends here -->
+</body>
+</html>

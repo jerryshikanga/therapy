@@ -18,10 +18,13 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
-from profiles.views import index
+from profiles.views import index, contact, about
 
 urlpatterns = [
     path("", index, name="home"),
+    path("index.html", index, name="home"),
+    path("contact.html", contact, name="contact_page"),
+    path("about.html", about, name="about_page"),
     path('admin/', admin.site.urls),
     path("profiles/", include("profiles.urls")),
     path("session/", include("session.urls")),

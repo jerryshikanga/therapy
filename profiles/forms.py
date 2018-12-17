@@ -12,7 +12,7 @@ class SignUpForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ('username', 'first_name', 'last_name', 'email', 'password1', 'password2', )
+        fields = ('username', 'first_name', 'last_name', 'email', 'password1', 'password2',)
 
 
 class UserRoles(DjangoChoices):
@@ -24,9 +24,11 @@ class ProfileUpdateForm(forms.ModelForm):
     role = forms.ChoiceField(widget=forms.RadioSelect(), choices=UserRoles.choices, initial=UserRoles.Patient)
     telephone = forms.CharField(widget=forms.TextInput(), help_text="Use International format e.g. +254...")
     date_of_birth = forms.CharField(widget=forms.DateInput(format='%d/%m/%Y'), help_text="Use format YYYY-MM-DD")
+    picture = forms.ImageField()
 
     def __init__(self, *args, **kwargs):
         self.user = kwargs.pop("user")
+        self.picture = kwargs.pop("picture") if "picture" in kwargs else None
         super(ProfileUpdateForm, self).__init__(*args, **kwargs)
 
     class Meta:
@@ -36,7 +38,10 @@ class ProfileUpdateForm(forms.ModelForm):
     def save(self, *args, **kwargs):
         user_role = self.cleaned_data.get("role")
         kwargs = self.cleaned_data
-        kwargs.update({"user":self.user})
+        kwargs.update({
+            "user": self.user,
+            "picture": self.picture
+        })
         if user_role == UserRoles.Therapist:
             return Therapist.objects.get_or_create(user=kwargs["user"])
         elif user_role == UserRoles.Patient:

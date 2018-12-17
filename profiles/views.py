@@ -14,9 +14,20 @@ def index(request, *args, **kwargs):
     return render(request, "index.html")
 
 
+def contact(request, *args, **kwargs):
+    return render(request, "contact.html")
+
+
+def about(request, *args, **kwargs):
+    context = {
+        "therapist_list":Therapist.objects.all()
+    }
+    return render(request, "about.html", context=context)
+
+
 class SignUpView(FormView):
     form_class = SignUpForm
-    template_name = "registration/registration.html"
+    template_name = "registration/sign_up_form.html"
     success_url = reverse_lazy("profiles:create_profile_view")
 
     def form_valid(self, form):
@@ -30,7 +41,7 @@ class SignUpView(FormView):
 
 class UpdateProfileView(FormView):
     form_class = ProfileUpdateForm
-    template_name = "registration/update_profile"
+    template_name = "registration/update_profile.html"
     success_url = reverse_lazy("home")
 
     @method_decorator(login_required)
@@ -42,9 +53,9 @@ class UpdateProfileView(FormView):
         user = self.request.user
         fields = ["gender", "date_of_birth", "description", "telephone", "picture"]
         if Patient.objects.filter(user=user).exists():
-            data = model_to_dict(Patient.objects.filter(user=user).first())
+            data = model_to_dict(Patient.objects.filter(user=user).first(), fields=fields)
         elif Therapist.objects.filter(user=user).exists():
-            data = model_to_dict(Therapist.objects.filter(user=user).first())
+            data = model_to_dict(Therapist.objects.filter(user=user).first(), fields=fields)
         else:
             data = None
         if data is not None:
@@ -52,7 +63,7 @@ class UpdateProfileView(FormView):
         return initial
 
     def form_valid(self, form):
-        form.save(commit=False, user=self.request.user)
+        form.save(commit=False, user=self.request.user, picture=self.request.FILES["picture"])
         return super(UpdateProfileView, self).form_valid(form)
 
     def get_form_kwargs(self):
