@@ -34,7 +34,7 @@ class CreateSessionView(FormView):
 
     def get_context_data(self, **kwargs):
         context_data = super(CreateSessionView, self).get_context_data(**kwargs)
-        context_data.update({"recipient":Therapist.objects.get(id=self.kwargs["therapist_id"])})
+        context_data.update({"recipient": Therapist.objects.get(id=self.kwargs["therapist_id"])})
         return context_data
 
     def get_form_kwargs(self):
@@ -50,7 +50,8 @@ class CreateSessionView(FormView):
         text = form.cleaned_data["text"]
         recipient = Therapist.objects.get(id=form.cleaned_data["recipient"]).user
         subject = "Request for new Therapy Session"
-        message = Message.new_message(from_user=self.request.user, to_users=[recipient,], subject=subject, content=text)
+        message = Message.new_message(from_user=self.request.user, to_users=[recipient, ], subject=subject,
+                                      content=text)
         self.thread_id = message.thread_id
         return super(CreateSessionView, self).form_valid(form)
 
@@ -64,29 +65,25 @@ class MessageThreadView(View):
     def get(self, request, *args, **kwargs):
         thread = get_object_or_404(Thread, id=self.kwargs["thread_id"])
         thread.userthread_set.filter(user=self.request.user).update(unread=False)
+        threads = []
+        for t in Thread.objects.all():
+            if self.request.user in t.users.all():
+                threads.append(t)
         context = {
             "thread_active": thread,
-            "recipient":thread.users.all()[0].get_full_name()
-        }
-        if self.kwargs.get("deleted", None):
-            threads = Thread.ordered(Thread.deleted(self.request.user))
-            folder = "deleted"
-        else:
-            threads = Thread.ordered(Thread.inbox(self.request.user))
-            folder = "inbox"
-        context.update({
-            "folder": folder,
+            "recipient": thread.users.all()[0].get_full_name(),
             "threads": threads,
             "threads_unread": Thread.ordered(Thread.unread(self.request.user))
-        })
-        return render(self.request, "session/thread.new.html", context)
+        }
+        return render(self.request, "session/thread.html", context)
 
     def post(self, request, *args, **kwargs):
         thread = get_object_or_404(Thread, id=self.kwargs["thread_id"])
         content = str(self.request.POST.get("content")).strip()
         if content is not None or content != "":
             Message.new_reply(thread=thread, user=self.request.user, content=content)
-        return redirect(self.request.path)
+        # return redirect(self.request.path)
+        return self.get(self.request, *args, **kwargs)
 
 
 class InboxView(TemplateView):
@@ -94,7 +91,7 @@ class InboxView(TemplateView):
     View inbox thread list.
     """
     # template_name = "session/inbox.html"
-    template_name = "session/inbox.html"
+    template_name = "session/thread.html"
 
     @method_decorator(login_required)
     def dispatch(self, *args, **kwargs):
@@ -102,15 +99,15 @@ class InboxView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super(InboxView, self).get_context_data(**kwargs)
-        if self.kwargs.get("deleted", None):
-            threads = Thread.ordered(Thread.deleted(self.request.user))
-            folder = "deleted"
-        else:
-            threads = Thread.ordered(Thread.inbox(self.request.user))
-            folder = "inbox"
-
+        thread = Thread.ordered(Thread.inbox(self.request.user))[-1]
+        thread.userthread_set.filter(user=self.request.user).update(unread=False)
+        threads = []
+        for t in Thread.objects.all():
+            if self.request.user in t.users.all():
+                threads.append(t)
         context.update({
-            "folder": folder,
+            "thread_active": thread,
+            "recipient": thread.users.all()[0].get_full_name(),
             "threads": threads,
             "threads_unread": Thread.ordered(Thread.unread(self.request.user))
         })
