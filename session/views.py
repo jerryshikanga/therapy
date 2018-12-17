@@ -1,13 +1,11 @@
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import get_object_or_404, render, redirect
 from django.urls import reverse_lazy
-from django.shortcuts import get_object_or_404, render
 from django.utils.decorators import method_decorator
-from django.views.generic import FormView, ListView, View, TemplateView
-from django.shortcuts import redirect
+from django.views.generic import ListView, View, TemplateView
 from pinax.messages.models import Message, Thread
 
 from profiles.models import Therapist
-from .forms import NewMessageForm as InternalNewMessageForm
 
 
 # Create your views here.
@@ -17,43 +15,24 @@ class TherapistListView(ListView):
     template_name = "session/therapist_list.html"
 
 
-class CreateSessionView(FormView):
-    form_class = InternalNewMessageForm
-    template_name = "session/new_message_form.html"
-
-    def __init__(self, *args, **kwargs):
-        self.thread_id = None
-        super(CreateSessionView, self).__init__(*args, **kwargs)
-
+class CreateSessionView(View):
     @method_decorator(login_required)
     def dispatch(self, *args, **kwargs):
         return super(CreateSessionView, self).dispatch(*args, **kwargs)
 
-    def get_success_url(self):
-        return reverse_lazy("session:message_thread", args=[self.thread_id])
-
-    def get_context_data(self, **kwargs):
-        context_data = super(CreateSessionView, self).get_context_data(**kwargs)
-        context_data.update({"recipient": Therapist.objects.get(id=self.kwargs["therapist_id"])})
-        return context_data
-
-    def get_form_kwargs(self):
-        kwargs = super(CreateSessionView, self).get_form_kwargs()
+    def get(self, request, *args, **kwargs):
         therapist = Therapist.objects.get(id=self.kwargs["therapist_id"])
-        kwargs.update({
-            "recipient": therapist,
-            "sender": self.request.user,
-        })
-        return kwargs
-
-    def form_valid(self, form):
-        text = form.cleaned_data["text"]
-        recipient = Therapist.objects.get(id=form.cleaned_data["recipient"]).user
-        subject = "Request for new Therapy Session"
-        message = Message.new_message(from_user=self.request.user, to_users=[recipient, ], subject=subject,
-                                      content=text)
-        self.thread_id = message.thread_id
-        return super(CreateSessionView, self).form_valid(form)
+        subject = "Therapy between {} and {}".format(self.request.user.first_name, therapist.user.first_name)
+        content = "Hello {}, I would like to have a session with you.".format(therapist.user.get_full_name())
+        thread = None
+        for t in self.request.user.userthread_set.all():
+            if therapist.user in t.thread.users.all():
+                thread = t.thread
+        if thread is None:
+            message = Message.new_message(from_user=self.request.user, to_users=[therapist.user,], subject=subject, content=content)
+            thread = message.thread
+        url = reverse_lazy("session:message_thread", args=[thread.id])
+        return redirect(url)
 
 
 class MessageThreadView(View):
