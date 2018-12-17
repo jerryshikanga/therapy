@@ -1,8 +1,9 @@
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
+from django.shortcuts import get_object_or_404, render
 from django.utils.decorators import method_decorator
-from django.views.generic import FormView, ListView, UpdateView, TemplateView
-from pinax.messages.forms import MessageReplyForm
+from django.views.generic import FormView, ListView, View, TemplateView
+from django.shortcuts import redirect
 from pinax.messages.models import Message, Thread
 
 from profiles.models import Therapist
@@ -54,38 +55,38 @@ class CreateSessionView(FormView):
         return super(CreateSessionView, self).form_valid(form)
 
 
-class MessageThreadView(UpdateView):
-
-    """
-        View a single Thread or POST a reply.
-    """
-    model = Thread
-    form_class = MessageReplyForm
-    context_object_name = "thread"
-    template_name = "session/thread.html"
-    success_url = reverse_lazy("session:inbox_view")
+class MessageThreadView(View):
 
     @method_decorator(login_required)
     def dispatch(self, *args, **kwargs):
         return super(MessageThreadView, self).dispatch(*args, **kwargs)
 
-    def get_queryset(self):
-        qs = super(MessageThreadView, self).get_queryset()
-        qs = qs.filter(userthread__user=self.request.user).distinct()
-        return qs
-
-    def get_form_kwargs(self):
-        kwargs = super(MessageThreadView, self).get_form_kwargs()
-        kwargs.update({
-            "user": self.request.user,
-            "thread": self.object
-        })
-        return kwargs
-
     def get(self, request, *args, **kwargs):
-        response = super(MessageThreadView, self).get(request, *args, **kwargs)
-        self.object.userthread_set.filter(user=request.user).update(unread=False)
-        return response
+        thread = get_object_or_404(Thread, id=self.kwargs["thread_id"])
+        thread.userthread_set.filter(user=self.request.user).update(unread=False)
+        context = {
+            "thread_active": thread,
+            "recipient":thread.users.all()[0].get_full_name()
+        }
+        if self.kwargs.get("deleted", None):
+            threads = Thread.ordered(Thread.deleted(self.request.user))
+            folder = "deleted"
+        else:
+            threads = Thread.ordered(Thread.inbox(self.request.user))
+            folder = "inbox"
+        context.update({
+            "folder": folder,
+            "threads": threads,
+            "threads_unread": Thread.ordered(Thread.unread(self.request.user))
+        })
+        return render(self.request, "session/thread.new.html", context)
+
+    def post(self, request, *args, **kwargs):
+        thread = get_object_or_404(Thread, id=self.kwargs["thread_id"])
+        content = str(self.request.POST.get("content")).strip()
+        if content is not None or content != "":
+            Message.new_reply(thread=thread, user=self.request.user, content=content)
+        return redirect(self.request.path)
 
 
 class InboxView(TemplateView):
